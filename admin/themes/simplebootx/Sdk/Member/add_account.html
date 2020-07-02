@@ -1,0 +1,35 @@
+<admintpl file="header" />
+</head>
+<body class="J_scroll_fixed" >
+<div class="wrap js-check-wrap" >
+    <ul class="nav nav-tabs" >
+        <li class="active" ><a href="{:U('Member/index')}" >第三方账号导入</a ></li >
+    </ul >
+
+    <form class="well form-search" method="post" action="{:U('Sdk/Member/add_other_account')}" >
+        <div class="search_type cc mb10" >
+            <div class="mb10" >
+                <span class="mr20" >                              
+                    注册游戏：
+                    {$app_select}
+                    注册渠道：
+                    {$agent_select}
+                    </br></br>
+                    账号列表（多个,隔开）：
+                    <div class="control-group" >
+                        <div class="controls" >
+                            <textarea name="gameaccount" value="" style="resize:none;width:40%;height:500px" 
+                            placeholder="请输入需要映射的游戏帐号"></textarea >
+                        </div >
+                    </div >
+                </span >
+            </div >
+        </div >
+        <div class="form-actions" >
+                <button type="submit" class="btn btn-primary  js-ajax-submit" >{:L('SAVE')}</button >
+        </div >
+    </form >
+</div >
+<script src="__PUBLIC__/js/common.js" ></script >
+</body >
+</html>

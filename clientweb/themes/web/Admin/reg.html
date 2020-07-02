@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)http://cllch.cn:1938/docheck.php?key=b92dd333587764939b71b9ffb3d85b43 -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>
+    万古仙踪
+</title>
+    <script src="/publictwo/js/jquery-1.8.3.js"></script>
+    <link href="/publictwo/css/Register_syxx.Css" rel="stylesheet" type="text/css">
+	<meta content="width=640" name="viewport">
+    <script>
+        function CheckValue() {
+            if ($("#txt_UserName").val() == "请输入帐号" || $("#txt_UserName").val() == "") {
+                return "请输入帐号";
+            }
+            else if ($("#txt_Pwd").val() == "请输入密码" || $("#txt_Pwd").val() == "") {
+                return "请输入密码";
+            }
+            else if ($("#txt_Pwd2").val() == "请确认密码" || $("#txt_Pwd2").val() == "") {
+                return "请确认密码";
+            }
+            else if ($("#txt_Pwd").val() != $("#txt_Pwd2").val()) {
+                return "确认密码与密码不一致";
+            }
+            else {
+                return "1";
+            }
+        }
+
+        function Register() {
+            if (CheckValue() != "1") {
+                //new TipBox({ type: 'error', str: CheckValue(), hasBtn: true });
+                alert(CheckValue());
+            }
+            else {
+                var url = "{:U('Public/doreg')}";
+                $.ajax({
+                    url: url,
+                    type: "POST",
+					data:{agent:$("#hid_SourseID").val(),appid:$("#hid_AppID").val(),myUsername:$("#txt_UserName").val(),myPwd:$("#txt_Pwd").val()},
+                    //contentType: "application/x-www-form-urlencoded;charset=GB-2312",
+                    beforeSend: function () {
+                        $(".Button_B1 > a").attr("disabled", "disabled");
+                        $(".Button_B1").css("background", "#666");
+                        $(".Button_B1 > a").text("正在注册...");
+                    },
+                    success: function (data) {
+                        //alert(data);
+                        var _data = data.split("|");
+                        if (_data == "SUCCESS") {
+                            alert("恭喜您注册成功!");
+                            window.location="https://itunes.apple.com/cn/app/%E4%B8%87%E5%8F%A4%E4%BB%99%E8%B8%AA-2017%E6%9C%80%E7%83%AD%E4%B8%87%E4%BA%BA%E5%9B%A2%E6%88%98pk%E5%8A%A8%E4%BD%9C%E6%96%B0%E6%89%8B%E6%B8%B8/id1213330118?mt=8"                           
+							//location.href = "https://itunes.apple.com/cn/app/wei-wei-yi-xiao-meng-xian/id1168848637?mt=8";
+                            //new TipBox({ type: 'success', str: '恭喜您注册成功', hasBtn: true });
+                        }
+                        else if(_data == "FAIL0"){
+                            alert("帐号密码只能包含字母和数字!,请重新输入!");
+                            $(".Button_B1 > a").removeAttr("disabled");
+                            $(".Button_B1").css("background", "#ff8a2c");
+                            $(".Button_B1 > a").text("立即注册");
+                        }
+                        else if(_data == "FAIL2"){
+                            alert("帐号已存在, 请重新输入!");
+                            $(".Button_B1 > a").removeAttr("disabled");
+                            $(".Button_B1").css("background", "#ff8a2c");
+                            $(".Button_B1 > a").text("立即注册");
+                        }
+                        else {
+                            alert("帐号密码只能包含字母和数字!,请重新输入!");
+                            //new TipBox({ type: 'error', str: _data[1], hasBtn: true });
+                            $(".Button_B1 > a").removeAttr("disabled");
+                            $(".Button_B1").css("background", "#ff8a2c");
+                            $(".Button_B1 > a").text("立即注册");
+                        }
+                    },
+                    complete: function () {
+
+                    },
+                    error: function () {
+                        alert("出错了");
+                    }
+                });
+            }
+        }
+    </script>
+</head>
+<body style="background-color:#e0e4ea">
+    <form method="post" action="" id="form1">
+    <input type="hidden" name="hid_SourseID" id="hid_SourseID" value="{$agent}">
+    <input type="hidden" name="hid_AppID" id="hid_AppID" value="{$appid}">
+    <div class="Global">
+        <div class="Banner">
+            <img src="/publictwo/image/sign_head_02.jpg" id="img_Banner" width="720" height="520">
+        </div>
+        <div id="div_Bj" class="Bj"></div>
+        <div class="NieRong">
+            <div class="BiaoTi"><img src="/publictwo/image/zhuce.png" id="img_ZhuCe" width="613" height="40"></div>
+            <!-- 输入框 -->
+            <div class="Input_Box">
+                <ul>
+                    <li><input id="txt_UserName" type="text" class="Input_B1" placeholder="请输入会员帐号"></li>
+                    <li><input id="txt_Pwd" name="password" type="password" class="Input_B2" placeholder="请输入密码"></li>
+                    <li><input id="txt_Pwd2" name="password" type="password" class="Input_B2" placeholder="请重新输入密码"></li>
+                </ul>
+            </div>
+            <div class="BiaoDan"><input class="Input_AnNiu" name="" type="button" onclick="Register()"></div>
+            <div class="JietuPic"><img src="/publictwo/image/JIe.jpg" id="img_JIe" width="640" height="642"></div>
+        </div>
+    </div>
+    </form>
+
+<div style="position: static; width: 0px; height: 0px; border: none; padding: 0px; margin: 0px;">
+<div id="trans-tooltip">
+<div id="tip-left-top" style="background: url(/publictwo/image/tip-left-top.png);">
+</div>
+<div id="tip-top" style="background: url(/publictwo/image/map/tip-top.png) repeat-x;">
+</div>
+<div id="tip-right-top" style="background: url(/publictwo/image/tip-right-top.png);">
+</div>
+<div id="tip-right" style="background: url(/publictwo/image/tip-right.png) repeat-y;">
+</div>
+<div id="tip-right-bottom" style="background: url(/publictwo/image/tip-right-bottom.png);">
+</div>
+<div id="tip-bottom" style="background: url(/publictwo/image/tip-bottom.png) repeat-x;">
+</div>
+<div id="tip-left-bottom" style="background: url(/publictwo/image/tip-left-bottom.png);">
+</div>
+<div id="tip-left" style="background: url(/publictwo/image/tip-left.png);">
+</div>
+<div id="trans-content">
+</div>
+</div>
+<div id="tip-arrow-bottom" style="background: url(/publictwo/image/tip-arrow-bottom.png);">
+</div>
+<div id="tip-arrow-top" style="background: url(/publictwo/image/tip-arrow-top.png);">
+</div>
+</div>
+</body>
+</html>

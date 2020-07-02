@@ -1,0 +1,88 @@
+<admintpl file="header" />
+
+<link rel="shortcut icon" href="favicon.ico"> <link href="/public/h/css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="/public/h/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link href="/public/h/css/plugins/chosen/chosen.css" rel="stylesheet">
+    <link href="/public/h/css/plugins/cropper/cropper.min.css" rel="stylesheet">
+    <link href="/public/h/css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+
+    <link href="/public/h/css/animate.min.css" rel="stylesheet">
+    <link href="/public/h/css/style.min862f.css?v=4.1.0" rel="stylesheet">
+
+</head>
+<body class="J_scroll_fixed">
+	<div class="wrap J_check_wrap">
+        
+       
+	   <form class="J_ajaxForm" action="" method="post">
+	   <div class="ibox-content">
+		<table class="table table-striped table-bordered table-hover dataTables-example" style="margin-bottom:5px">
+			<thead>
+				<tr>					
+					<th>头像</th>				
+					<th>手机号码</th> 
+					<th>性别</th>
+					<th>收货地址</th>
+					<th>最近登录IP</th>	
+					<th>最后登录时间</th>					
+					<th>注册IMEI码</th>
+					<th>注册时间</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><img src="{$accessinfo['img']}" width="50" height="50"></td>
+					<td>{$accessinfo['mobile']}</td>
+					<td>{$accessinfo['sex']}</td>
+					<td><a href="{:U('Member/acsaddress',array('userid'=>$accessinfo['id']))}">查看</a></td>
+					<td>{$accessinfo['ip']}</td>
+					<td>{$accessinfo['last_login_time']|date='Y-m-d  H:i:s',###}</td>
+					<td>{$accessinfo['imei']}</td>
+					<td>{$accessinfo['reg_time']|date='Y-m-d  H:i:s',###}</td>
+					
+				</tr>
+			
+			</tbody>
+			<!-- <tbody>
+				<php>$fromflag = array('1'=>'SDK','5'=>'APP')</php>
+				<php>$members_flag=array("0"=>"正常","1"=>"冻结");</php>
+				<foreach name="members" item="vo">
+				<tr>
+					<td>{$vo.username}</td>
+					<td>{$vo.nickname}</td>
+					<td>{$fromflag[$vo['fromflag']]}</td>
+					<td>{$vo.agentnicename}</td>
+					<td>{$members_flag[$vo['flag']]}</td>
+					<td>
+						<a href="{:U('Member/accessinfo',array('id'=>$vo['id']))}">其他</a>/
+						<a>好友列表</a>
+					</td>
+					<td>
+						<a>修改</a>/
+						<a>冻结</a>
+					</td>
+				</tr>
+				</foreach>
+			</tbody> -->
+			
+		</table>
+		<div class="form-actions" style="background-color:#fff;text-align:center"><a class="btn" href="{:U('Member/useraccess')}">返回</a></div>
+		</div>
+	  </form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	<script src="/public/h/js/plugins/chosen/chosen.jquery.js"></script>
+    <script src="/public/h/js/content.min.js?v=1.0.0"></script>
+    <script src="/public/h/js/plugins/chosen/chosen.jquery.js"></script>
+    <script src="/public/h/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+    <script src="/public/h/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="/public/h/js/plugins/clockpicker/clockpicker.js"></script>
+    <script src="/public/h/js/plugins/cropper/cropper.min.js"></script>
+    <script src="/public/h/js/demo/form-advanced-demo.min.js"></script>
+
+    <script src="/public/h/js/plugins/jeditable/jquery.jeditable.js"></script>
+    <script src="/public/h/js/plugins/dataTables/jquery.dataTables.js"></script>
+    <script src="/public/h/js/plugins/dataTables/dataTables.bootstrap.js"></script>
+    <script src="/public/h/js/content.min.js?v=1.0.0"></script>
+</body>
+</html>

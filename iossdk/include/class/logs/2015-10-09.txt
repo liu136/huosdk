@@ -1,0 +1,107 @@
+Time : 08:51:38
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'payway' in 'field list'
+Raw SQL : insert into l_paylog (orderid, cid, account, lm_username, amount, appid, roleid, payway, productname, gameagent, reggameagent, serverid, status, ip, imei, create_time, switchflag) value (:orderid, :cid, :account, :lm_username, :amount, :appid, :roleid, :payway, :productname, :gameagent, :reggameagent, :serverid, :status, :ip, :imei, :create_time, :switchflag)
+
+Time : 08:51:17
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'payway' in 'field list'
+Raw SQL : insert into l_paylog (orderid, cid, account, lm_username, amount, appid, roleid, payway, productname, gameagent, reggameagent, serverid, status, ip, imei, create_time, switchflag) value (:orderid, :cid, :account, :lm_username, :amount, :appid, :roleid, :payway, :productname, :gameagent, :reggameagent, :serverid, :status, :ip, :imei, :create_time, :switchflag)
+
+Time : 08:48:28
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'payway' in 'field list'
+Raw SQL : insert into l_paylog (orderid, cid, account, lm_username, amount, appid, roleid, payway, productname, gameagent, reggameagent, serverid, status, ip, imei, create_time, switchflag) value (:orderid, :cid, :account, :lm_username, :amount, :appid, :roleid, :payway, :productname, :gameagent, :reggameagent, :serverid, :status, :ip, :imei, :create_time, :switchflag)
+
+Time : 08:48:27
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'payway' in 'field list'
+Raw SQL : insert into l_paylog (orderid, cid, account, lm_username, amount, appid, roleid, payway, productname, gameagent, reggameagent, serverid, status, ip, imei, create_time, switchflag) value (:orderid, :cid, :account, :lm_username, :amount, :appid, :roleid, :payway, :productname, :gameagent, :reggameagent, :serverid, :status, :ip, :imei, :create_time, :switchflag)
+
+Time : 08:47:11
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'payway' in 'field list'
+Raw SQL : insert into l_paylog (orderid, cid, account, lm_username, amount, appid, roleid, payway, productname, gameagent, reggameagent, serverid, status, ip, imei, create_time, switchflag) value (:orderid, :cid, :account, :lm_username, :amount, :appid, :roleid, :payway, :productname, :gameagent, :reggameagent, :serverid, :status, :ip, :imei, :create_time, :switchflag)
+
+Time : 08:46:57
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'payway' in 'field list'
+Raw SQL : insert into l_paylog (orderid, cid, account, lm_username, amount, appid, roleid, payway, productname, gameagent, reggameagent, serverid, status, ip, imei, create_time, switchflag) value (:orderid, :cid, :account, :lm_username, :amount, :appid, :roleid, :payway, :productname, :gameagent, :reggameagent, :serverid, :status, :ip, :imei, :create_time, :switchflag)
+
+Time : 08:46:53
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'payway' in 'field list'
+Raw SQL : insert into l_paylog (orderid, cid, account, lm_username, amount, appid, roleid, payway, productname, gameagent, reggameagent, serverid, status, ip, imei, create_time, switchflag) value (:orderid, :cid, :account, :lm_username, :amount, :appid, :roleid, :payway, :productname, :gameagent, :reggameagent, :serverid, :status, :ip, :imei, :create_time, :switchflag)
+
+Time : 08:45:39
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'payway' in 'field list'
+Raw SQL : insert into l_paylog (orderid, cid, account, lm_username, amount, appid, roleid, payway, productname, gameagent, reggameagent, serverid, status, ip, imei, create_time, switchflag) value (:orderid, :cid, :account, :lm_username, :amount, :appid, :roleid, :payway, :productname, :gameagent, :reggameagent, :serverid, :status, :ip, :imei, :create_time, :switchflag)
+
+Time : 08:45:10
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'payway' in 'field list'
+Raw SQL : insert into l_paylog (orderid, cid, account, lm_username, amount, appid, roleid, payway, productname, gameagent, reggameagent, serverid, status, ip, imei, create_time, switchflag) value (:orderid, :cid, :account, :lm_username, :amount, :appid, :roleid, :payway, :productname, :gameagent, :reggameagent, :serverid, :status, :ip, :imei, :create_time, :switchflag)
+
+Time : 08:44:58
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'payway' in 'field list'
+Raw SQL : insert into l_paylog (orderid, cid, account, lm_username, amount, appid, roleid, payway, productname, gameagent, reggameagent, serverid, status, ip, imei, create_time, switchflag) value (:orderid, :cid, :account, :lm_username, :amount, :appid, :roleid, :payway, :productname, :gameagent, :reggameagent, :serverid, :status, :ip, :imei, :create_time, :switchflag)
+
+Time : 08:44:15
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'payway' in 'field list'
+Raw SQL : insert into l_paylog (orderid, cid, account, lm_username, amount, appid, roleid, payway, productname, gameagent, reggameagent, serverid, status, ip, imei, create_time, switchflag) value (:orderid, :cid, :account, :lm_username, :amount, :appid, :roleid, :payway, :productname, :gameagent, :reggameagent, :serverid, :status, :ip, :imei, :create_time, :switchflag)
+
+Time : 06:25:11
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_league.cy_pay' doesn't exist
+Raw SQL : insert into cy_pay (orderid, amount, username, roleid, paytype, productname, agent, serverid, gameid, ip, imeil, create_time, regagent) value (:orderid, :amount, :username, :roleid, :paytype, :productname, :agent, :serverid, :gameid, :ip, :imeil, :create_time, :regagent)
+
+Time : 06:21:11
+SQLSTATE[HY093]: Invalid parameter number
+Raw SQL : select agent from l_user where cid=:cid and account=:username
+
+Time : 06:21:10
+SQLSTATE[HY093]: Invalid parameter number
+Raw SQL : select agent from l_user where cid=:cid and account=:username
+
+Time : 06:21:01
+SQLSTATE[HY093]: Invalid parameter number
+Raw SQL : select agent from l_user where cid=:cid and account=:username
+
+Time : 06:19:39
+SQLSTATE[HY093]: Invalid parameter number
+Raw SQL : select agent from l_user where cid=:cid and account=:username
+
+Time : 06:18:02
+SQLSTATE[HY093]: Invalid parameter number
+Raw SQL : select agent from l_user where cid=:cid and account=:username
+
+Time : 06:17:47
+SQLSTATE[HY093]: Invalid parameter number
+Raw SQL : select agent from l_user where cid=:cid and account=:username
+
+Time : 05:24:34
+SQLSTATE[HY000]: General error: 2031 
+Raw SQL : select id FROM l_client WHERE clientidentifier=:cidenty AND clientkey=:clientkey
+
+Time : 04:22:14
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : select id FROM l_client WHERE clientidentifier=:cidenty AND clientkey=:clientkey
+
+Time : 04:20:21
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : select id FROM l_client WHERE clientidentifier=:cidenty AND clientkey=:clientkey
+
+Time : 04:20:20
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : select id FROM l_client WHERE clientidentifier=:cidenty AND clientkey=:clientkey
+
+Time : 04:20:02
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : select id FROM l_client WHERE clientidentifier=:cidenty AND clientkey=:clientkey
+
+Time : 04:19:43
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : select id FROM l_client WHERE clientidentifier=:cidenty AND clientkey=:clientkey
+
+Time : 04:19:42
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : select id FROM l_client WHERE clientidentifier=:cidenty AND clientkey=:clientkey
+
+Time : 04:12:54
+SQLSTATE[HY000]: General error: 2031 
+Raw SQL : select id FROM l_client WHERE clientidentifier=:cidenty AND clientkey=:clientkey
+
+Time : 04:10:45
+SQLSTATE[HY000]: General error: 2031 
+Raw SQL : select id FROM l_client WHERE clientidentifier=:cidenty AND clientkey=:clientkey

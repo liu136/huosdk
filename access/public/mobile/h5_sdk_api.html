@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/public/mobile/js/gn_h5_sdk.js"  charset="utf-8"></script>
+<script >
+
+initSdk("6000");
+
+
+function postSms(){
+	var mobile =document.getElementById("mobile").value;
+	send_sms(mobile);
+}
+function postMobileRegister(){
+	var mobile =document.getElementById("mobile").value;
+	var code =document.getElementById("code").value;
+	var password =document.getElementById("mobilepassword").value;
+	mobile_register(mobile,password,code);
+}
+function postUpdatePassword(){
+	var mobile =document.getElementById("mobile").value;
+	var code =document.getElementById("code").value;
+	var password =document.getElementById("mobilepassword").value;
+	update_password(mobile,password,code);
+}
+function  postLogin(){
+	var username =document.getElementById("username").value;
+	var password =document.getElementById("password").value;
+	window.parent.sdkModule.sdkLogin(username,password);
+
+}
+
+
+function postRegister(){
+	var username =document.getElementById("username").value;
+	var password =document.getElementById("password").value;
+	register(username,password);
+}
+
+function postUpSms(){
+	var mobile =document.getElementById("mobile").value;
+	send_sms_up(mobile);
+
+}
+
+function postPay() {
+	/**
+	*  	orderinfo 订单数据
+		*       product_name 	   商品名字
+		*       product_id  	   商品id
+		*       product_desc     商品描述
+		*       exchange_rate    虚拟币兑换比例（例如100，表示1元购买100虚拟币） 默认为0。
+		*       ext    CP自定义扩展字段 透传信息 默认为””
+		*       currency_name    虚拟币名称（如金币、元宝）默认为””
+		*       product_count    商品数量(除非游戏需要支持一次购买多份商品),默认为1
+		*       product_price    价格(元),留两位小数
+		*      cp_order_id    虚拟币兑换比例（例如100，表示1元购买100虚拟币） 默认为0。
+	* 	app_id  游戏id
+	*   timestamp  客户端时间戳
+	*   roleinfo  角色数据
+		*   party_name  工会、帮派名称，如果没有，请填空字符串””
+		*   role_vip  玩家vip等级，如果没有，请填0。
+		*   role_balence  玩家游戏中游戏币余额，留两位小数;如果没有账户余额，请填0。
+		*   rolelevel_ctime  玩家创建角色的时间 时间戳(11位的整数，单位秒)，默认0
+		*   rolelevel_mtime  玩家角色等级变化时间 时间戳(11位的整数，单位秒)，默认0
+		*   server_name  游戏服务器名称
+		*   role_name  玩家角色名称
+		*   server_id  游戏服务器id
+		*   role_id  玩家角色id
+		*   role_level  玩家角色等级，如果没有，请填0。
+	* 	sign  接口 sign
+	*/
+	sdkPay('sdk测试商品','com.cn.cqyry.68usd',"sdk 商品","10","金币","gna_@@_1001","1","0.01","12345679","1537841671","sdk 帮会","1","0","0","0","sdk 测试","sdk 测试","1","123412","1",'7f6147defe2d492c1cbacc7e3c7f1bde'							
+	);
+}
+
+ 
+</script>
+
+<title>无标题文档</title>
+</head>	
+
+
+
+
+用户名:<input name="username" id="username" type="text"/>
+密码:<input name="password" id="password" type="text"/>
+<button type="button" onclick="postLogin();" style="width:100%;top:10px;">登录测试 </button>
+<button type="button" onclick="postRegister();" style="width:100%;top:10px;">账号注册测试</button>
+---------------------------------------------------------------------------------------------------</p>
+手机号:<input name="mobile" id="mobile" type="text"/>
+密码:<input name="mobilepassword" id="mobilepassword" type="text"/>
+验证码:<input name="code" id="code" type="text"/>
+<button type="button" onclick="postSms();" style="width:100%;top:10px;">获取验证码 </button>
+<button type="button" onclick="postUpSms();" style="width:100%;top:10px;">获取修改验证码 </button>
+<button type="button" onclick="postMobileRegister();" style="width:100%;top:10px;">手机号注册 </button>
+<button type="button" onclick="postUpdatePassword();" style="width:100%;top:10px;">修改密码 </button>
+<button type="button" onclick="postPay();" style="width:100%;top:10px;">发起支付 </button>
+
+<iframe src="" name="payWindow"   width="100%" height="100%"><iframe/>
+
+
+
+
+<body>
+
+
+</body>
+
+</html>

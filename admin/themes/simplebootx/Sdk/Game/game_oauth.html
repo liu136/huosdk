@@ -1,0 +1,178 @@
+<admintpl file="header" />
+</head>
+<body class="J_scroll_fixed" >
+<div class="wrap jj" >
+    <div class="common-form" >
+        <form class="form-horizontal js-ajax-form" method="post" action="{:U('Game/game_oauth_do')}" >
+            <!--<fieldset >
+				<div class="form-actions" >
+					<td ><input name="app_id" type="hidden" value="{$Think.get.id}" ></td >
+					APP应用
+				</div >
+				<div class="span6">
+					<div class="control-group" >
+						<label class="control-label" for="input01" >QQ:</label >
+					</div >
+					<div class="control-group" >
+						<label class="control-label" for="input01" >appid:</label >
+						<div class="controls" >
+							<input type="text" name="qq_oauth_appid" value="{$oauth_config_arr[2]['oauth_appid']}" placeholder="QQ提供的 appid" >
+						</div >
+					</div >
+
+					<div class="control-group" >
+						<label class="control-label" for="input01" >appSecret:</label >
+						<div class="controls" >
+							<input type="text" name="qq_oauth_appsecret" value="{$oauth_config_arr[2]['oauth_appsecret']}" placeholder="QQ提供的 appSecret" >
+						</div >
+					</div >
+					
+					&lt;!&ndash;<div class="control-group" >
+						<label class="control-label" for="input01" >是否开启:</label >
+						<div class="controls" >
+							<input type="checkbox" name="qq_status" value="1" <if condition="$oauth_config_arr[2]['status'] eq 1">checked="checked"</if>>
+						</div >
+					</div >&ndash;&gt;
+				</div>
+				<div class="span6">
+					<div class="control-group" >
+						<label class="control-label" for="input01" >微信:</label >
+					</div >
+					
+					<div class="control-group" >
+						<label class="control-label" for="input01" >appid:</label >
+						<div class="controls" >
+							<input type="text" name="wx_oauth_appid" value="{$oauth_config_arr[3]['oauth_appid']}" placeholder="微信提供的 appid" >
+						</div >
+					</div >
+
+					<div class="control-group" >
+						<label class="control-label" for="input01" >appSecret:</label >
+						<div class="controls" >
+							<input type="text" name="wx_oauth_appsecret" value="{$oauth_config_arr[3]['oauth_appsecret']}" placeholder="微信提供的 appSecret" >
+						</div >
+					</div >
+					&lt;!&ndash;<div class="control-group" >
+						<label class="control-label" for="input01" >是否开启:</label >
+						<div class="controls" >
+							<input type="checkbox" name="wx_status" value="1" <if condition="$oauth_config_arr[3]['status'] eq 1">checked="checked"</if>>
+						</div >
+					</div >&ndash;&gt;
+				</div>
+				
+				<div class="span6">
+					<div class="control-group" >
+						<label class="control-label" for="input01" >微博:</label >
+					</div >
+					
+					<div class="control-group" >
+						<label class="control-label" for="input01" >appid:</label >
+						<div class="controls" >
+							<input type="text" name="wb_oauth_appid" value="{$oauth_config_arr[4]['oauth_appid']}" placeholder="微博提供的 appid" >
+						</div >
+					</div >
+
+					<div class="control-group" >
+						<label class="control-label" for="input01" >appSecret:</label >
+						<div class="controls" >
+							<input type="text" name="wb_oauth_appsecret" value="{$oauth_config_arr[4]['oauth_appsecret']}" placeholder="微博提供的 appSecret" >
+						</div >
+					</div >
+					
+					<div class="control-group" >
+						<label class="control-label" for="input01" >redirecturl:</label >
+						<div class="controls" >
+							<input type="text" name="wb_oauth_redirecturl" value="{$oauth_config_arr[4]['oauth_redirecturl']}" placeholder="微博提供的 redirecturl" >
+						</div >
+					</div >
+					&lt;!&ndash;<div class="control-group" >
+						<label class="control-label" for="input01" >是否开启:</label >
+						<div class="controls" >
+							<input type="checkbox" name="wb_status" value="1" <if condition="$oauth_config_arr[4]['status'] eq 1">checked="checked"</if>>
+						</div >
+					</div >&ndash;&gt;
+				</div>
+            </fieldset >-->
+			
+			<fieldset >
+				<div class="form-actions" >
+					<td ><input name="app_id" type="hidden" value="{$Think.get.id}" ></td >
+					网站应用
+				</div >
+				<!--<div class="span6">
+					<div class="control-group" >
+						<label class="control-label" for="input01" >QQ:</label >
+					</div >
+					<div class="control-group" >
+						<label class="control-label" for="input01" >appid:</label >
+						<div class="controls" >
+							<input type="text" name="webqq_oauth_appid" value="{$oauth_config_arr[5]['oauth_appid']}" placeholder="QQ提供的 appid" >
+						</div >
+					</div >
+
+					<div class="control-group" >
+						<label class="control-label" for="input01" >appSecret:</label >
+						<div class="controls" >
+							<input type="text" name="webqq_oauth_appsecret" value="{$oauth_config_arr[5]['oauth_appsecret']}" placeholder="QQ提供的 appSecret" >
+						</div >
+					</div >
+				</div>-->
+				<div class="span6">
+					<div class="control-group" >
+						<label class="control-label" for="input01" >微信:</label >
+					</div >
+					
+					<div class="control-group" >
+						<label class="control-label" for="input01" >appid:</label >
+						<div class="controls" >
+							<input type="text" name="webwx_oauth_appid" value="{$oauth_config_arr[6]['oauth_appid']}" placeholder="微信提供的 appid" >
+						</div >
+					</div >
+
+					<div class="control-group" >
+						<label class="control-label" for="input01" >appSecret:</label >
+						<div class="controls" >
+							<input type="text" name="webwx_oauth_appsecret" value="{$oauth_config_arr[6]['oauth_appsecret']}" placeholder="微信提供的 appSecret" >
+						</div >
+					</div >
+				</div>
+				
+				<!--<div class="span6">
+					<div class="control-group" >
+						<label class="control-label" for="input01" >微博:</label >
+					</div >
+
+					<div class="control-group" >
+						<label class="control-label" for="input01" >appid:</label >
+						<div class="controls" >
+							<input type="text" name="webwb_oauth_appid" value="{$oauth_config_arr[7]['oauth_appid']}" placeholder="微博提供的 appid" >
+						</div >
+					</div >
+
+					<div class="control-group" >
+						<label class="control-label" for="input01" >appSecret:</label >
+						<div class="controls" >
+							<input type="text" name="webwb_oauth_appsecret" value="{$oauth_config_arr[7]['oauth_appsecret']}" placeholder="微博提供的 appSecret" >
+						</div >
+					</div >
+
+					<div class="control-group" >
+						<label class="control-label" for="input01" >redirecturl:</label >
+						<div class="controls" >
+							<input type="text" name="webwb_oauth_redirecturl" value="{$oauth_config_arr[7]['oauth_redirecturl']}" placeholder="微博提供的 redirecturl" >
+						</div >
+					</div >
+				</div>-->
+            </fieldset >
+			<div class="form-actions" >
+				<td ><input name="app_id" type="hidden" value="{$Think.get.id}" ></td >
+				<button type="submit" class="btn btn-primary btn_submit  js-ajax-submit">更新</button >
+				<a class="btn" href="#" onClick="javascript :history.back(-1);" >返回</a >
+			</div >
+        </form >
+    </div >
+</div >
+<script src="__PUBLIC__/js/common.js" ></script >
+<admintpl file="footer" />
+</body >
+</html>

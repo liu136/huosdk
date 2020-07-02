@@ -1,0 +1,43 @@
+.gameList{width:386px;background:#fff;float:right}
+.gameList .titleHolder{font-size:20px;color:#333;height:55px;border-bottom:1px solid #d7d7d7}
+.gameList .titleHolder span{padding-top:15px;display:block;float:left;width:50%;font-weight:700;text-align:center;font-size:20px;cursor:pointer;line-height:38px;transition:all ease .2s}
+.gameList .titleHolder span.current{border-bottom:2px solid #e74c3c;}
+.rankContent .hr{height:25px;margin:-13px auto -12px}
+.gameList .rankContent li.first span{color: #666;}
+.gameList .rankContent li{clear: both;overflow: hidden;}
+.gameList .rankContent li span.span{text-align: left;}
+.gameList .rankContent li.li span.span{width: 50%;}
+.gameList .rankContent li span{width: 25%;display:block;float: left;text-align: center;}
+.gameList .rankContent li{position:relative;padding:12px 15px;border-bottom:1px dashed #cdcdcd;font-size:14px;line-height:26px;transition:all .2s}
+.gameList .rankContent li:hover{background-color:#f7f7f7}
+.gameList .rankContent li.noBorder{border:0}
+.gameList .rankContent em{display:inline-block;width:20px;height:20px;line-height:20px;margin-right:10px;color:#575757;background:#dfdfdf;text-align:center;border-radius:2px}
+.gameList .rankContent em.first{background:#e73c44;color:#fff}
+.gameList .rankContent em.second{background:#f97b3d;color:#fff}
+.gameList .rankContent em.third{background:#ffa800;color:#fff}
+.gameList .rankContent li .rankTxt{overflow:hidden;color:#323232;position:relative;z-index:3;transition:opacity .2s}
+.gameList .rankContent li.on .rankTxt{opacity:0;filter:alpha(opacity=0)}
+.gameList .rankContent li .rankTxt span{width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;height:20px}
+.gameList .rankContent li .rankTxt i{float:right;display:inline-block;width:26px;height:26px;background:url(../img/homePageRank_10d3b5c.png?__sprite) no-repeat}
+.gameList .rankContent li .rank-m{height:26px;overflow:hidden;position:relative;opacity:0;margin-top:-26px;margin-right:-15px;opacity:0;filter:alpha(opacity=0);z-index:2;transition:opacity .5s}
+.gameList .rankContent li.on .rank-m{height:80px;opacity:1;filter:alpha(opacity=100);z-index:4}
+.gameList .rankContent li .rank-m em{height:80px;line-height:80px;vertical-align:top}
+.gameList .rankContent li .rank-m .icon{display:inline-block;width:80px;height:80px}
+.gameList .rankContent li .rank-m .rTitle a{width:auto}
+.gameList .rankContent li .rank-m img{width:100%;height:100%;border-radius:14px;overflow:hidden}
+.gameList .rankContent li .rank-m .rank-desc{display:inline-block;width:149px;vertical-align:top}
+.gameList .rankContent li .rank-m .rank-desc .rTitle{margin-bottom:14px;height:26px;line-height:26px}
+.gameList .rankContent li .rank-m .rank-desc .rTitle a{display:block;width:149px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;font-size:16px}
+.gameList .rankContent li .rank-m .rank-desc p{font-size:12px;color:#a2a2a2;margin:0;line-height:20px}
+.gameList .rankContent li .rank-m .rank-down{position:absolute;right:15px;bottom:3px;transition:all .2s}
+.gameList .rankContent li .rank-m .rank-desc .rTitle:hover{color:#E73C44}
+.gameList .rankContent{display:none;height:auto;}
+.gameList .tab-on{display:block}
+.frirendList{padding:15px 0 0}
+.frirendList span{margin:5px 0;padding:0 10px;border-right:1px solid #d8d8d8;display:inline-block;line-height:16px}
+.frirendList span a{font-size:14px}
+.wrapperBox .titleHolder .title{cursor:pointer}
+.wrapperBox .titleHolder .title.inactive{border-color:#d7d7d7}
+.addimghd .gameList .rankContent li.li span.span{clear:both;overflow:hidden;text-align:center;}
+.addimghd .gameList .rankContent em.second{float:left;}
+.addimghd .gameList .rankContent li.first span:nth-child(2){text-align: left;}

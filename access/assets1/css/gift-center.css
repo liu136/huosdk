@@ -1,0 +1,14 @@
+#Gift-center{width: 1100px;margin: 0 auto;padding-top: 30px;padding-bottom: 60px;}
+#Gift-center ul {clear: both;overflow: hidden;}
+#Gift-center ul li{float: left;border:1px solid #D5D5D5;list-style: none;border: 1px solid #D5D5D5;padding: 10px;width: 22%;cursor: pointer;}
+#Gift-center ul li div{float: left;}
+#Gift-center ul li div.pic{margin-right: 10px;}
+#Gift-center ul li div.pic img{height:80px ;width: 80px;}
+#Gift-center ul li div.text{line-height: 20px;color: #333;font-size: 12px;padding-top: 20px;}
+#Gift-center ul li div.text a{font-size: 16px;}
+#Gift-center ul li div.text a:hover{color: #E73C44;}
+#Gift-center ul li div.text p span{color: #E73C44;}
+#Gift-center ul li:hover .text a{color: #E73C44;}
+#Gift-center ul li:hover{border: 1px solid #E73C44;}
+#Gift-center ul li:hover img{transform: scale(1.06)}
+#Gift-center ul li img{ transition: transform .3s;}

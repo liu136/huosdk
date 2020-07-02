@@ -1,0 +1,244 @@
+[ 2017-12-22T14:31:31+08:00 ] 218.19.99.96 /Main/index.html
+ERR: 1356:View 'db_sdk_2.c_tagentgamepayview' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them
+ [ SQL语句 ] : SHOW COLUMNS FROM `db_sdk_2`.`c_tagentgamepayview`
+
+[ 2017-12-22T18:01:10+08:00 ] 116.22.55.148 /Main/index.html
+ERR: 1356:View 'db_sdk_2.c_tagentgamepayview' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them
+ [ SQL语句 ] : SHOW COLUMNS FROM `db_sdk_2`.`c_tagentgamepayview`
+
+[ 2017-12-22T18:07:44+08:00 ] 116.22.55.148 /Gameaccess/appstpay_post.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_clientusers` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`user_login`,`user_nicename`,`level` FROM db_sdk_2.l_clientusers WHERE `id` = '1' AND `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_game` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_status` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_client` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_gametype` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_gameclass` [ RunTime:0.0003s ]
+
+[ 2017-12-22T18:08:13+08:00 ] 116.22.55.148 /Gameaccess/appstpay_post.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_clientusers` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`user_login`,`user_nicename`,`level` FROM db_sdk_2.l_clientusers WHERE `id` = '1' AND `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_game` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_status` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_client` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_gametype` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_gameclass` [ RunTime:0.0003s ]
+
+[ 2017-12-22T18:08:58+08:00 ] 116.22.55.148 /Gameaccess/appstpay_post.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_clientusers` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`user_login`,`user_nicename`,`level` FROM db_sdk_2.l_clientusers WHERE `id` = '1' AND `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_game` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_status` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_client` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_gametype` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_gameclass` [ RunTime:0.0003s ]
+
+[ 2017-12-22T18:09:48+08:00 ] 116.22.55.148 /Gameaccess/appstpay_post.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_clientusers` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`user_login`,`user_nicename`,`level` FROM db_sdk_2.l_clientusers WHERE `id` = '1' AND `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_game` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_status` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_client` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_gametype` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_gameclass` [ RunTime:0.0003s ]
+
+[ 2017-12-22T18:09:57+08:00 ] 116.22.55.148 /Gameaccess/appstpay_post.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_clientusers` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`user_login`,`user_nicename`,`level` FROM db_sdk_2.l_clientusers WHERE `id` = '1' AND `cid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_game` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_status` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_client` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_gametype` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_gameclass` [ RunTime:0.0003s ]
+
+[ 2017-12-22T18:12:47+08:00 ] 116.22.55.148 /Gameaccess/appstpay_post.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_clientusers` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`user_login`,`user_nicename`,`level` FROM db_sdk_2.l_clientusers WHERE `id` = '1' AND `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_game` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_status` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_client` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_gametype` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_gameclass` [ RunTime:0.0003s ]
+
+[ 2017-12-22T18:13:20+08:00 ] 116.22.55.148 /Gameaccess/appstpay_post.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_clientusers` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`user_login`,`user_nicename`,`level` FROM db_sdk_2.l_clientusers WHERE `id` = '1' AND `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_game` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_status` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_client` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_gametype` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_gameclass` [ RunTime:0.0003s ]
+
+[ 2017-12-22T18:15:55+08:00 ] 116.22.55.148 /Gameaccess/appstpay_post.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000891s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_clientusers` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`user_login`,`user_nicename`,`level` FROM db_sdk_2.l_clientusers WHERE `id` = '1' AND `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_game` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_status` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_client` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_gametype` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_gameclass` [ RunTime:0.0003s ]
+
+[ 2017-12-22T18:16:07+08:00 ] 116.22.55.148 /Gameaccess/appstpay_post.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001045s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_clientusers` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`user_login`,`user_nicename`,`level` FROM db_sdk_2.l_clientusers WHERE `id` = '1' AND `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_game` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_status` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_client` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_gametype` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_gameclass` [ RunTime:0.0003s ]
+
+[ 2017-12-22T18:16:49+08:00 ] 116.22.55.148 /Main/index.html
+ERR: 1356:View 'db_sdk_2.c_tagentgamepayview' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them
+ [ SQL语句 ] : SHOW COLUMNS FROM `db_sdk_2`.`c_tagentgamepayview`
+
+[ 2017-12-22T18:17:01+08:00 ] 116.22.55.148 /Gameaccess/appstpay_post.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000897s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_clientusers` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`user_login`,`user_nicename`,`level` FROM db_sdk_2.l_clientusers WHERE `id` = '1' AND `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_game` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_status` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_client` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_gametype` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_gameclass` [ RunTime:0.0003s ]
+
+[ 2017-12-22T18:22:02+08:00 ] 116.22.55.148 /Gameaccess/appstpay_post.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_clientusers` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`user_login`,`user_nicename`,`level` FROM db_sdk_2.l_clientusers WHERE `id` = '1' AND `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_game` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_status` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_client` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_gametype` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_gameclass` [ RunTime:0.0003s ]
+
+[ 2017-12-22T18:22:07+08:00 ] 116.22.55.148 /Main/index.html
+ERR: 1356:View 'db_sdk_2.c_tagentgamepayview' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them
+ [ SQL语句 ] : SHOW COLUMNS FROM `db_sdk_2`.`c_tagentgamepayview`
+
+[ 2017-12-22T18:55:44+08:00 ] 119.130.229.233 /Main/index.html
+ERR: 1356:View 'db_sdk_2.c_tagentgamepayview' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them
+ [ SQL语句 ] : SHOW COLUMNS FROM `db_sdk_2`.`c_tagentgamepayview`
+
+[ 2017-12-22T18:55:52+08:00 ] 119.130.229.233 /Gameaccess/appstpay_post.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_clientusers` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`user_login`,`user_nicename`,`level` FROM db_sdk_2.l_clientusers WHERE `id` = '1' AND `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_game` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_status` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_client` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_gametype` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_gameclass` [ RunTime:0.0003s ]
+
+[ 2017-12-22T18:58:25+08:00 ] 116.22.55.148 /Main/index.html
+ERR: 1356:View 'db_sdk_2.c_tagentgamepayview' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them
+ [ SQL语句 ] : SHOW COLUMNS FROM `db_sdk_2`.`c_tagentgamepayview`
+
+[ 2017-12-22T18:58:52+08:00 ] 119.130.229.233 /Gameaccess/appstpay_post.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_clientusers` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`user_login`,`user_nicename`,`level` FROM db_sdk_2.l_clientusers WHERE `id` = '1' AND `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_game` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_status` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_client` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_gametype` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_gameclass` [ RunTime:0.0003s ]
+
+[ 2017-12-22T19:08:43+08:00 ] 219.136.95.17 /Main/index.html
+ERR: 1356:View 'db_sdk_2.c_tagentgamepayview' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them
+ [ SQL语句 ] : SHOW COLUMNS FROM `db_sdk_2`.`c_tagentgamepayview`
+
+[ 2017-12-22T20:05:24+08:00 ] 219.136.95.17 /Main/index.html
+ERR: 1356:View 'db_sdk_2.c_tagentgamepayview' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them
+ [ SQL语句 ] : SHOW COLUMNS FROM `db_sdk_2`.`c_tagentgamepayview`
+
+[ 2017-12-22T20:52:56+08:00 ] 119.130.229.233 /Gameaccess/appstpay_post.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_clientusers` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`user_login`,`user_nicename`,`level` FROM db_sdk_2.l_clientusers WHERE `id` = '1' AND `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_game` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_status` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_client` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_gametype` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_gameclass` [ RunTime:0.0003s ]
+
+[ 2017-12-22T20:55:46+08:00 ] 119.130.229.233 /Main/index.html
+ERR: 1356:View 'db_sdk_2.c_tagentgamepayview' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them
+ [ SQL语句 ] : SHOW COLUMNS FROM `db_sdk_2`.`c_tagentgamepayview`
+
+[ 2017-12-22T20:55:58+08:00 ] 119.130.229.233 /Gameaccess/appstpay_post.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000886s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_clientusers` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`user_login`,`user_nicename`,`level` FROM db_sdk_2.l_clientusers WHERE `id` = '1' AND `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_game` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_status` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_client` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_gametype` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_gameclass` [ RunTime:0.0003s ]
+
+[ 2017-12-22T20:56:05+08:00 ] 119.130.229.233 /Gameaccess/appstpay_post.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000904s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_clientusers` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`user_login`,`user_nicename`,`level` FROM db_sdk_2.l_clientusers WHERE `id` = '1' AND `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_game` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_status` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_client` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_gametype` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `db_sdk_2`.`l_gameclass` [ RunTime:0.0003s ]
+

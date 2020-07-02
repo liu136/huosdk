@@ -1,0 +1,76 @@
+/*发送手机验证码前的验证码*/
+.reCheckGetCode {
+    display: none;
+    padding: 60px;
+    position: absolute;
+    z-index: 10000;
+}
+.reCheckGetCode-cover {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+    z-index: 9999;
+}
+.reCheckGetCode .box {
+    /*width: 196px;*/
+    padding: 6px 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-shadow: 0 0 4px #999;
+    background-color: #fff;
+}
+.reCheckGetCode .title {
+    margin-bottom: 6px;
+}
+.reCheckGetCode img {
+    height: 36px;
+    position: static !important;
+    vertical-align: top;
+    margin-right: 3px;
+}
+.reCheckGetCode input {
+    width: 94px;
+    line-height: 35px;
+    text-align: center;
+    border-width: 0 0 1px 0;
+    border-color: #ccc;
+}
+.reCheckGetCode .error {
+    border-color: red;
+}
+.reCheckGetCode .sub {
+    text-align: right;
+}
+.reCheckGetCode .sub a {
+    display: inline-block;
+    padding: 4px;
+    cursor: pointer;
+}
+.reCheckGetCode .sub .disable,
+.reCheckGetCode .sub .disable:hover {
+    color: #bbb;
+    cursor: no-drop;
+}
+.reCheckGetCode .result {
+    display: none;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 8px;
+    margin: auto -8px;
+    border-top: 1px dashed #ddd;
+    font-size: 13px;
+    text-align: center;
+    color: red;
+}
+
+body.no-scroll {
+    overflow: hidden !important;
+}

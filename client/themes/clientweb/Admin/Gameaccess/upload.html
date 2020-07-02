@@ -1,0 +1,38 @@
+<admintpl file="header" />
+	
+    <link rel="stylesheet" type="text/css" href="/public/oss-h5-upload-js-php/style.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+</head>
+<body>
+<div class="ibox-content">
+<div class="wrap jj">
+	<h2>游戏上传</h2>
+	<ol>
+	<li>本功能只为上传游戏母包，分包请使用一键分包</li>
+	<li>注意:上传格式为APK文件</li>
+	</ol>
+	<br>
+
+	<h4>选择文件：</h4>
+	<div id="ossfile">你的浏览器不支持flash,Silverlight或者HTML5！</div>
+
+	<br/>
+	<div id="container">
+		<a id="selectfiles" href="javascript:void(0);" class='btn'>选择文件</a>
+		<a id="postfiles" href="javascript:void(0);" class='btn'>开始上传</a>
+	</div>
+
+	<pre id="console" style="background-color:#fff;border:0px"></pre>
+
+	<p>&nbsp;</p>
+	<input type="hidden" name="sigweb" id="sigweb" value="{:U('Gameaccess/getSig',array('appid'=>$appid))}">
+	<input type="hidden" name="ajaxweb" id="ajaxweb" value="{:U('Gameaccess/uploadok')}">
+	<input type="hidden" name="appid" id="appid" value="{$appid}">
+</div>
+</div>
+</body>
+<script type="text/javascript" src="/public/oss-h5-upload-js-php/lib/plupload-2.1.2/js/plupload.full.min.js"></script>
+<script type="text/javascript" src="/public/oss-h5-upload-js-php/upload.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="shortcut icon" href="/publictwo/img/damai.ico">
+		<meta charset="utf-8" />
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<title>{$webinfo['cname']}</title>
+		<link rel="stylesheet" type="text/css" href="/publictwo/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="/publictwo/css/index.css" />
+		<script type="text/javascript" src="/publictwo/js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="/publictwo/js/common.js"></script>
+		<script type="text/javascript" src="/publictwo/js/lyz.delayLoading.min.js"></script>
+		<script type="text/javascript" src="/publictwo/js/index.js"></script>
+		
+	</head>
+
+	<body>
+	    <admintpl file="cheader" />
+		
+		<!--导航-->
+		<div class="fl header">
+			<div class="container header_con">
+				<if condition="$logos['imgname'] == ''">
+				<div class="brand_logo"></div>
+				<else />
+				<div class="brand_logo" style="background:url({$imgurl}{$logos.imgname}) no-repeat center"></div>
+				</if>
+				<!-- <div class="brand_logo"></div> -->
+				<form action="{:U('Website/searchall')}" method="post" name="" style="margin:0;padding:0">
+					<div class="hreadSearch">
+						<select name="searchtype">
+							<option value="游戏" selected="selected">游戏</option>
+							<option value="资讯" >资讯</option>
+							<option value="礼包" >礼包</option>
+						</select>
+						<input type="text" name="keywords" />
+						<input type="submit" name="" value="搜索"/>
+					</div>
+				</form>

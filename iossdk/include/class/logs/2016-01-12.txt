@@ -1,0 +1,174 @@
+Time : 15:36:26
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_sdk_testsdk.c_ttb' doesn't exist
+Raw SQL : select ttb from c_ttb where username=:username
+
+Time : 15:36:20
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_sdk_testsdk.c_ttb' doesn't exist
+Raw SQL : select ttb from c_ttb where username=:username
+
+Time : 15:35:58
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_sdk_testsdk.c_ttb' doesn't exist
+Raw SQL : select ttb from c_ttb where username=:username
+
+Time : 14:42:50
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'username' in 'where clause'
+Raw SQL : select count(*) as t from c_pay where username =:username and status =:paystatus
+
+Time : 14:42:49
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'username' in 'where clause'
+Raw SQL : select count(*) as t from c_pay where username =:username and status =:paystatus
+
+Time : 14:42:48
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'username' in 'where clause'
+Raw SQL : select count(*) as t from c_pay where username =:username and status =:paystatus
+
+Time : 14:42:46
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'username' in 'where clause'
+Raw SQL : select count(*) as t from c_pay where username =:username and status =:paystatus
+
+Time : 14:42:44
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'username' in 'where clause'
+Raw SQL : select count(*) as t from c_pay where username =:username and status =:paystatus
+
+Time : 14:42:40
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'username' in 'where clause'
+Raw SQL : select count(*) as t from c_pay where username =:username and status =:paystatus
+
+Time : 14:41:47
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_sdk_testsdk.c_ttb' doesn't exist
+Raw SQL : select ttb from c_ttb where username=:username
+
+Time : 14:20:30
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_sdk_testsdk.c_ttb' doesn't exist
+Raw SQL : select ttb from c_ttb where username=:username
+
+Time : 13:13:29
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_sdk_testsdk.c_ttb' doesn't exist
+Raw SQL : select ttb from c_ttb where username=:username
+
+Time : 13:12:35
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_sdk_testsdk.c_ttb' doesn't exist
+Raw SQL : select ttb from c_ttb where username=:username
+
+Time : 10:51:59
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_sdk_testsdk.c_ttb' doesn't exist
+Raw SQL : select ttb from c_ttb where username=:username
+
+Time : 10:23:17
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_sdk_testsdk.c_ttb' doesn't exist
+Raw SQL : select ttb from c_ttb where username=:username
+
+Time : 10:21:14
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_sdk_testsdk.c_ttb' doesn't exist
+Raw SQL : select ttb from c_ttb where username=:username
+
+Time : 10:15:16
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_sdk_testsdk.c_ttb' doesn't exist
+Raw SQL : select ttb from c_ttb where username=:username
+
+Time : 10:05:32
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_sdk_testsdk.c_ttb' doesn't exist
+Raw SQL : select ttb from c_ttb where username=:username
+
+Time : 08:40:15
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_sdk_testsdk.c_ttb' doesn't exist
+Raw SQL : select ttb from c_ttb where username=:username
+
+Time : 08:35:52
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_sdk_testsdk.c_ttb' doesn't exist
+Raw SQL : select ttb from c_ttb where username=:username
+
+Time : 08:32:30
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_sdk_testsdk.c_ttb' doesn't exist
+Raw SQL : select ttb from c_ttb where username=:username
+
+Time : 08:32:24
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_sdk_testsdk.c_ttb' doesn't exist
+Raw SQL : select ttb from c_ttb where username=:username
+
+Time : 08:31:39
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_sdk_testsdk.c_ttb' doesn't exist
+Raw SQL : select ttb from c_ttb where username=:username
+
+Time : 08:28:00
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_sdk_testsdk.c_ttb' doesn't exist
+Raw SQL : select ttb from c_ttb where username=:username
+
+Time : 08:19:07
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_sdk_testsdk.c_ttb' doesn't exist
+Raw SQL : select ttb from c_ttb where username=:username
+
+Time : 08:12:48
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_sdk_testsdk.c_ttb' doesn't exist
+Raw SQL : select ttb from c_ttb where username=:username
+
+Time : 08:05:03
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_sdk_testsdk.c_ttb' doesn't exist
+Raw SQL : select ttb from c_ttb where username=:username
+
+Time : 08:04:20
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_sdk_testsdk.c_ttb' doesn't exist
+Raw SQL : select ttb from c_ttb where username=:username
+
+Time : 08:03:11
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_sdk_testsdk.c_ttb' doesn't exist
+Raw SQL : select ttb from c_ttb where username=:username
+
+Time : 08:00:04
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_sdk_testsdk.c_ttb' doesn't exist
+Raw SQL : select ttb from c_ttb where username=:username
+
+Time : 07:52:39
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_sdk_testsdk.c_ttb' doesn't exist
+Raw SQL : select ttb from c_ttb where username=:username
+
+Time : 07:46:22
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_sdk_testsdk.c_ttb' doesn't exist
+Raw SQL : select ttb from c_ttb where username=:username
+
+Time : 07:45:07
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_sdk_testsdk.c_ttb' doesn't exist
+Raw SQL : select ttb from c_ttb where username=:username
+
+Time : 07:42:59
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_sdk_testsdk.c_ttb' doesn't exist
+Raw SQL : select ttb from c_ttb where username=:username
+
+Time : 07:36:20
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_sdk_testsdk.c_ttb' doesn't exist
+Raw SQL : select ttb from c_ttb where username=:username
+
+Time : 07:34:03
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_sdk_testsdk.c_ttb' doesn't exist
+Raw SQL : select ttb from c_ttb where username=:username
+
+Time : 07:32:20
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_sdk_testsdk.c_ttb' doesn't exist
+Raw SQL : select ttb from c_ttb where username=:username
+
+Time : 05:02:33
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_sdk_testsdk.c_ttb' doesn't exist
+Raw SQL : select ttb from c_ttb where username=:username
+
+Time : 04:58:47
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_sdk_testsdk.c_ttb' doesn't exist
+Raw SQL : select ttb from c_ttb where username=:username
+
+Time : 04:58:00
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_sdk_testsdk.c_ttb' doesn't exist
+Raw SQL : select ttb from c_ttb where username=:username
+
+Time : 04:52:35
+SQLSTATE[28000] [1045] Access denied for user 'a4be7f0b8461'@'localhost' (using password: YES)
+
+Time : 04:52:26
+SQLSTATE[28000] [1045] Access denied for user 'a4be7f0b8461'@'localhost' (using password: YES)
+
+Time : 04:51:43
+SQLSTATE[28000] [1045] Access denied for user 'a4be7f0b8461'@'localhost' (using password: YES)
+
+Time : 04:51:31
+SQLSTATE[28000] [1045] Access denied for user 'a4be7f0b8461'@'localhost' (using password: YES)
+
+Time : 04:51:27
+SQLSTATE[28000] [1045] Access denied for user 'a4be7f0b8461'@'localhost' (using password: YES)

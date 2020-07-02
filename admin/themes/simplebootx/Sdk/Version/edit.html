@@ -1,0 +1,86 @@
+<admintpl file="header" />
+</head>
+<body >
+<div class="wrap" >
+    <ul class="nav nav-tabs" >
+        <li ><a href="{:U('/Sdk/Version/index')}" >游戏版本强更控制</a ></li >
+        <li class="active" ><a href="#" >更新设置</a ></li >
+    </ul >
+    <form class="form-horizontal js-ajax-form" method="post" action="{:U('Version/set_update_switch_do')}" >
+        <fieldset >
+			<div class="control-group" >
+                <label class="control-label" >游戏</label >
+                <div class="controls" >
+                    <input type="hidden" name="appid" value="{$appid}" />{$appname}
+                </div >
+            </div >
+           <!-- <div class="control-group" >
+                <label class="control-label"  >是否更新</label >
+                <div class="controls" >
+					<input type="radio" value="1" name="is_update"
+                    <if condition="$data['is_update'] eq 1" >checked="checked" </if >
+                    />是
+				    <input type="radio" value="0" name="is_update"
+                    <if condition="$data['is_update'] eq 0" >checked="checked" </if >
+                    />否
+				</div >
+            </div >-->
+            <div class="control-group" >
+                <label class="control-label" >强制更新</label >
+                <div class="controls" >
+					<input type="radio" value="1" name="force_update"
+                    <if condition="$data['force_update'] eq 1" >checked="checked" </if >
+                    />是
+                    <input type="radio" value="0" name="force_update"
+                     <if condition="$data['force_update'] eq 0" >checked="checked" </if >
+                    />否
+                    <em style="color: red">*要开起强更必须将更新状态改为是</em>
+                </div >
+            </div >
+            <div class="control-group" >
+                <label class="control-label" >设置强更版本</label >
+                <div class="controls" >
+                   <!-- <textarea name="version" rows="3" cols="30" style="resize:none;width:40%;" 
+                    placeholder="请输入版本号" >{$item.version}</textarea >-->
+                    <input type="text" class="input-xlarge" name="version" value="{$data['version']}" >
+                    <em style="color: red">*客户端版本号小于当前版本号更新</em>
+                </div >
+            </div >
+             <div class="control-group" >
+                <label class="control-label" >选择渠道</label >
+                <fieldset>
+                    <div class="controls" >
+                        <input onclick="$('.pts').prop('checked',$(this).prop('checked'))" class="ids" type="checkbox" id="pt_all" />全部 <br>                      
+                       <table class="" width="100%" border="0" cellspacing="0" cellpadding="3">
+                            <tr><input type="checkbox" name="agent_id[]" value="0" class="pts" />官包</tr>
+                            <foreach name="item" item="vo" >                              
+                                <tr>
+                                    <foreach name="vo" item="v" >
+                                        <td><input type="checkbox" name="agent_id[]"
+                                        value="{$v['agent_id']}" class="pts" />{$v['agent_name']}
+                                        </td>
+                                    </foreach>
+                                </tr>
+                            </foreach>
+                                
+                      </table>
+                    </div >
+                </fieldset>
+            </div >
+            <div class="control-group" >
+                <label class="control-label" >更新内容</label >
+                <div class="controls" >
+                    <textarea name="content" rows="3" cols="30" value="{$data['content']}" style="resize:none;width:40%;" 
+                    placeholder="请输入更新内容"></textarea >
+                </div >
+            </div >
+            <div class="form-actions" >
+                <button type="submit" class="btn btn-primary  js-ajax-submit" >{:L('SAVE')}</button >
+				<a class="btn" href="{:U('Sdk/Version/index')}" >返回</a >
+            </div >
+        </fieldset >
+    </form >
+</div >
+<script src="__PUBLIC__/js/common.js" ></script >
+</body >
+</html>

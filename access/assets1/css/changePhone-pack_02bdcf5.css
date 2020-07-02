@@ -1,0 +1,29 @@
+.privateCenter-right .content{border:1px solid #e6e6e6}
+.privateCenter-right .content .state{position:fixed;left:50%;bottom:50%;z-index:910;padding:10px 30px;background-color:#000;filter:Alpha(opacity=70);-moz-opacity:.7;opacity:.7;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;color:#fff}
+.privateCenter-right .content .state img{vertical-align:middle;margin-right:5px}
+.step{width:284px;margin:32px auto}
+.stepThree,.stepTwo{}
+.step input{padding:15px 10px;border:1px solid #cdcdcd;border-radius:4px}
+.code input{width:138px;font-size:14px}
+.content .wor{font-size:14px;color:red}
+.content input.wrongcode{border:#ff4545 1px solid}
+.content .rit{font-size:14px;color:green}
+.code input.huoqu{padding: 0;}
+.code span ,.code input.huoqu{float:right;display:inline-block;width:114px;height:46px;background:#f69e2e;color:#fff;font-size:14px;text-align:center;line-height:46px;border-radius:4px;cursor:pointer}
+.step .btn{margin-top:20px;width:100%;height:46px;color:#fff;font-size:16px;text-align:center;line-height:46px;border-radius:4px;cursor:pointer;box-sizing:border-box;border:1px solid #c73723;background-repeat: repeat-x}
+.step .btn:hover{background-repeat: repeat-x}
+.step .loding,.step .loding:hover{background:#ccc;border:#B7B5B5 1px solid}
+.stepOne .phone{font-size:16px;color:#333}
+.stepOne .tip{font-size:14px;color:#999;margin:15px 0 20px}
+.stepTwo .only{font-size:14px;color:#333}
+.inputPhone{margin:20px 0}
+.inputPhone input{width:100%;font-size:16px;box-sizing:border-box}
+.code.wrong input{border:1px solid #ec0000}
+.code span.afterClick{background:#bdbdbd}
+.code.wrong p{display:block;font-size:12px;color:#ec0000;padding-top:6px}
+.step.stepThree{width:308px;text-align:center}
+.successTip{color:#1eb417;font-size:24px;padding-left:44px;position:relative}
+.successTip i{position:absolute;left:0;top:4px;display:inline-block;width:28px;height:28px;background-repeat: no-repeat;}
+.stepThree .phone{color:#000;margin:20px 0}
+.back{font-size:16px;color:#999}
+.back a{color:#1784f3;text-decoration:underline}.step .btn{background-position:0px 0px}.step .btn:hover{background-position:0px -64px}.step .btn,.step .btn:hover{background-image: url(http://cdn2.guopan.cn/frontend/pc/static/gpgame/css/changePhone-pack_x_e9a0e2d.png)}.successTip i{background-position:0px 0px}.successTip i{background-image: url(http://cdn2.guopan.cn/frontend/pc/static/gpgame/css/changePhone-pack_z_74bab65.png)}

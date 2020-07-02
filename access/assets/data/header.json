@@ -1,0 +1,36 @@
+{
+    "company_brand":"火树",
+    "game_platform_classify":[
+        {"classify_name":"Android","classify_url":"http://huo.huosdk.com"},
+        {"classify_name":"H5游戏","classify_url":"http://huo.huosdk.com"},
+        {"classify_name":"ios游戏","classify_url":"http://huo.huosdk.com"}
+    ],
+    "hot_game":[
+        {"app_id":1,"name":"全民坦克","game_url":"http://game.17auv.com/public/web/pages/index.html"},
+        {"app_id":1,"name":"传奇世界","game_url":"http://huo.huosdk.com/public/web/pages/index.html"},
+        {"app_id":1,"name":"全民坦克","game_url":"http://game.17auv.com/public/web/pages/index.html"},
+        {"app_id":1,"name":"传奇世界","game_url":"http://huo.huosdk.com/public/web/pages/index.html"},
+        {"app_id":1,"name":"全民坦克","game_url":"http://game.17auv.com/public/web/pages/index.html"},
+        {"app_id":1,"name":"传奇世界","game_url":"http://huo.huosdk.com/public/web/pages/index.html"},
+        {"app_id":1,"name":"全民坦克","game_url":"http://game.17auv.com/public/web/pages/index.html"}
+    ],
+    "other_product":[
+        {"product_name":"礼包中心","product_url":"http://huo.huosdk.com"},
+        {"product_name":"积分商城","product_url":"http://huo.huosdk.com"},
+        {"product_name":"交易平台","product_url":"http://huo.huosdk.com"}
+    ],
+    "service_qq":"215689045",
+    "company_logo":"http://v71.huosdk.com/upload/image/1486469053.png",
+    "search_hot_game":[
+        {"app_id":1,"game_name":"大圣之怒"},
+        {"app_id":1,"game_name":"王者之剑2"},
+        {"app_id":1,"game_name":"超级马里奥"},
+        {"app_id":1,"game_name":"跑酷"}
+    ],
+    "nav_right_app":[
+        {"app_name":"火树app","app_logo":"http://cdn2.guopan.cn/frontend/pc/static/img/headerCoin_4f464d3.png","app_url":"http://huo.huosdk.com"},
+        {"app_name":"火币充值","app_logo":"http://cdn2.guopan.cn/frontend/pc/static/img/headerCoin_4f464d3.png","app_url":"http://huo.huosdk.com"},
+        {"app_name":"礼包","app_logo":"http://cdn2.guopan.cn/frontend/pc/static/img/headerCoin_4f464d3.png","app_url":"http://huo.huosdk.com"},
+        {"app_name":"苹果app","app_logo":"http://cdn2.guopan.cn/frontend/pc/static/img/headerCoin_4f464d3.png","app_url":"http://huo.huosdk.com"}
+    ]
+}

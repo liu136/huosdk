@@ -1,0 +1,32 @@
+<admintpl file="header" />
+</head>
+<body >
+<div class="wrap" >
+
+    <form method="post" class="form-horizontal js-ajax-form" action="{:U('Option/record_number_post')}" >
+        <fieldset >
+            <div class="control-group" >
+                <input type="hidden" name="name" value="{$_GET['name']}" >
+                <label class="control-label" >设置名</label >
+                <div class="controls" >
+                    <input type="text" name="" value="备案号" readonly>
+                    <span class="form-required" >*</span >
+                </div >
+
+
+                <label class="control-label" >设置值</label >
+                <div class="controls" >
+                    <input type="text" name="value" value="{$_GET['value']}" >
+                    <span class="form-required" >*</span >
+                </div >
+            </div >
+        </fieldset >
+        <div class="form-actions" >
+            <button type="submit" class="btn btn-primary js-ajax-submit" >{:L('SAVE')}</button >
+            <a class="btn" href="{:U('Option/record_number')}" >{:L('BACK')}</a >
+        </div >
+    </form >
+</div >
+<script src="__PUBLIC__/js/common.js" ></script >
+</body >
+</html>

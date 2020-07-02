@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>密码找回</title>
+<script src="/public/js/jquery.js"></script>
+<link href="/public/css/bootstrap.css" rel="stylesheet" />
+
+		<style>
+			table tr{
+				height: 20px;;
+			}
+
+		</style>
+
+<body>
+
+<div class="safe_su">
+   <p>
+      <span class="p_span_left">平台账号:</span>
+      <span class="p_span_right">{$user.username}</span>
+   </p>
+   <p>
+      <span class="p_span_left">已绑定邮箱:</span>
+      <span class="p_span_right">{$user.email}</span>
+   </p>
+</div>
+<div class="safe_sure">
+   <ul>
+      <form  id="email-form" name="email-form" action="{:U('Admin/Forgetpwd/forgetpwd_post')}" method="post" />
+         <li class="li_10">			
+		 <input type="submit" value="发送邮件" />
+		 <input type="hidden" name="action" value="findpwd" />
+		 <input type="hidden" name="email" value="{$user.email}" />
+		 <input type="hidden" name="username" value="{$user.username}" /></li>
+      </form>
+   </ul>
+</div>
+</body>
+</html>

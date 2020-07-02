@@ -1,0 +1,7 @@
+Time : 06:40:18
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : UPDATE `c_members` SET `username` = :username, `password` = :password, `ip` = :ip, `device` = :device, `imei` = :imei, `agentgame` = :agentgame, `deviceinfo` = :deviceinfo, `reg_time` = :reg_time, `update_time` = :update_time, `appid` = :appid,`last_login_time`=:last_login_time WHERE `id` =1
+
+Time : 06:39:26
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : UPDATE `c_members` SET `username` = :username, `password` = :password, `ip` = :ip, `device` = :device, `imei` = :imei, `agentgame` = :agentgame, `deviceinfo` = :deviceinfo, `reg_time` = :reg_time, `update_time` = :update_time, `appid` = :appid,`last_login_time`=:last_login_time WHERE `id` =1

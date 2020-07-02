@@ -1,0 +1,9 @@
+{
+    "game_info":[{"game_name":"无敌战神", "game_icon":"http://img.guopan.cn/2017-02-27/1488163135775.png","android_down_url":"http://www.guopan.cn/dede/appload.php?pt=android&type=101&special=wudizhanshen","ios_down_url":"http://www.guopan.cn/dede/appload.php?pt=android&type=101&special=wudizhanshen","gift_counts":"4", "app_id":60025}],
+    "gift_list":[
+    {"gift_title":"新手礼包","gift_content":"复活圣水*5、绑定元宝*500、30W金币、传送石*10、小人参血灵*2、攻击药水*5、防御药水*5","remain_bfb":"88.5%","gift_id":12},
+    {"gift_title":"特权礼包","gift_content":"复活圣水*5、绑定元宝*500、30W金币、传送石*10、小人参血灵*2、攻击药水*5、防御药水*5","remain_bfb":"88.5%","gift_id":13},
+    {"gift_title":"白银礼包","gift_content":"复活圣水*5、绑定元宝*500、30W金币、传送石*10、小人参血灵*2、攻击药水*5、防御药水*5","remain_bfb":"90.7%","gift_id":14},
+    {"gift_title":"专属礼包","gift_content":"复活圣水*5、绑定元宝*500、30W金币、传送石*10、小人参血灵*2、攻击药水*5、防御药水*5","remain_bfb":"91%","gift_id":15}
+    ]
+}

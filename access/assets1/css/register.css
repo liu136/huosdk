@@ -1,0 +1,18 @@
+#Register{font-size: 12px;color: #333;width: 800px;margin: 0 auto;clear: both;overflow: hidden;color: #333;margin-bottom: 100px;margin-top: 30px;}
+#Register .breadcrumb .active{color: #e73c44;}
+#Register .content h2{color: #ec666c;font-size: 30px;margin-bottom: 10px;}
+#Register .content h3{color: #c3767a;margin: 0;font-size: 18px;}
+#Register .content input{width: 95%;padding: 0 8px;border-radius: 5px;line-height: 40px;height: 40px;border: 1px solid #D5D5D5;color: #666;margin-top: 20px;outline: none;background: #eaeaea;}
+#Register .content p{color: #666;padding-left: 8px;margin-top: 5px;}
+#Register .content p a{color: #ff8c00;}
+#Register .content .check{width: 72%;}
+#Register .content input[type="button"]{margin-left: 3%;width: 20%;text-align: center;background: #E54D42;cursor: pointer;color: #fff;}
+#Register .content input[type="checkbox"]{width: 15px;height: 15px;float: left;margin-top: 0;}
+#Register .content input[type="button"]:hover{background: #E42121;}
+#Register .content h4{color: #ff8c00;font-size: 18px;margin-top: 8px;}
+#Register .content button{border: none;width: 95%;margin-top: 30px;text-align: center;background: #E73C44;color: #fff;border-radius: 5px;font-size: 22px;height: 40px;line-height: 40px;cursor: pointer;}
+#Register .content button:hover{background: #E42121;}
+
+
+#Register .content .label{clear: both;overflow: hidden;width: 100%;display: block;margin-top: 15px;margin-bottom: 20px;}
+#Register .content .label span{float: left;}

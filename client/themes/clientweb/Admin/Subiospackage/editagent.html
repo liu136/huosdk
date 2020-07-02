@@ -1,0 +1,96 @@
+<admintpl file="header" />
+
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/css.css">
+ <link rel="shortcut icon" href="favicon.ico"> <link href="/public/h/css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="/public/h/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link href="/public/h/css/plugins/chosen/chosen.css" rel="stylesheet">
+    <link href="/public/h/css/plugins/cropper/cropper.min.css" rel="stylesheet">
+    <link href="/public/h/css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+
+    <link href="/public/h/css/animate.min.css" rel="stylesheet">
+    <link href="/public/h/css/style.min862f.css?v=4.1.0" rel="stylesheet">
+
+</head>
+<body class="J_scroll_fixed">
+	<div class="wrap jj">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('Admin/Subpackage/index')}">一键分包</a></li>
+			<li class="active"><a href="{:U('Admin/Subpackage/addagent')}">添加渠道</a></li>
+		</ul>
+		<div class="ibox-content">
+                        <form class="form-horizontal" method="post" action="{:U('Subpackage/editagent_post')}" >
+                        
+                        	<div class="form-group">
+                                <label class="col-sm-3 control-label">游戏:</label>
+                                <div class="col-sm-2">
+                                    <input type="text" class="form-control" name="gamename" value="{$games['gamename']}" readonly>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">角色:</label>
+                                <div class="col-sm-2">
+                                    <input type="text" class="form-control" name="gamename" value="{$roles['name']}" readonly>
+                                </div>
+                            </div>
+                            <!-- <div class="form-group">
+                                <label class="col-sm-3 control-label">游戏:</label>
+                                <div class="col-sm-8">
+									<select name="game_id">
+										<option value="{$games['appid']}">{$games['gamename']}</option>
+									</select>
+                                </div>
+                            </div>
+							<div class="form-group">
+                                <label class="col-sm-3 control-label">角色:</label>
+								<div class="col-sm-8">
+									<select name="role_id">
+										<option value="{$roles['id']}">{$roles['name']}</option>
+									</select>
+                                </div>
+                            </div> -->
+							<div class="form-group">
+                                <label class="col-sm-3 control-label">渠道名称:</label>
+                                <div class="col-sm-2">
+                                    <input type="text" class="form-control" name="agentname" value="{$users['user_nicename']}" readonly>
+                                </div>
+                            </div>
+							
+							<div class="form-group" id="username">
+                                <label class="col-sm-3 control-label">账号：</label>
+                                <div class="col-sm-2">
+                                    <input type="text" class="form-control" name="user_login" value="{$users['user_login']}" readonly>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">分成比例：</label>
+                                <div class="col-sm-2">
+                                    <input type="text" class="form-control" name="rate" value="{$agent['rate']}">
+                                </div>
+                            </div>
+                   
+						    <div class="form-actions">
+					          <input type="hidden" name="id" value="{$id}" />
+					          <button type="submit"
+						         class="btn btn-primary btn_submit J_ajax_submit_btn">更新</button>
+					          <a class="btn" href="__URL__">返回</a>
+				            </div>
+                        </form>
+         </div>
+		
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	<script src="/public/h/js/content.min.js?v=1.0.0"></script>
+    <script src="/public/h/js/plugins/chosen/chosen.jquery.js"></script>
+    <script src="/public/h/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+    <script src="/public/h/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="/public/h/js/plugins/clockpicker/clockpicker.js"></script>
+    <script src="/public/h/js/plugins/cropper/cropper.min.js"></script>
+    <script src="/public/h/js/demo/form-advanced-demo.min.js"></script>
+
+    <script src="/public/h/js/plugins/jeditable/jquery.jeditable.js"></script>
+    <script src="/public/h/js/plugins/dataTables/jquery.dataTables.js"></script>
+    <script src="/public/h/js/plugins/dataTables/dataTables.bootstrap.js"></script>
+    <script src="/public/h/js/content.min.js?v=1.0.0"></script>
+</body>
+</html>

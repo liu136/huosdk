@@ -1,0 +1,87 @@
+/*body,html{overflow-x:hidden}*/
+.newGame .infoAndWish{margin-top:15px;height:575px}
+.newGame .video{margin-top:15px}
+.newGame .newGameSlider{width:100%;height:390px;background:#f5f5f5;overflow:hidden;position:relative}
+
+
+
+
+.newGame .pagePosition{position:absolute;right:15px;bottom:5px;z-index:5}
+.newGame .pagePosition span{display:inline-block;width:12px;height:12px;background:#908b86;margin:0 5px;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%}
+.newGame .pagePosition span.on{background:#E73C44}
+.newGame .newInfo{width:688px;float:left}
+.newGame .newInfo.wrapperBox{padding:10px 15px 0}
+.newGame .newInfo .contentHolder{margin-top:3px}
+.newGame .newInfo .oneList{height:158px;padding:15px;margin:auto -15px;box-sizing:border-box;border-bottom:1px dashed #cdcdcd;position:relative;transition:background .3s}
+.newGame .newInfo .oneList:hover{background-color:#f7f7f7}
+.newGame .newInfo .oneList.atLast{border:0}
+.newGame .newInfo .oneList a img{width:212px;height:127px;position:absolute;left:15px}
+.newGame .newInfo .oneList .text{padding-left:227px;height:127px}
+.newGame .newInfo .oneList .text>a{font-size:16px;color:#333;line-height:30px;font-weight:700;display:block;width:431px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.newGame .newInfo .oneList .text>a:hover{color:#e74c3c}
+.newGame .newInfo .oneList .text .n-time{color:#999;font-size:14px;padding:10px 0}
+.newGame .newInfo .oneList .text .n-desc{font-size:14px;height:60px;overflow:hidden;color:#575757}
+.newGame .newInfo .oneList .text .n-desc a{color:#e74c3c;margin-left:32px}
+.newGame .newInfo .oneList .text .n-desc a:hover{text-decoration:underline}
+.newGame .topWishPlay.wrapperBox{float:right;width:296px;background:#fff;height:auto;padding:10px 0}
+.newGame .topWishPlay.wrapperBox .titleHolder{margin:0 10px}
+.newGame .topWishPlay .contentHolder .item:last-child{border: none;}
+.newGame .topWishPlay .contentHolder .item{display:block;height:68px;border-bottom:1px dashed #d7d7d7;position:relative;font-size:14px;padding:10px 60px 10px 47px;transition:all .3s}
+.newGame .topWishPlay .contentHolder .item:hover{background:#f7f7f7}
+.newGame .topWishPlay .contentHolder .item.last{border-bottom:0}
+.newGame .topWishPlay .contentHolder .item.first{margin-top:-10px}
+.newGame .topWishPlay .contentHolder .item .index{width:20px;height:46px;position:absolute;left:10px;top:10px;line-height:46px;text-align:center;background:#dfdfdf;border-radius:2px;color:#575757;font-size:14px}
+.newGame .topWishPlay .contentHolder .item .title{font-size:14px;color:#000;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:700;transition:color .3s}
+.newGame .topWishPlay .contentHolder .item:hover .title{color:#e74c3c}
+.newGame .topWishPlay .contentHolder .item .type{font-size:12px;color:#999;position:absolute;bottom:10px}
+.newGame .topWishPlay .contentHolder .item .ios,.topWishPlay .contentHolder .item .android,.topWishPlay .contentHolder .item .pc{width:20px;height:20px;display:inline-block;vertical-align:sub}
+
+.newGame .topWishPlay .contentHolder .item .type .br{height:6px}
+.newGame .topWishPlay .contentHolder .item .score{font-size:30px;color:#e74c3c;position:absolute;right:10px;line-height:30px;top:18px;font-family:"Times New Roman","Times Roman";font-weight:700;font-style:oblique}
+.newGame .topWishPlay .contentHolder .item .score span{font-size:24px}
+.newGame .topWishPlay .contentHolder .item .icon{position:absolute;width:84px;height:84px;border-radius:14px;left:40px;top:10px}
+.newGame .topWishPlay .contentHolder .item.top1,.topWishPlay .contentHolder .item.top2,.topWishPlay .contentHolder .item.top3{height:104px;padding:10px 10px 10px 134px}
+.newGame .topWishPlay .contentHolder .item.top1 .score,.topWishPlay .contentHolder .item.top2 .score,.topWishPlay .contentHolder .item.top3 .score{top:56px}
+.newGame .topWishPlay .contentHolder .item.top1 .index,.topWishPlay .contentHolder .item.top2 .index,.topWishPlay .contentHolder .item.top3 .index{font-size:24px;color:#fff;height:84px;line-height:84px}
+.newGame .topWishPlay .contentHolder .item.top1 .index{background:#e73c44}
+.newGame .topWishPlay .contentHolder .item.top2 .index{background:#f97b3d}
+.newGame .topWishPlay .contentHolder .item.top3 .index{background:#ffa800}
+.newGame .crackAndNew{width:688px;float:left;margin-top:15px}
+.newGame .crackAndNew.last{margin-top:21px}
+.newGame .crackAndNew .oneList{width:88px;margin:0 43.6px 15px 0;text-align:center;float:left}
+.newGame .crackAndNew .oneList.lastRight{margin-right:0}
+.newGame .crackAndNew .oneList a{display:block;width:88px;height:88px}
+.newGame .crackAndNew .oneList a.text{line-height:42px;height:auto;font-size:14px;color:#000;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.newGame .crackAndNew .oneList a:hover{color:#e74c3c}
+.newGame .crackAndNew .oneList a img{width:88px;height:88px;border-radius:15px;transition:transform .2s}
+.newGame .crackAndNew .oneList:hover a img{transform:scale(1.05)}
+.newGame .startTest{width:297px;float:right;margin-top:15px}
+.newGame .startTest.wrapperBox{padding:15px 0 0}
+.newGame .startTest .titleHolder{margin:0 15px}
+.newGame .startTest .titleHolder span{float:right;font-size:14px;line-height:38px}
+.newGame .startTest .titleHolder span em{font-size:18px;color:#ee4732;margin:0 5px}
+.newGame .startTest .contentHolder{margin-top:0}
+.newGame .startTest .oneList{padding:15px 10px;border-bottom:1px dashed #cdcdcd;position:relative;font-size:14px;transition:all .3s}
+.newGame .startTest .oneList:hover{background:#f7f7f7}
+.newGame .startTest .oneList.atLast{border:0}
+.newGame .startTest .oneList .instruction{padding-left:98px;height:86px}
+.newGame .startTest .oneList .instruction p{color:#9e9e9e;line-height:28px;font-size:12px;height:28px;width:127px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.newGame .startTest .oneList .instruction .iTitle a{line-height:30px;font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:179px;display:block}
+.newGame .startTest .oneList .instruction .iTitle a:hover{color:#e74c3c}
+.newGame .startTest .oneList a img{width:86px;height:86px;border-radius:15px;position:absolute;left:10px}
+.newGame .startTest .oneList .testIcon{width:52px;height:52px;display:block;position:absolute;right:10px;top:40px;text-align:center;padding:8px 0;line-height:18px;box-sizing:border-box;background:url(http://cdn2.guopan.cn/frontend/pc/static/img/startTestNotToday_ac27184.png?__sprite) no-repeat}
+.newGame .startTest .oneList .testIcon.isToday{background:url(../img/today.png) no-repeat}
+.newGame .startTest .oneList .testIcon p{color:#fff;font-size:12px}
+.newGame .startTest .oneList .words{padding-right:72px;height:52px}
+.newGame .startTest .oneList .words p a{color:#000;line-height:26px;font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:205px;display:block}
+.newGame .startTest .oneList .words p a:hover{color:#e74c3c}
+.newGame .startTest .oneList .words p{color:#9e9e9e;height:26px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:205px;position:relative}
+.newGame .startTest .oneList .words p span{position:absolute;bottom:0;font-size:12px}
+.newGame .startTest .oneList .words p span.gift{right:20px;}
+.newGame .startTest .oneList .words p span.gift span{position: static;}
+.newGame .startTest .oneList .instruction p a,.startTest .oneList .words p span a{display:inline-block;width:26px;height:26px;vertical-align:text-bottom;transition:background .2s}
+.newGame .startTest .oneList .instruction p a.hasGift,.startTest .oneList .words p span a.hasGift{background:url(../img/gift.png) no-repeat;width: 30px;display: inline-block;}
+.newGame .startTest .oneList .instruction p a.noGift,.startTest .oneList .words p span a.noGift{background:url(../img/no_gift.png) no-repeat}
+.newGame .startTest .oneList .instruction p a.hasGift:hover,.startTest .oneList .words p span a.hasGift:hover{background:url(../img/gift_press.png) no-repeat}
+.newGame .startTest .oneList.afterThree{padding:10px}
+.newGame .startTest .oneList.afterThree .testIcon{top:10px}

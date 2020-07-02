@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/jquery-easyui-1.4.3/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/jquery-easyui-1.4.3/themes/icon.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/base.css">
+	<script type="text/javascript" src="__PUBLIC__/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/jquery-easyui-1.4.3/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/outlook2.js"></script>
+	
+	<script type="text/javascript" src="__PUBLIC__/js/dp/WdatePicker.js"></script>
+
+
+<script>
+	$(function(){
+		$('#dg').datagrid({
+			columns:[[
+				{field:'reg_time',title:'注册时间',
+					formatter:function(value,row,index){  
+						var tt=new Date(parseInt(value) * 1000).toLocaleString().replace(/年|月/g, "-").replace(/日/g, " ");
+						return tt; 
+					 }  
+				},
+				{field:'imei',title:'imei码'},
+				{field:'username',title:'注册账号'},
+				{field:'money',title:'充值金额'},
+				{field:'paycount',title:'充值次数'},
+				{field:'agentgame',title:'渠道号'}
+			]]
+		});
+	});
+
+	//查询
+	function doSearch(){
+		$('#dg').datagrid('load',{
+			start: $('#start').val(),
+			end: $('#end').val(),
+			username: $('#username').val(),
+			imeil: $('#imeil').val(),
+			agent: $('#agent').val()
+		});
+	}
+	
+</script>
+</head>
+<body>
+<div style="margin:5px 0;"></div>
+		<div  title="DataGrid">
+			<table id="dg" class="easyui-datagrid" style="height:480px"
+				url="{:U('Agent/regList')}" toolbar="#toolbar"
+				title="Load Data"
+				pagination="true" singleSelect="true">
+				
+			</table>
+			
+			<div id="toolbar" style="padding:5px;height:auto">
+				<!--<div style="margin-bottom:5px">
+					<a href="#" class="easyui-linkbutton" iconCls="icon-down" plain="true" onclick="newUser()">下载</a>
+				</div>-->
+				<div>
+					开始时间:<input id="start" class="easyui-my97" name="start" onClick="new WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'});"/>
+				
+					结束时间:<input id="end" class="easyui-my97" name="end" onClick="new WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'});">
+					
+					账号: <input id="username" class="easyui-textbox" type="text" name="username"  style="width:110px">
+					
+					imeil码: <input id="imeil" class="easyui-textbox" type="text" name="imeil"  style="width:110px">
+					
+					渠道号: <input id="agent" class="easyui-textbox" type="text" name="agent" style="width:110px">
+					
+					<a href="#" class="easyui-linkbutton" iconCls="icon-search" onClick="doSearch()">查询</a>
+				</div>
+			</div>
+			
+</div>
+</body>
+</html>

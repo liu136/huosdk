@@ -1,0 +1,67 @@
+{
+    "game_info":[{
+        "game_name":"无敌战神", 
+        "game_icon":"http://img.guopan.cn/2017-02-27/1488163135775.png","game_size":"109M","status":"公测", 
+        "version":"1.0.3", "developers":"网易",
+        "down_cnt":120568,
+        "game_cates":["卡牌","角色","动作","动漫"],
+        "android_down_url":"http://www.guopan.cn/dede/appload.php?pt=android&type=101&special=wudizhanshen",
+        "ios_down_url":"http://www.guopan.cn/dede/appload.php?pt=android&type=101&special=wudizhanshen",
+        "game_desc":"《无敌战神》秉承传奇经典设置，力求带给玩家原汁原味的传奇体验。游戏当中的人物、怪物均采用全新设计的高品质模型，动作更为自然，形象精致生动;游戏场景精美宏大，音效清晰逼真，极具代入感;华丽的技能和优良的操作手感带来极致的战斗体验",
+        "game_shots":["http://image.game.uc.cn/2017/3/6/16171771_.jpg","http://image.game.uc.cn/2017/3/6/16171771_.jpg","http://image.game.uc.cn/2017/3/6/16171771_.jpg","http://image.game.uc.cn/2017/3/6/16171771_.jpg","http://image.game.uc.cn/2017/3/6/16171771_.jpg"]
+    }],
+    "server_list":[
+        {"server_name":"胜利之剑","run_time":"01-21 10:00","status":"新服","android_down_url":"http://www.guopan.cn/dede/appload.php?pt=android&type=101&special=wudizhanshen","ios_down_url":"http://www.guopan.cn/dede/appload.php?pt=android&type=101&special=wudizhanshen","platform":"火游戏平台"},
+        {"server_name":"胜利之剑","run_time":"01-21 10:00","status":"新服","android_down_url":"http://www.guopan.cn/dede/appload.php?pt=android&type=101&special=wudizhanshen","ios_down_url":"http://www.guopan.cn/dede/appload.php?pt=android&type=101&special=wudizhanshen","platform":"火游戏平台"},
+        {"server_name":"胜利之剑","run_time":"01-21 10:00","status":"新服","android_down_url":"http://www.guopan.cn/dede/appload.php?pt=android&type=101&special=wudizhanshen","ios_down_url":"http://www.guopan.cn/dede/appload.php?pt=android&type=101&special=wudizhanshen","platform":"火游戏平台"},
+        {"server_name":"胜利之剑","run_time":"01-21 10:00","status":"新服","android_down_url":"http://www.guopan.cn/dede/appload.php?pt=android&type=101&special=wudizhanshen","ios_down_url":"http://www.guopan.cn/dede/appload.php?pt=android&type=101&special=wudizhanshen","platform":"火游戏平台"},
+        {"server_name":"胜利之剑","run_time":"01-21 10:00","status":"新服","android_down_url":"http://www.guopan.cn/dede/appload.php?pt=android&type=101&special=wudizhanshen","ios_down_url":"http://www.guopan.cn/dede/appload.php?pt=android&type=101&special=wudizhanshen","platform":"火游戏平台"}
+    ],
+    "gift_info":[
+        {"gift_id":"1","gift_name":"新手礼包", "gift_type":"个人","start_time":"2017-3-7","end_time":"2017-3-7","platform":"安卓", "status":"正常", "remain":84, "total":"200"},
+        {"gift_id":"2","gift_name":"新手礼包", "gift_type":"个人","start_time":"2017-3-7","end_time":"2017-3-7","platform":"安卓", "status":"正常", "remain":84, "total":"200"},
+        {"gift_id":"3","gift_name":"新手礼包", "gift_type":"个人","start_time":"2017-3-7","end_time":"2017-3-7","platform":"安卓", "status":"正常", "remain":84, "total":"200"},
+        {"gift_id":"4","gift_name":"新手礼包", "gift_type":"个人","start_time":"2017-3-7","end_time":"2017-3-7","platform":"安卓", "status":"正常", "remain":84, "total":"200"}
+    ],
+    "gift_count":25,
+    "post_news":[
+        {"post_id":"12","post_title":"世界第三款经典","post_modify":"2017-03-17"},
+        {"post_id":"12","post_title":"世界第三款经典","post_modify":"2017-03-17"},
+        {"post_id":"12","post_title":"世界第三款经典","post_modify":"2017-03-17"},
+        {"post_id":"12","post_title":"世界第三款经典","post_modify":"2017-03-17"},
+        {"post_id":"12","post_title":"世界第三款经典","post_modify":"2017-03-17"},
+        {"post_id":"12","post_title":"世界第三款经典","post_modify":"2017-03-17"}
+    ],
+    "post_news_count":23,
+    "post_stragetys":[
+        {"post_id":"13","post_title":"攻城策略1","post_modify":"2017-03-17"},
+        {"post_id":"122","post_title":"攻城策略1","post_modify":"2017-03-17"},
+        {"post_id":"142","post_title":"攻城策略1","post_modify":"2017-03-17"},
+        {"post_id":"152","post_title":"攻城策略1","post_modify":"2017-03-17"},
+        {"post_id":"162","post_title":"攻城策略1","post_modify":"2017-03-17"},
+        {"post_id":"122","post_title":"攻城策略1","post_modify":"2017-03-17"}
+    ],
+    "post_stragetys_count":24,
+    "game_like":[
+        {"app_id":1, "game_icon":"http://img.guopan.cn/2017-02-27/1488163135775.png", "game_name":"贪吃蛇大作战","app_id":100022},
+        {"app_id":2, "game_icon":"http://img.guopan.cn/2017-02-27/1488163135775.png", "game_name":"贪吃蛇大作战","app_id":100022},
+        {"app_id":3, "game_icon":"http://img.guopan.cn/2017-02-27/1488163135775.png", "game_name":"贪吃蛇大作战","app_id":100022},
+        {"app_id":4, "game_icon":"http://img.guopan.cn/2017-02-27/1488163135775.png", "game_name":"贪吃蛇大作战","app_id":100022},
+        {"app_id":5, "game_icon":"http://img.guopan.cn/2017-02-27/1488163135775.png", "game_name":"贪吃蛇大作战","app_id":100022},
+        {"app_id":6, "game_icon":"http://img.guopan.cn/2017-02-27/1488163135775.png", "game_name":"贪吃蛇大作战","app_id":100022},
+        {"app_id":7, "game_icon":"http://img.guopan.cn/2017-02-27/1488163135775.png", "game_name":"贪吃蛇大作战","app_id":100022},
+        {"app_id":8, "game_icon":"http://img.guopan.cn/2017-02-27/1488163135775.png", "game_name":"贪吃蛇大作战","app_id":100022},
+        {"app_id":9, "game_icon":"http://img.guopan.cn/2017-02-27/1488163135775.png", "game_name":"贪吃蛇大作战","app_id":100022},
+        {"app_id":10, "game_icon":"http://img.guopan.cn/2017-02-27/1488163135775.png", "game_name":"贪吃蛇大作战","app_id":100022}
+    ],
+    "game_comment":[{
+        "game_avg_socre":"3.2",
+        "comment_star":[{"1":"56%","2":"0%","3":"0%","4":"0%","5":"44%"}],
+        "game_cates":["画面超赞","运行流畅","动作带感","音效很棒"]
+    }],
+    "member_comment":[
+        {"head_img":"http://img.guopan.cn/2017-02-27/1488163135775.png","user_name":"改什么名字","comment_time":"2017-3-7 18:28:49","comment_content":"剧情好玩，花钱少"},
+        {"head_img":"http://img.guopan.cn/2017-02-27/1488163135775.png","user_name":"改什么名字","comment_time":"2017-3-7 18:28:49","comment_content":"剧情好玩，花钱少2"},
+        {"head_img":"http://img.guopan.cn/2017-02-27/1488163135775.png","user_name":"改什么名字","comment_time":"2017-3-7 18:28:49","comment_content":"剧情好玩，花钱少3"}
+    ]
+}

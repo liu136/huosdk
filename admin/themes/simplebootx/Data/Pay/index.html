@@ -1,0 +1,205 @@
+<admintpl file="header" />
+</head>
+<body class="J_scroll_fixed" >
+<div class="wrap js-check-wrap" >
+    <form class="well form-search" method="get" action="{:U('Data/Pay/index')}" >
+        <div class="search_type cc mb10" >
+            <div class="mb10" >
+					<span class="mr20" >
+						时间：
+						<input type="text" name="start_time" class="js-date" value="{$formget['start_time']|default=''}"
+                               style="width: 100px;" autocomplete="off" >-
+						<input type="text" name="end_time" class="js-date" value="{$formget['end_time']|default=''}"
+                               style="width: 100px;" autocomplete="off" > &nbsp; &nbsp;
+						<input type="submit" class="btn btn-warning" name='date_time' value="搜索" />
+						<input type="submit" class="btn btn-warning" name='date_time' value="今日" />
+						<input type="submit" class="btn btn-warning" name='date_time' value="七日" />
+						<input type="submit" class="btn btn-warning" name='date_time' value="当月" />
+						<input type="submit" class="btn btn-warning" name='date_time' value="30天" />
+                        <?php echo \Huosdk\UI\Pieces::export_excel(); ?>
+					</span >
+            </div >
+        </div >
+    </form >
+    <form class="js-ajax-form" action="" method="get" >
+        <table class="table table-hover table-bordered table-list" >
+            <thead >
+            <tr >
+                <th >日期</th >
+                <th >新增注册数</th >
+                <th >登录用户数</th >
+                <th >次日留存率</th >
+                <th >三日留存率</th >
+                <th >七日留存率</th >
+                <th >充值金额</th >
+                <th >新登充值</th >
+                <th >充值人数</th >
+                <th >新登充值人数</th >
+                <th >付费率</th >
+                <th >新登付费率</th >
+                <th >APRU值</th >
+                <th >新登APRU</th >
+                <th >LTV</th >
+            </tr >
+            </thead >
+              <tr >
+                <th style='color:#FF0000' >汇总</th >
+                <th style='color:#FF0000' >{$totalpays[0]['reg_cnt']}</th >
+                <th style='color:#FF0000' >{$totalpays[0]['user_cnt']}</th >
+                <if condition="$totalpays[0]['reg_cnt'] neq 0">
+                        <td style='color:#FF0000'>{$totalpays[0]['day2']/$totalpays[0]['reg_cnt']*100|number_format=2}%</td >
+                    <else />
+                        <td style='color:#FF0000'>0.00%</td >
+                    </if>
+                   <if condition="$totalpays[0]['reg_cnt'] neq 0">
+                        <td style='color:#FF0000'>{$totalpays[0]['day3']/$totalpays[0]['reg_cnt']*100|number_format=2}%</td >
+                    <else />
+                        <td style='color:#FF0000'>0.00%</td >
+                    </if>
+                    <if condition="$totalpays[0]['reg_cnt'] neq 0">
+                        <td style='color:#FF0000'>{$totalpays[0]['day7']/$totalpays[0]['reg_cnt']*100|number_format=2}%</td >
+                    <else />
+                        <td style='color:#FF0000'>0.00%</td >
+                    </if>
+                <th style='color:#FF0000' >{$totalpays[0]['sum_money']|floor}</th >
+                <th style='color:#FF0000' >{$totalpays[0]['sum_reg_money']|floor}</th >
+                <th style='color:#FF0000' >{$totalpays[0]['pay_user_cnt']}</th >
+                <th style='color:#FF0000' >{$totalpays[0]['reg_pay_cnt']}</th >
+                
+                
+                <if condition="$totalpays[0]['user_cnt'] neq 0">
+					<th style='color:#FF0000' >{$totalpays[0]['pay_user_cnt']/$totalpays[0]['user_cnt']*100|number_format=2}%</th >
+				<else />
+					<th style='color:#FF0000' >0.00%</td >
+				</if>
+				
+				<if condition="$totalpays[0]['reg_cnt'] neq 0">
+					<th style='color:#FF0000' >{$totalpays[0]['reg_pay_cnt']/$totalpays[0]['reg_cnt']*100|number_format=2}%</th >
+				<else />
+					<th style='color:#FF0000' >0.00%</td >
+				</if>
+                
+                <if condition="$totalpays[0]['pay_user_cnt'] neq 0">
+					<th style='color:#FF0000' >{$totalpays[0]['sum_money']/$totalpays[0]['pay_user_cnt']|number_format=2}</th >
+				<else />
+					<th style='color:#FF0000' >0</td >
+				</if>
+                
+				<if condition="$totalpays[0]['reg_pay_cnt'] neq 0">
+					<th style='color:#FF0000' >{$totalpays[0]['sum_reg_money']/$totalpays[0]['reg_pay_cnt']|number_format=2}</th >
+				<else />
+					<th style='color:#FF0000' >0</td >
+				</if>
+                <if condition="$totalpays[0]['reg_cnt'] neq 0">
+                    <th style='color:#FF0000' >{$totalpays[0]['sum_reg_money']/$totalpays[0]['reg_cnt']|number_format=2}</th >
+                <else />
+                    <th style='color:#FF0000' >0</td >
+                </if> 
+            </tr >
+            <if condition=" (1 eq $current_page OR 0 eq $current_page) AND !empty($todaypays['date'])" >
+                <tr >
+                    <td >{$todaypays['date']}</td >
+                    <td >{$todaypays['reg_cnt']}</td >
+                    <td >{$todaypays['user_cnt']}</td >
+                    <th>-</th>
+                    <th>-</th>
+                    <th>-</th>
+                    <td >{$todaypays['sum_money']|floor}</td >
+                    <td >{$todaypays['sum_reg_money']|floor}</td >
+                    <td >{$todaypays['pay_user_cnt']}</td >
+                    <td >{$todaypays['reg_pay_cnt']}</td > 
+                    
+                    
+                    <if condition="$todaypays['user_cnt'] neq 0">
+                        <td >{$todaypays['pay_user_cnt']/$todaypays['user_cnt']*100|number_format=2}%</td >
+                    <else />
+                        <td >0.00%</td >
+                    </if>
+                    
+                    <if condition="$todaypays['reg_cnt'] neq 0">
+                        <td >{$todaypays['reg_pay_cnt']/$todaypays['reg_cnt']*100|number_format=2}%</td >
+                    <else />
+                        <td >0.00%</td >
+                    </if>
+                    
+                    <if condition="$todaypays['pay_user_cnt'] neq 0">
+                        <td >{$todaypays['sum_money']/$todaypays['pay_user_cnt']|number_format=2}</td >
+                    <else />
+                        <td >0</td >
+                    </if>
+                    
+                    <if condition="$todaypays['reg_pay_cnt'] neq 0">
+                        <td >{$todaypays['sum_reg_money']/$todaypays['reg_pay_cnt']|number_format=2}</td >
+                    <else />
+                        <td >0</td >
+                    </if>
+                    <if condition="$todaypays['reg_cnt'] neq 0">
+                        <td >{$todaypays['sum_reg_money']/$todaypays['reg_cnt']|number_format=2}</td >
+                    <else />
+                        <td >0</td >
+                    </if>
+                </tr >
+            </if >
+            <foreach name="pays" item="vo" >
+                <tr >
+                    <td >{$vo['date']}</td >
+                    <td >{$vo['reg_cnt']}</td >
+                    <td >{$vo['user_cnt']}</td >
+                    <if condition="$vo['reg_cnt'] neq 0">
+                        <td >{$vo['day2']/$vo['reg_cnt']*100|number_format=2}%</td >
+                    <else />
+                        <td >0.00%</td >
+                    </if>
+                   <if condition="$vo['reg_cnt'] neq 0">
+                        <td >{$vo['day3']/$vo['reg_cnt']*100|number_format=2}%</td >
+                    <else />
+                        <td >0.00%</td >
+                    </if>
+                    <if condition="$vo['reg_cnt'] neq 0">
+                        <td >{$vo['day7']/$vo['reg_cnt']*100|number_format=2}%</td >
+                    <else />
+                        <td >0.00%</td >
+                    </if>
+                    <td >{$vo['sum_money']|floor}</td >
+                    <td >{$vo['sum_reg_money']|floor}</td >
+                    <td >{$vo['pay_user_cnt']}</td >
+                    <td >{$vo['reg_pay_cnt']}</td >
+                    <if condition="$vo['user_cnt'] neq 0">
+						<td >{$vo['pay_user_cnt']/$vo['user_cnt']*100|number_format=2}%</td >
+					<else />
+						<td >0.00%</td >
+					</if>
+                    
+					<if condition="$vo['reg_cnt'] neq 0">
+						<td >{$vo['reg_pay_cnt']/$vo['reg_cnt']*100|number_format=2}%</td >
+					<else />
+						<td >0.00%</td >
+					</if>
+					
+					<if condition="$vo['pay_user_cnt'] neq 0">
+						<td >{$vo['sum_money']/$vo['pay_user_cnt']|number_format=2}</td >
+					<else />
+						<td >0</td >
+					</if>
+                    
+					<if condition="$vo['reg_pay_cnt'] neq 0">
+						<td >{$vo['sum_reg_money']/$vo['reg_pay_cnt']|number_format=2}</td >
+					<else />
+						<td >0</td >
+					</if>
+                    <if condition="$vo['reg_cnt'] neq 0">
+                        <td >{$vo['sum_reg_money']/$vo['reg_cnt']|number_format=2}</td >
+                    <else />
+                        <td >0</td >
+                    </if>
+                </tr >
+            </foreach >
+        </table >
+        <div class="pagination" >{$Page}</div >
+
+    </form >
+</div >
+<script src="__PUBLIC__/js/common.js" ></script >
+
+</body >
+</html>

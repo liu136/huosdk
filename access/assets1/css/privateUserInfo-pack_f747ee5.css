@@ -1,0 +1,36 @@
+.privateCenter-right .content{border:1px solid #e6e6e6;position:relative;background-color:#fefefe}
+.uinfoBtn,.uinfoSaveBtn{margin:0 auto;height:34px;text-align:center;line-height:34px;font-size:14px;cursor:pointer}
+.cancelBtn{height:34px;text-align:center;line-height:34px;font-size:14px;cursor:pointer;width:72px;color:#333;border:1px solid #e0e0e0;background:url(http://cdn2.guopan.cn/frontend/pc/static/img/uinfo_icon_db50666.png) repeat-x;float:left;margin-left:40px}
+.uinfoBtn{width:104px;color:#333;border:1px solid #e0e0e0;background:url(http://cdn2.guopan.cn/frontend/pc/static/img/uinfo_icon_db50666.png) repeat-x;transition:background .2s}
+.uinfoBtn:hover{background:url(http://cdn2.guopan.cn/frontend/pc/static/img/uinfo_icon_hover_4008e46.png) repeat-x}
+.uinfoSaveBtn{width:310px;color:#fff;background:url(http://cdn2.guopan.cn/frontend/pc/static/img/uinfo_save_40006c8.png) repeat-x;float:left;border-radius:2px;margin-left:82px;transition:background .3s}
+.uinfoSaveBtn:hover{background:url(http://cdn2.guopan.cn/frontend/pc/static/img/uinfo_save_hover_4d175d8.png) repeat-x}
+.iconTip{margin:20px 32px 30px 30px;font-size:14px;text-align:center;color:#666}
+.iconTip p{text-align:center;font-size:12px}
+.contentRight{position:relative;padding:15px;margin:auto;width:431px;box-sizing:border-box;background-color:#fff}
+.contentRight table{width:100%;font-size:14px;color:#000}
+.contentRight table tr td{padding:10px 0}
+.contentRight table a{top:1px;position:relative;color:#1784f3}
+.contentRight table a:hover{text-decoration:underline}
+.contentRight table input,.contentRight table textarea{padding:8px 6px;width:298px;border:1px solid #cdcdcd;border-radius:2px}
+.contentRight table input[type=radio],.contentRight table input[type=checkbox]{width:auto;border:0}
+.contentRight table textarea{overflow-y:hidden;line-height:20px;resize:none}
+.contentRight table .sm{width:auto;padding-left:0;border-left-width:0}
+.contentRight table .birthday{background:url(http://cdn2.guopan.cn/frontend/pc/static/img/vip-select-time_f2a8058.png) 287px center no-repeat}
+.contentRight table input.noBorder,.contentRight table textarea.noBorder{border:#fff 1px solid;overflow-y:visible}
+.contentRight .not-modify{color:#888;background-color:#F3F3F3;cursor:no-drop}
+.firstTd{width:80px;text-align:right}
+.firstTd.td4{vertical-align:top;padding-top:20px}
+.uname{display:none;position:absolute;left:24%;top:34%;font-size:12px;color:#ec0000}
+.seccussTip{position:absolute;left:50%;top:50%;margin-left:-130px;margin-top:-32px;display:none;width:210px;height:64px;line-height:64px;text-align:center;background:rgba(0,0,0,.6);color:#fff;font-size:18px;border-radius:3px}
+.seccussTip i{display:inline-block;width:28px;height:28px;background:url(http://cdn2.guopan.cn/frontend/pc/static/img/successCoin_e04599a.png);vertical-align:text-bottom;margin-right:14px}
+.webuploader-container{position:relative}
+.webuploader-element-invisible{position:absolute!important;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px)}
+.webuploader-pick{position:relative;margin:0 auto;height:14px;padding:8px 0 12px;cursor:pointer;width:104px;color:#333;font-size:14px;border:1px solid #e0e0e0;background:url(http://cdn2.guopan.cn/frontend/pc/static/img/uinfo_icon_db50666.png) repeat-x;text-align:center;transition:background .2s}
+.webuploader-pick-hover{background:url(http://cdn2.guopan.cn/frontend/pc/static/img/uinfo_icon_hover_4008e46.png) repeat-x}
+.webuploader-pick-disable{opacity:.6;pointer-events:none}
+.content .state{position:fixed;left:50%;bottom:50%;z-index:910;padding:10px 30px;background-color:#000;filter:Alpha(opacity=70);-moz-opacity:.7;opacity:.7;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;color:#fff}
+.content .state img{vertical-align:middle;margin-right:5px}
+.content .hide{display:none}
+
+#user1 .people .content .info.cf{border: 1px solid #e4e4e4;}

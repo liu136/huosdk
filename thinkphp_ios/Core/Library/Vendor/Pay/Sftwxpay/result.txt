@@ -1,0 +1,45 @@
+================接口回调收到通知参数===================
+key: bank_type value: CFT
+key: charset value: UTF-8
+key: fee_type value: CNY
+key: is_subscribe value: N
+key: mch_id value: 7551000001
+key: nonce_str value: 1466604235945
+key: openid value: osMSktyXBAh-UsWAqzjgBwzkjA3E
+key: out_trade_no value: 004942637492556
+key: out_transaction_id value: 4000452001201606227721185332
+key: pay_result value: 0
+key: result_code value: 0
+key: sign value: C19E81F49F253D60A76345CAD62D0616
+key: sign_type value: MD5
+key: status value: 0
+key: time_end value: 20160622220355
+key: total_fee value: 1
+key: trade_type value: pay.weixin.wappay
+key: transaction_id value: 7551000001201606222468412137
+key: version value: 2.0
+================查询订单===================
+key: charset value: UTF-8
+key: err_code value: ORDERNOTEXIST
+key: err_msg value: Order not found
+key: result_code value: 1
+key: sign value: 75381BCEC6A7D60292445E4D99B791B6
+key: sign_type value: MD5
+key: status value: 0
+key: version value: 2.0
+================提交退款===================
+key: charset value: UTF-8
+key: mch_id value: 7551000001
+key: nonce_str value: 1466607206
+key: out_refund_no value: 608268976700643
+key: out_trade_no value: 004942637492556
+key: refund_channel value: ORIGINAL
+key: refund_fee value: 1
+key: refund_id value: 7551000001201606222468415054
+key: result_code value: 0
+key: sign value: 1C48898460D7740954A7DF35BEC243D8
+key: sign_type value: MD5
+key: status value: 0
+key: trade_type value: pay.weixin.wappay
+key: transaction_id value: 7551000001201606222468412137
+key: version value: 2.0

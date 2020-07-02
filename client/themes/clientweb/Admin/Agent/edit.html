@@ -1,0 +1,75 @@
+<admintpl file="header" />
+
+<link rel="shortcut icon" href="favicon.ico"> <link href="/public/h/css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="/public/h/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link href="/public/h/css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="/public/h/css/animate.min.css" rel="stylesheet">
+    <link href="/public/h/css/style.min862f.css?v=4.1.0" rel="stylesheet">
+
+
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('agent/index')}">渠道列表</a></li>
+			<li class="active"><a href="{:U('user/editagent')}">渠道编辑</a></li>
+		</ul>
+		<div class="ibox-content">
+          <form class="form-horizontal" method="post" action="{:U('User/edit_post')}">
+		    <div class="form-group">
+                                <label class="col-sm-3 control-label">{:L('USERNAME')}</label>
+
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" name="user_login" value="{$user_login}" disabled readonly>
+                                </div>
+            </div>
+			<div class="form-group">
+                                <label class="col-sm-3 control-label">渠道名称</label>
+
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" name="user_nicename" value="{$user_nicename}">
+                                </div>
+            </div>
+			<div class="form-group">
+                                <label class="col-sm-3 control-label">{:L('PASSWORD')}</label>
+
+                                <div class="col-sm-8">
+                                    <input type="password" class="form-control" name="user_pass" value="" placeholder="******">
+                                </div>
+            </div>
+           
+
+			<div class="form-group">
+                                <label class="col-sm-3 control-label">{:L('EMAIL')}</label>
+
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" name="user_email" value="{$user_email}">
+                                </div>
+            </div>
+            
+			<div class="form-group">
+                                 <label class="col-sm-3 control-label">{:L('ROLE')}</label>
+								 <div class="radio i-checks">
+								     <foreach name="roles" item="vo">
+									   <php>$role_id_checked=in_array($vo['id'],$role_ids)?"checked":"";</php>
+								       <label> <input type="radio" name="role_id" value="{$vo.id}" {$role_id_checked}  id="active_true"> <i></i> {$vo.name}</label>
+						             </foreach>      
+                                 </div>
+             </div>
+
+			<div class="form-actions">
+				<input type="hidden" name="id" value="{$id}" />
+				<button type="submit" class="btn btn-primary js-ajax-submit">{:L('SAVE')}</button>
+				<a class="btn" href="{:U('agent/index')}">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	<script src="/public/h/js/plugins/cropper/cropper.min.js"></script>
+    <script src="/public/h/js/content.min.js?v=1.0.0"></script>
+	<script src="/public/h/js/plugins/iCheck/icheck.min.js"></script>
+    <script>
+        $(document).ready(function(){$(".i-checks").iCheck({checkboxClass:"icheckbox_square-green",radioClass:"iradio_square-green",})});
+    </script>
+</body>
+</html>

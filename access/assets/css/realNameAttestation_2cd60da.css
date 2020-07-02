@@ -1,0 +1,44 @@
+.privateCenter-right{width:692px;margin:20px 0 0 20px;float:left;min-height:700px}
+.privateCenterTitle p{color:#333;font-size:24px;font-weight:700;padding:7px 0 22px}
+.real-name-attestation{width:692px;background-color:#fff;border:solid 1px #e6e6e6;margin:0 auto;box-sizing:border-box;font-size:14px}
+.real-name-attestation .title{color:#865928;padding:20px 20px 18px;margin:-1px -1px auto;background-color:#fef9eb;border:#f1cf88 1px solid;box-sizing:border-box}
+.real-name-attestation .con .error_msg{color:#fa1020;display:none;padding-left:10px}
+.real-name-attestation .con table{width:100%;margin:30px auto}
+.real-name-attestation table td{padding:10px 0}
+.real-name-attestation #cPsd{font-size:12px}
+.real-name-attestation .text{text-align:right;color:#666}
+.real-name-attestation .mast{color:#fa1020}
+.real-name-attestation .in{-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;background-color:#fff;border:solid 1px #ddd;height:18px;padding:10px;width:260px}
+.real-name-attestation .not-modify{color:#888;background-color:#F3F3F3;cursor:no-drop}
+.real-name-attestation .in:hover,.real-name-attestation .in:focus{border:1px solid #f6df76}
+.real-name-attestation .birthday{background:url(http://cdn2.guopan.cn/frontend/pc/static/img/vip-select-time_f2a8058.png) 260px center no-repeat}
+.real-name-attestation .in.error{border:solid 1px #fa1020}
+.real-name-attestation .btn{-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;background:#F16B54;background:-webkit-gradient(linear,0 0,0 100%,from(#F16B54),to(#E64838));background:-webkit-linear-gradient(top,#F16B54,#E64838);background:-moz-linear-gradient(top,#F16B54,#E64838);background:-o-linear-gradient(top,#F16B54,#E64838);background:-ms-linear-gradient(top,#F16B54,#E64838);background:linear-gradient(top,#F16B54,#E64838);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#F16B54, endColorstr=#E64838);height:20px;padding:10px;width:262px;text-align:center;color:#fff;display:block;transition:all .3s}
+.real-name-attestation .btn:hover{background:#E64838;background:-webkit-gradient(linear,0 0,0 100%,from(#E64838),to(#F16B54));background:-webkit-linear-gradient(top,#E64838,#F16B54);background:-moz-linear-gradient(top,#E64838,#F16B54);background:-o-linear-gradient(top,#E64838,#F16B54);background:-ms-linear-gradient(top,#E64838,#F16B54);background:linear-gradient(top,#E64838,#F16B54);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#E64838, endColorstr=#F16B54)}
+.real-name-attestation .code{width:150px}
+.real-name-attestation .huoqu{-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;border:1px solid #f28c08;background:#F7A22F;height:20px;padding:9px;text-align:center;color:#fff;margin-left:20px;display:inline-block;transition:all .3s}
+.real-name-attestation .huoqu{border: none;}
+.real-name-attestation .get-code:hover{background:#F48626;background:-webkit-gradient(linear,0 0,0 100%,from(#F48626),to(#F7A22F));background:-webkit-linear-gradient(top,#F48626,#F7A22F);background:-moz-linear-gradient(top,#F48626,#F7A22F);background:-o-linear-gradient(top,#F48626,#F7A22F);background:-ms-linear-gradient(top,#F48626,#F7A22F);background:linear-gradient(top,#F48626,#F7A22F);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#F48626, endColorstr=#F7A22F)}
+.real-name-attestation .get-code.loading,.real-name-attestation .get-code.loading:hover{background:#bdbdbd;border-color:#bdbdbd}
+.real-name-attestation .toBind{color:#1784f3}
+.reconfirm{display:none;width:100%;height:100%;top:0;left:0;position:fixed;font-size:14px;z-index:20}
+.reconfirm .content{width:446px;top:50%;left:50%;margin:-197px auto auto -223px;position:absolute;z-index:22}
+.reconfirm .content-top,.reconfirm .content-bottom{width:100%;height:9px;background:url(http://cdn2.guopan.cn/frontend/pc/static/img/myreal-confirm-t-b_245b79d.png) 0 0 no-repeat}
+.reconfirm .content-bottom{background-position:0 -9px}
+.reconfirm .content-mid{padding:13px 15px 0;background:url(http://cdn2.guopan.cn/frontend/pc/static/img/myreal-confirm-mid_4882942.png) 0 0 repeat}
+.reconfirm .row{line-height:32px;overflow:hidden}
+.reconfirm .label{float:left}
+.reconfirm .label{width:108px;text-align:right}
+.reconfirm .text{margin-left:108px;word-wrap:break-word;word-break:normal}
+.reconfirm .hr{line-height:44px;text-align:center;border-bottom:1px solid #ddd;color:#ec0000}
+.reconfirm .btns{padding:14px 0;margin:6px -6px auto;text-align:center;background-color:#F3F3F3}
+.reconfirm .btn{display:inline-block;width:118px;height:38px;line-height:38px;margin:auto 19px;border:1px solid #ddd;-webkit-border-radius:1px;-moz-border-radius:1px;border-radius:1px;color:#000;background-color:#fff;transition:all .3s;cursor:pointer}
+.reconfirm .btn:hover{background-color:#f3f3f3}
+.reconfirm .btn-danger{border-color:#c73723;color:#fff;background:#F16B54;background:-webkit-gradient(linear,0 0,0 100%,from(#F16B54),to(#E64838));background:-webkit-linear-gradient(top,#F16B54,#E64838);background:-moz-linear-gradient(top,#F16B54,#E64838);background:-o-linear-gradient(top,#F16B54,#E64838);background:-ms-linear-gradient(top,#F16B54,#E64838);background:linear-gradient(top,#F16B54,#E64838);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#F16B54, endColorstr=#E64838)}
+.reconfirm .btn-danger:hover{background:#E64838;background:-webkit-gradient(linear,0 0,0 100%,from(#E64838),to(#F16B54));background:-webkit-linear-gradient(top,#E64838,#F16B54);background:-moz-linear-gradient(top,#E64838,#F16B54);background:-o-linear-gradient(top,#E64838,#F16B54);background:-ms-linear-gradient(top,#E64838,#F16B54);background:linear-gradient(top,#E64838,#F16B54);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#E64838, endColorstr=#F16B54)}
+.reconfirm .bg{width:100%;height:100%;opacity:.3;position:relative;filter:alpha(opacity=30);background-color:#000;z-index:21}
+.privateCenter-right .state{position:fixed;left:50%;bottom:50%;z-index:910;padding:10px 30px;background-color:#000;filter:Alpha(opacity=70);-moz-opacity:.7;opacity:.7;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;color:#fff}
+.privateCenter-right .state img{vertical-align:middle;margin-right:5px}
+.reconfirm .content{width:446px;top:50%;left:50%;margin:-197px auto auto -223px;position:absolute;z-index:22}
+.goback{display:none;width:424px;height:281px;position:fixed;top:50%;left:50%;margin:-127px auto auto -62px;background:url(http://cdn2.guopan.cn/frontend/pc/static/img/getGift_18f1f84.png)}
+.goback a{display:block;width:266px;height:40px;margin:187px auto auto}

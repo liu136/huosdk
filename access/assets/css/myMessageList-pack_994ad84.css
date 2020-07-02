@@ -1,0 +1,15 @@
+.myMessageList .listList{height:33px;padding:20px;border:#e6e6e6 1px solid;border-bottom:0;background-color:#fff;color:#000;display:block;cursor: pointer;}
+.myMessageList .lastList{border-bottom:#e6e6e6 1px solid;cursor: pointer;}
+.myMessageList .listList:hover{background-color:#f4f4f4}
+.myMessageList .listList i{font-size:16px;display:block;width:34px;height:34px;float:left}
+.myMessageList .listList .title{float:left;margin-top:5px;margin-left:5px}
+.myMessageList .listList .message{font-size:14px;color:#fff;background-color:#f30f1a;padding:2px 6px;margin-left:5px;float:left;margin-top:5px;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px}
+.myMessageList .listList .arrow{display:block;width:9px;height:17px;float:right;margin-top:5px;background-repeat: no-repeat;}
+.myMessageList .listList-01 i{background-repeat: no-repeat;}
+.myMessageList .listList-02 i{background-repeat: no-repeat;}
+.myMessageList .listList-03 i{background-repeat: no-repeat;}
+.myMessageList .listList .arrow{background-position:-25px 0px}
+.myMessageList .listList-01 i{background-position:0px -37px}
+.myMessageList .listList-02 i{background-position:0px -91px}
+.myMessageList .listList-03 i{background-position:0px -145px}
+.myMessageList .listList .arrow,.myMessageList .listList-01 i,.myMessageList .listList-02 i,.myMessageList .listList-03 i{background-image: url(http://cdn2.guopan.cn/frontend/pc/static/gpgame/css/myMessageList-pack_z_56ea1b3.png)}

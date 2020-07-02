@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0 , maximum-scale=1.0, user-scalable=0">
+
+<link href="/public/css/bootstrap.css" rel="stylesheet" />
+<script type="text/javascript" src="/public/js/jquery.js"></script>
+<script src="/public/js/bootstrap.min.js"></script>
+<script src="/public/js/util.js"></script>
+<script src="/public/js/findpwd.js"></script>
+
+{literal}
+<style>
+			table tr{
+				height: 20px;;
+			}
+
+		</style>
+{/literal}
+</head>
+
+<body>
+<div class="navbar navbar-fixed-top" data-id="top">
+		<div class="navbar-inner" style="text-align:center; background-color: #3C3C3C; height: 50px; color: #FFFFFF; line-height: 50px; font-size: 18px;">
+			<i class="glyphicon glyphicon-lock"></i> 忘记密码
+		</div>
+	</div>
+	<form  id="find-pwd" name="find-pwd" action='{:U("Forgetpwd/forgetpwd")}' method="post" style="width: 80%; margin: 70px auto 30px;">
+		 <div class="form-group">
+			<label for="exampleInputEmail">平台账号</label>
+			<input type="text" class="form-control" id="username" name="username" placeholder="请输入要找回密码的账号">
+		</div>
+		
+		<div id="message"></div>
+		<div style="width: 100%; text-align: center;margin-top: 10px;">
+			 <input id="action" name="action" type="hidden" value="findpwd">
+			 <input id="url" type="hidden" value="{:U('Forgetpwd/ajaxForget')}">
+			<button type="button" class="btn btn-primary btn-lg btn-block" id="find" style="padding:5px 16px">确定</button>
+		</div>
+      </form>
+
+</body>
+</html>

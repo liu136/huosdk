@@ -1,0 +1,56 @@
+<admintpl file="header"/>
+</head>
+<body class="J_scroll_fixed">
+<div class="wrap jj">
+  <ul class="nav nav-tabs">
+  </ul>
+  <div class="common-form">
+    <form class="form-horizontal J_ajaxForm" method="post"  enctype="multipart/form-data" action="{:U('Contact/editContact')}">
+        <fieldset>
+		 
+          <div class="control-group">
+            <label class="control-label" for="input01">客服QQ:</label>
+            <div class="controls">
+              <input type="text" name="qq" value="{$contact.qq}" placeholder="QQ">
+            </div>
+          </div>
+
+		  <div class="control-group">
+            <label class="control-label" for="input01">客服电话:</label>
+            <div class="controls">
+              <input type="text" name="tel" value="{$contact.tel}" placeholder="电话">
+            </div>
+          </div>
+
+		  <div class="control-group">
+            <label class="control-label" for="input01">客服邮箱:</label>
+            <div class="controls">
+              <input type="text" name="email" value="{$contact.email}" placeholder="邮箱">
+            </div>
+          </div>
+			
+			
+		  <div class="control-group">
+						<label class="control-label">渠道logo:</label>
+						<div class="controls">
+							<input type="file" class="input" name="logo" value="" size="45" style="width:290px"><font color="red">*LOGO尺寸为320*60，上传格式为：*.jpg、*.gif、*.png、*.jpeg，大小3MB。</font>
+						</div>
+		  </div>
+		   <div class="control-group">
+						<label class="control-label">渠道浮点图标:</label>
+						<div class="controls">
+							<input type="file" class="input" name="float_img" value="" size="45" style="width:290px"><font color="red">*图片尺寸为120*120，上传格式为：*.jpg、*.gif、*.png、*.jpeg，大小3MB。</font>
+						</div>
+		  </div>
+          <div class="form-actions">
+			<input name="action" type="hidden" value="contact">
+            <button type="submit" class="btn btn-primary btn_submit  J_ajax_submit_btn">更新</button>
+          </div>
+        </fieldset>
+      </form>
+  </div>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+<admintpl file="footer"/>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<admintpl file="header" />
+</head>
+<body class="J_scroll_fixed">
+
+	<div class="wrap jj">
+		<div class="common-form">
+		    <div class="ibox-content">
+			<form method="post" class="form-horizontal J_ajaxForm" action="{:U('Game/addurl_post')}">
+				<fieldset>
+					<div class="control-group">
+						<label class="control-label">游戏:</label>
+						<div class="controls">
+							<select name="appid">
+								<foreach name="games" item="vo">
+									<option value="{$vo.appid}">{$vo.name}</option>
+								</foreach>
+							</select>
+						</div>
+					</div>
+					
+					<div class="control-group">
+						<label class="control-label">回调地址:</label>
+						<div class="controls">
+							<input type="text" class="input" name="cpurl" value="">
+						</div>
+					</div>
+				</fieldset>
+				<div class="form-actions">
+					<button type="submit"
+						class="btn btn-primary btn_submit J_ajax_submit_btn">添加</button>
+					<a class="btn" href="__URL__">返回</a>
+				</div>
+			</form>
+			</div>
+		</div>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE HTML>
+<html >
+<head >
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <script type="text/javascript" src="__PUBLIC__/ios/js/jquery.min.js" ></script >
+    <script type="text/javascript" src="__PUBLIC__/ios/js/template.js" ></script >
+    <script type="text/javascript" src="__PUBLIC__/ios/js/view.js" ></script >
+
+    <title >{:C('BRAND_NAME')}苹果助手</title >
+<style >
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden
+}
+
+body {
+    font-size: 12px;
+    font-family: 微软雅黑;
+    background: #FFFFFF;
+    color: #333333;
+}
+
+.y_main {
+    width: 100%;
+    background: #FFFFFF;
+    margin: auto;
+    padding-top: 90px;
+}
+
+.y_tishi {
+    width: 610px;
+    padding: 16px 15px 0px 15px;
+}
+
+.y_tishi_box {
+    width: 562px;
+    padding: 24px;
+    background: #F2F2F2;
+    color: #000000;
+    border-radius: 8px;
+    font-size: 24px;
+}
+
+.y_tishi_box p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em
+}
+
+.yd_main {
+    width: 640px;
+}
+
+dl {
+    width: 640px;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+dl dt {
+    width: 572px;
+    height: auto;
+    display: block;
+    line-height: 60px;
+    margin: auto;
+}
+
+dl dt em {
+    width: 50px;
+    height: 50px;
+    display: block;
+    float: left;
+    background: #F54846;
+    color: #FFFFFF;
+    font-style: normal;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 30px
+}
+
+dl dt span {
+    width: 500px;
+    height: auto;
+    float: left;
+    display: block;
+    line-height: 50px;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    margin-left: 15px;
+}
+
+dl dt span p {
+    margin: 0;
+    padding: 0
+}
+
+.zsmc {
+    width: 500px;
+    height: 50px;
+    line-height: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+dl dd {
+    width: 640px;
+    height: auto;
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 24px 0
+}
+
+.sub_title {
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #DDDDDD;
+    background: #99825F;
+}
+
+.sub_title_box {
+    width: 640px;
+    height: 90px;
+    margin: auto;
+    position: relative;
+}
+
+.xinren_btn {
+    width: 112px;
+    height: 48px;
+    line-height: 48px;
+    background: #509EFC;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 22px;
+    position: absolute;
+    z-index: 2;
+    right: 10px;
+    top: 4px;
+    border-radius: 6px
+}
+
+.sub_title_con {
+    width: 500px;
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    font-size: 28px;
+    color: #FFFFFF;
+    margin: auto;
+}
+
+.back_arrow {
+    display: block;
+    width: 90px;
+    height: 90px;
+    background: url('__PUBLIC__/ios/images/back_arrow.png') no-repeat;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 10px;
+}
+
+.sub_title_box .search_btn1 {
+    width: 36px;
+    height: 36px;
+    display: block;
+    background: url('__PUBLIC__/ios/images/search_btn.png') no-repeat;
+    margin: 0;
+    position: absolute;
+    z-index: 2;
+    right: 10px;
+    top: 9px
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.clearfix {
+    zoom: 1;
+    display: inline-block;
+    _height: 1px
+}
+
+* html .clearfix {
+    height: 1%
+}
+
+* + html .clearfix {
+    height: 1%
+}
+
+.clearfix {
+    display: block
+}
+
+@-webkit-keyframes top2bottom {
+    0% {
+        -webkit-transform: translateY(-428px);
+        opacity: .6
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        opacity: 1
+    }
+}
+
+@keyframes top2bottom {
+    0% {
+        transform: translateY(-428px);
+        opacity: .6;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+</style >
+</head >
+<body >
+<div id="content" ></div >
+<div class="sub_title" >
+	<div class="sub_title_box" >
+    	<a class="back_arrow" href="{:U('Game/app')}" ></a >
+        <div class="sub_title_con" >如何信任{:C('BRAND_NAME')}证书</div >
+    </div >
+</div >
+<div class="y_main" >
+    <div class="y_tishi" >
+    	<div class="y_tishi_box" >
+        	<p >由于iOS9系统限制，安装苹果助手后直接打开，系统会
+提示"未受信任的企业级开发者"。为正常使用，
+需手动去信任{:C('BRAND_NAME')}证书，教程如下：</p >
+        </div >
+    </div >
+	<div class="yd_main" >
+		<dl class="clearfix" >
+        	<dt class="clearfix" >
+            	<em >1</em >
+                <span >
+                	<p >记住{:C('BRAND_NAME')}证书：</p >
+					<div class="zsmc" >Management And Language Training S. R. O</div >
+                	<p >如：下图的系统提示框中红色下划线位置</p >
+				</span >
+            </dt >
+            <dd >
+            	<img src="__PUBLIC__/ios/images/nosafari_1.png" />
+            </dd >
+        </dl >
+        <dl class="clearfix" >
+        	<dt class="clearfix" >
+            	<em >2</em >
+                <span >
+                	<p >找到{:C('BRAND_NAME')}证书</p >
+                	<p >依次点击设备上的【设置】->【通用】->【描述文件】</p >
+				</span >
+            </dt >
+            <dd >
+            	<img src="__PUBLIC__/ios/images/nosafari_2.png" />
+            </dd >
+        </dl >
+        <dl class="clearfix" >
+        	<dt class="clearfix" >
+            	<em >3</em >
+                <span >
+                	<p >点击并进入{:C('BRAND_NAME')}证书</p >
+				</span >
+            </dt >
+            <dd >
+            	<img src="__PUBLIC__/ios/images/nosafari_3.png" />
+            </dd >
+        </dl >
+        <dl class="clearfix" >
+        	<dt class="clearfix" >
+            	<em >4</em >
+                <span >
+                	<p >点击【信任"证书名称"】</p >
+				</span >
+            </dt >
+            <dd >
+            	<img src="__PUBLIC__/ios/images/nosafari_4.png" />
+            </dd >
+        </dl >
+        <dl class="clearfix" >
+        	<dt class="clearfix" >
+            	<em >5</em >
+                <span >
+                	<p >在弹窗中点击【信任】</p >
+				</span >
+            </dt >
+            <dd >
+            	<img src="__PUBLIC__/ios/images/nosafari_5.png" />
+            </dd >
+        </dl >
+	</div >
+</div >
+
+    <script type="text/javascript" src="__PUBLIC__/ios/js/hmdev.js" ></script >
+
+</body >
+</html >

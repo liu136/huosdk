@@ -1,0 +1,102 @@
+<admintpl file="header" />
+
+<link rel="shortcut icon" href="favicon.ico"> <link href="/public/h/css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="/public/h/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link href="/public/h/css/plugins/chosen/chosen.css" rel="stylesheet">
+    <link href="/public/h/css/plugins/cropper/cropper.min.css" rel="stylesheet">
+    <link href="/public/h/css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+
+    <link href="/public/h/css/animate.min.css" rel="stylesheet">
+    <link href="/public/h/css/style.min862f.css?v=4.1.0" rel="stylesheet">
+
+</head>
+<body>
+	<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="{:U('user/index')}">{:L('ADMIN_USER_INDEX')}</a></li>
+			<li><a href="{:U('user/addadmin')}">{:L('ADMIN_USER_ADD')}</a></li>
+		</ul>
+		<div class="ibox-content">
+		    <table class="table table-striped table-bordered table-hover dataTables-example" style="margin-bottom:5px">
+			<thead>
+				<tr>
+					<th>{:L('USERNAME')}</th>
+					<th>用户昵称</th>
+					<th>所属角色</th>
+					<th>{:L('LAST_LOGIN_IP')}</th>
+					<th>{:L('LAST_LOGIN_TIME')}</th>
+					<th>手机号</th>
+					<th>{:L('EMAIL')}</th>
+					<th>{:L('STATUS')}</th>
+					<th width="120">{:L('ACTIONS')}</th>
+				</tr>
+			</thead>
+			<tbody>
+				<php>$user_statuses=array("0"=>L('USER_STATUS_BLOCKED'),"1"=>L('USER_STATUS_ACTIVATED'),"2"=>L('USER_STATUS_UNVERIFIED'));</php>
+				<foreach name="users" item="vo">
+				<tr>
+					<td>{$vo.user_login}</td>
+					<td>{$vo.user_nicename}</td>
+					<td>{$roles[$vo['role_id']]}</td>
+					<td>{$vo.last_login_ip}</td>
+					<td>
+						<if condition="$vo['last_login_time'] eq 0">
+							{:L('USER_HAVENOT_LOGIN')}
+						<else />
+							{$vo.last_login_time}
+						</if>
+					</td>
+					<td>{$vo.mobile}</td>					
+					<td>{$vo.user_email}</td>
+					<td>{$user_statuses[$vo['user_status']]}</td>
+					<td>
+						<if condition="$vo['user_type'] eq 1">
+						<font color="#cccccc">{:L('EDIT')}</font> | <font color="#cccccc">{:L('DELETE')}</font> |
+							<if condition="$vo['user_status'] eq 1">
+								<font color="#cccccc">{:L('BLOCK_USER')}</font>
+							<else />
+								<font color="#cccccc">{:L('ACTIVATE_USER')}</font>
+							</if>
+						<else />
+							<a href='{:U("user/editadmin",array("id"=>$vo["id"], "user_type"=>$vo["user_type"]))}'>{:L('EDIT')}</a> | 
+							<a class="js-ajax-delete" href="{:U('user/delete',array('id'=>$vo['id']))}">{:L('DELETE')}</a> | 
+							<if condition="$vo['user_status'] eq 1">
+								<a href="{:U('user/ban',array('id'=>$vo['id'], 'user_type'=>$vo['user_type']))}" class="js-ajax-dialog-btn" data-msg="{:L('BLOCK_USER_CONFIRM_MESSAGE')}">{:L('BLOCK_USER')}</a>
+							<else />
+								<a href="{:U('user/cancelban',array('id'=>$vo['id'], 'user_type'=>$vo['user_type']))}" class="js-ajax-dialog-btn" data-msg="{:L('ACTIVATE_USER_CONFIRM_MESSAGE')}">{:L('ACTIVATE_USER')}</a>
+							</if>
+
+							<present name='vo.coin_pwd'>
+								<a href="{:U('User/coinpwd_reset',array('id'=>$vo['id']))}" >重置二级密码</a> | 
+							</present>
+							<if condition="$vo['coin_status'] eq 2">
+								<a href="{:U('User/cancelban_status',array('id'=>$vo['id']))}">解除禁用</a>
+							<else/>	
+								<a href="{:U('User/ban_status',array('id'=>$vo['id']))}">禁用</a>
+							</if>
+
+						</if>
+					</td>
+				</tr>
+				</foreach>
+			</tbody>
+		</table>
+		<div class="pagination">{$page}</div>
+		</div>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	<script src="/public/h/js/plugins/chosen/chosen.jquery.js"></script>
+    <script src="/public/h/js/content.min.js?v=1.0.0"></script>
+    <script src="/public/h/js/plugins/chosen/chosen.jquery.js"></script>
+    <script src="/public/h/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+    <script src="/public/h/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="/public/h/js/plugins/clockpicker/clockpicker.js"></script>
+    <script src="/public/h/js/plugins/cropper/cropper.min.js"></script>
+    <script src="/public/h/js/demo/form-advanced-demo.min.js"></script>
+
+    <script src="/public/h/js/plugins/jeditable/jquery.jeditable.js"></script>
+    <script src="/public/h/js/plugins/dataTables/jquery.dataTables.js"></script>
+    <script src="/public/h/js/plugins/dataTables/dataTables.bootstrap.js"></script>
+    <script src="/public/h/js/content.min.js?v=1.0.0"></script>
+</body>
+</html>

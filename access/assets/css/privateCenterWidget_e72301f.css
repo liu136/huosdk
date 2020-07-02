@@ -1,0 +1,52 @@
+#privateNav{margin-top:80px}
+.leftNavWrap{width:284px;position:relative;background-color:#fff;text-align:center}
+.privateCenter-left .fixed{position:fixed}
+.leftNavWrap .userMessage{border:1px solid #e6e6e6;padding-top:80px}
+.userMessage .header-icon{display:block;position:absolute;width:120px;height:120px;top:-60px;left:50%;margin-left:-60px;box-sizing:border-box;border-radius:100%;-webkit-border-radius:100%;-moz-border-radius:100%;box-shadow:0 0 18px #e6e6e6}
+.userMessage .header-icon img{width:110px;height:110px;padding:3px;border:2px solid #e6e6e6;border-radius:100%;-webkit-border-radius:100%;-moz-border-radius:100%}
+.userMessage .user-name{font-size:18px;color:#333;margin-bottom:15px;word-break:break-all;word-break:break-word;box-sizing:border-box;padding:0 5px}
+.userMessage .signature{max-height:38px;margin-bottom:15px;overflow:hidden;padding:0 15px;font-size:14px;color:#666}
+.userMessage .balance{background-color:#f9f9f9;border-top:1px solid #eee;padding:20px;position:relative;text-align:left}
+.userMessage .balance .recharge{position:absolute;padding:5px 15px;top:19px;right:20px;color:#fff;font-size:14px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;background-color:#ff8c04;border:solid 1px #ff8c04}
+.userMessage .balance .recharge:hover{background-color:#fe9e2d}
+.userMessage .balance span{font-size:14px}
+.userMessage .balance .num{color:#ff8c04;font-size:20px}
+.navs{margin-top:10px}
+.navs li{margin-top:-1px;height:50px;border:1px solid #eee;position:relative}
+.navs .msg-dot{position:absolute;width:11px;height:11px;top:13px;left:124px;background-repeat: no-repeat;}
+.navs li>a,.messages li>a{text-align:left;display:block;background-color:#f9f9f9;position:relative;width:100%;height:50px;line-height:50px;font-size:16px;color:#575757;padding-left:63px;box-sizing:border-box;background-repeat: no-repeat;}
+.messages li{height:48px;border:0}
+.messages li>a{background-color:#fff;height:48px;line-height:48px;padding-left:73px}
+.navs li>a.active,.navs li>a.active:hover{background-color:#e74c3c;color:#fff;background-repeat: no-repeat;}
+.navs li>a:hover,.messages li>a:hover,.messages li>a.active,.messages li>a.active:hover{background-color:#f4f4f4}
+.messages li>a.active,.messages li>a.active:hover{color:#333;background-repeat: no-repeat;}
+.navs li>a .private-icon{position:absolute;width:23px;height:23px;background-repeat:no-repeat;left:24px;top:16px}
+.private-icon.group{background-repeat: no-repeat;}
+.navs li>a.active .private-icon.group{background-repeat: no-repeat;}
+.private-icon.message{background-repeat: no-repeat;}
+.navs li>a.active .private-icon.message{background-repeat: no-repeat;}
+.private-icon.voucher{background-repeat: no-repeat;}
+.navs li>a.active .private-icon.voucher{background-repeat: no-repeat;}
+.private-icon.num-box{background-repeat: no-repeat;}
+.navs li>a.active .private-icon.num-box{background-repeat: no-repeat;}
+.private-icon.post{background-repeat: no-repeat;}
+.navs li>a.active .private-icon.post{background-repeat: no-repeat;}
+.private-icon.personal{background-repeat: no-repeat;}
+.navs li>a.active .private-icon.personal{background-repeat: no-repeat;}
+.private-icon.security{background-repeat: no-repeat;}
+.navs li>a.active .private-icon.security{background-repeat: no-repeat;}
+.navs li>a .private-icon.recommend{top:10px;background-repeat: no-repeat;}
+.navs li>a.active .private-icon.recommend{background-repeat: no-repeat;}
+.header-icon .webuploader-container{width:112px;height:20px;overflow:hidden;padding-top:91px;top:4px;left:4px;border-radius:100%;position:absolute}
+.header-icon .webuploader-pick,.header-icon .webuploader-pick-hover{width:86px;height:20px;padding:0;margin:auto;border-width:0;transition:opacity .3s;background-repeat: no-repeat;}
+.header-icon .webuploader-pick{opacity:.6;filter:alpha(opacity=60)}
+.header-icon .webuploader-pick-hover{opacity:1;filter:alpha(opacity=100)}
+.header-icon .webuploader-container input{opacity:0;filter:alpha(opacity=0)}
+.navSwitch{margin-top:6px}
+.navSwitch ul{width:100%;height:51px;border-top:#e3e3e3 4px solid;background-color:#f5f5f5}
+.navSwitch ul li{float:left;margin-top:-4px;border-top:#e3e3e3 4px solid;transition:all .3s}
+.navSwitch ul li a{padding:15px 20px;display:block;box-sizing:border-box;border:#f5f5f5 1px solid;border-bottom:0;border-top:0}
+.navSwitch ul li a:hover{color:#e74c3c}
+.navSwitch ul li:hover{border-top:#e74c3c 4px solid;background-color:#fff;box-sizing:border-box}
+.navSwitch ul .on{border-top:#e74c3c 4px solid;background-color:#fff;box-sizing:border-box}
+.navSwitch ul .on a{border:#e3e3e3 1px solid;color:#e74c3c;border-bottom:0;border-top:0}.navs .msg-dot{background-position:-75px 0px}.messages li>a.active,.messages li>a.active:hover{background-position:-81px -31px}.private-icon.group{background-position:-65px -60px}.navs li>a.active .private-icon.group{background-position:-65px -97px}.private-icon.message{background-position:-66px -134px}.navs li>a.active .private-icon.message{background-position:-66px -167px}.private-icon.voucher{background-position:-66px -200px}.navs li>a.active .private-icon.voucher{background-position:-66px -233px}.private-icon.num-box{background-position:-66px -266px}.navs li>a.active .private-icon.num-box{background-position:-66px -302px}.private-icon.post{background-position:-68px -338px}.navs li>a.active .private-icon.post{background-position:-68px -378px}.private-icon.personal{background-position:-68px -418px}.navs li>a.active .private-icon.personal{background-position:-68px -456px}.private-icon.security{background-position:-66px -494px}.navs li>a.active .private-icon.security{background-position:-66px -534px}.navs li>a .private-icon.recommend{background-position:-66px -574px}.navs li>a.active .private-icon.recommend{background-position:-66px -616px}.header-icon .webuploader-pick,.header-icon .webuploader-pick-hover{background-position:0px -658px}.navs .msg-dot,.messages li>a.active,.messages li>a.active:hover,.private-icon.group,.navs li>a.active .private-icon.group,.private-icon.message,.navs li>a.active .private-icon.message,.private-icon.voucher,.navs li>a.active .private-icon.voucher,.private-icon.num-box,.navs li>a.active .private-icon.num-box,.private-icon.post,.navs li>a.active .private-icon.post,.private-icon.personal,.navs li>a.active .private-icon.personal,.private-icon.security,.navs li>a.active .private-icon.security,.navs li>a .private-icon.recommend,.navs li>a.active .private-icon.recommend,.header-icon .webuploader-pick,.header-icon .webuploader-pick-hover{background-image: url(http://cdn2.guopan.cn/frontend/pc/static/gpgame/css/privateCenterWidget_z_bcf13a9.png)}.navs li>a,.messages li>a{background-position:260px 20px}.navs li>a.active,.navs li>a.active:hover{background-position:260px -9px}.navs li>a,.messages li>a,.navs li>a.active,.navs li>a.active:hover{background-size: 5px 38px;background-image: url(http://cdn2.guopan.cn/frontend/pc/static/gpgame/css/privateCenterWidget_1_z_71cb398.png)}

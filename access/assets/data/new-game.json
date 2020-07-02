@@ -1,0 +1,66 @@
+{
+        "game_slides":[
+        {
+            "app_id":6,
+            "name":"龙魂神裔",
+            "game_desc":"操作简单，处处暴血PK对战，还你一个真实刺激的战场。",
+            "game_shot":"http://cdn.guopan.cn/uploads/ggimg/2016-09-22/20160922115030910.jpg"
+        },
+        {
+            "app_id":8,
+            "name":"御剑情缘",
+            "game_desc":"一场遇见 一世相守",
+            "game_shot":"http://img.guopan.cn/2016-12-26/20161226114824804.jpg"
+        },
+        {
+            "app_id":20,
+            "name":"圣斗士星矢",
+            "game_desc":"30年经典漫画神作王者再临！车田正美正版授权，前所未有的MMOARPG动作手游大作",
+            "game_shot":"http://img.guopan.cn/2016-11-04/20161104161511998.jpg"
+        }
+    ],
+    "new_game_zx":[
+    {"post_thumb":"http://img.guopan.cn/2017-03-01/1488338769250047.jpg","post_title":"果盘多重活动喜迎《新莽荒纪》首发开测","post_modify":"2017-3-7 19:48:41","post_content":"3月3号《新莽荒纪》果盘首发公测，每位玩家最高可获1000钻，更有丰富开测活动，荒莽世界见！活动一、《新莽荒纪》预约送钻石【活动时间】2月25日—3月2日23:","post_id":"15"},
+    {"post_thumb":"http://img.guopan.cn/2017-03-01/1488338769250047.jpg","post_title":"果盘多重活动喜迎《新莽荒纪》首发开测","post_modify":"2017-3-7 19:48:41","post_content":"3月3号《新莽荒纪》果盘首发公测，每位玩家最高可获1000钻，更有丰富开测活动，荒莽世界见！活动一、《新莽荒纪》预约送钻石【活动时间】2月25日—3月2日23:","post_id":"15"},
+    {"post_thumb":"http://img.guopan.cn/2017-03-01/1488338769250047.jpg","post_title":"果盘多重活动喜迎《新莽荒纪》首发开测","post_modify":"2017-3-7 19:48:41","post_content":"3月3号《新莽荒纪》果盘首发公测，每位玩家最高可获1000钻，更有丰富开测活动，荒莽世界见！活动一、《新莽荒纪》预约送钻石【活动时间】2月25日—3月2日23:","post_id":"15"},
+    {"post_thumb":"http://img.guopan.cn/2017-03-01/1488338769250047.jpg","post_title":"果盘多重活动喜迎《新莽荒纪》首发开测","post_modify":"2017-3-7 19:48:41","post_content":"3月3号《新莽荒纪》果盘首发公测，每位玩家最高可获1000钻，更有丰富开测活动，荒莽世界见！活动一、《新莽荒纪》预约送钻石【活动时间】2月25日—3月2日23:","post_id":"15"},
+    {"post_thumb":"http://img.guopan.cn/2017-03-01/1488338769250047.jpg","post_title":"果盘多重活动喜迎《新莽荒纪》首发开测","post_modify":"2017-3-7 19:48:41","post_content":"3月3号《新莽荒纪》果盘首发公测，每位玩家最高可获1000钻，更有丰富开测活动，荒莽世界见！活动一、《新莽荒纪》预约送钻石【活动时间】2月25日—3月2日23:","post_id":"15"}
+    ],
+    "new_game_rank":[
+        {"game_icon":"","game_name":"不良人2","game_type":"角色","ios_down_url":"","android_down_url":"","game_score":9.5,"app_id":1},
+        {"game_icon":"","game_name":"不良人2","game_type":"角色","ios_down_url":"","android_down_url":"","game_score":9.5,"app_id":1},
+        {"game_icon":"","game_name":"不良人2","game_type":"角色","ios_down_url":"","android_down_url":"","game_score":9.5,"app_id":1},
+        {"game_icon":"","game_name":"不良人2","game_type":"角色","ios_down_url":"","android_down_url":"","game_score":9.5,"app_id":1},
+        {"game_icon":"","game_name":"不良人2","game_type":"角色","ios_down_url":"","android_down_url":"","game_score":9.5,"app_id":1},
+        {"game_icon":"","game_name":"不良人2","game_type":"角色","ios_down_url":"","android_down_url":"","game_score":9.5,"app_id":1},
+        {"game_icon":"","game_name":"不良人2","game_type":"角色","ios_down_url":"","android_down_url":"","game_score":9.5,"app_id":1},
+        {"game_icon":"","game_name":"不良人2","game_type":"角色","ios_down_url":"","android_down_url":"","game_score":9.5,"app_id":1},
+        {"game_icon":"","game_name":"不良人2","game_type":"角色","ios_down_url":"","android_down_url":"","game_score":9.5,"app_id":1},
+        {"game_icon":"","game_name":"不良人2","game_type":"角色","ios_down_url":"","android_down_url":"","game_score":9.5,"app_id":1}
+        ],
+    "new_game_list":[
+        {"app_id":"1","game_name":"热血高校","game_icon":"http://cdn.guopan.cn/web_server/upload/picture/2016-02-02/AZIOS_8.png"},
+        {"app_id":"1","game_name":"热血高校","game_icon":"http://cdn.guopan.cn/web_server/upload/picture/2016-02-02/AZIOS_8.png"},
+        {"app_id":"1","game_name":"热血高校","game_icon":"http://cdn.guopan.cn/web_server/upload/picture/2016-02-02/AZIOS_8.png"},
+        {"app_id":"1","game_name":"热血高校","game_icon":"http://cdn.guopan.cn/web_server/upload/picture/2016-02-02/AZIOS_8.png"},
+        {"app_id":"1","game_name":"热血高校","game_icon":"http://cdn.guopan.cn/web_server/upload/picture/2016-02-02/AZIOS_8.png"},
+        {"app_id":"1","game_name":"热血高校","game_icon":"http://cdn.guopan.cn/web_server/upload/picture/2016-02-02/AZIOS_8.png"},
+        {"app_id":"1","game_name":"热血高校","game_icon":"http://cdn.guopan.cn/web_server/upload/picture/2016-02-02/AZIOS_8.png"},
+        {"app_id":"1","game_name":"热血高校","game_icon":"http://cdn.guopan.cn/web_server/upload/picture/2016-02-02/AZIOS_8.png"},
+        {"app_id":"1","game_name":"热血高校","game_icon":"http://cdn.guopan.cn/web_server/upload/picture/2016-02-02/AZIOS_8.png"},
+        {"app_id":"1","game_name":"热血高校","game_icon":"http://cdn.guopan.cn/web_server/upload/picture/2016-02-02/AZIOS_8.png"},
+        {"app_id":"1","game_name":"热血高校","game_icon":"http://cdn.guopan.cn/web_server/upload/picture/2016-02-02/AZIOS_8.png"}
+    ],
+    "server_test_count":2,
+    "server_test_list":[
+        {"game_icon":"http://img.guopan.cn/2017-02-14/1487073197195.jpg","server_name":"荣耀崛起(每日送钻石)","status":"不删档内测","app_id":60045,"run_time":"今天 10:00"},
+        {"game_icon":"http://img.guopan.cn/2017-02-14/1487073197195.jpg","server_name":"荣耀崛起(每日送钻石)","status":"不删档内测","app_id":60045,"run_time":"今天 10:00"},
+        {"game_icon":"http://img.guopan.cn/2017-02-14/1487073197195.jpg","server_name":"荣耀崛起(每日送钻石)","status":"不删档内测","app_id":60045,"run_time":"今天 10:00"},
+        {"game_icon":"http://img.guopan.cn/2017-02-14/1487073197195.jpg","server_name":"荣耀崛起(每日送钻石)","status":"新服","app_id":60045,"run_time":"今天 10:00"},
+        {"game_icon":"http://img.guopan.cn/2017-02-14/1487073197195.jpg","server_name":"荣耀崛起(每日送钻石)","status":"新服","app_id":60045,"run_time":"今天 10:00"},
+        {"game_icon":"http://img.guopan.cn/2017-02-14/1487073197195.jpg","server_name":"荣耀崛起(每日送钻石)","status":"新服","app_id":60045,"run_time":"今天 10:00"},
+        {"game_icon":"http://img.guopan.cn/2017-02-14/1487073197195.jpg","server_name":"荣耀崛起(每日送钻石)","status":"新服","app_id":60045,"run_time":"今天 10:00"},
+        {"game_icon":"http://img.guopan.cn/2017-02-14/1487073197195.jpg","server_name":"荣耀崛起(每日送钻石)","status":"新服","app_id":60045,"run_time":"今天 10:00"},
+        {"game_icon":"http://img.guopan.cn/2017-02-14/1487073197195.jpg","server_name":"荣耀崛起(每日送钻石)","status":"新服","app_id":60045,"run_time":"今天 10:00"}
+    ]
+}

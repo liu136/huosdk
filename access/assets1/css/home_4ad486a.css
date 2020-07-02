@@ -1,0 +1,13 @@
+.video{margin-top:15px;height:330px}
+.home-section{margin-top:15px}
+.left-section{float:left;width:688px;background:#fff;height:100%}
+.right-section{float:right;width:297px;background:#fff;height:100%}
+.recommend{margin-top:4px}
+.meinv,.friendLink{background:#fff;margin-top:15px}
+.hot{margin-top:15px;height:475px;overflow:hidden}
+.hot .left{float:left;width:245px}
+.hot .right{float:right;width:297px}
+.giftInfo .left{width:686px;float:left}
+.giftDetail .main{float:left;width:686px}
+.giftDetail .side{float:right;width:240px}
+*{font-family: "微软雅黑";}

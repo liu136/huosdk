@@ -1,0 +1,144 @@
+﻿<admintpl file="header" />
+
+<link rel="stylesheet" href="__PUBLIC__/CloudAdmin/css/cloud-admin.min.css" /> 
+</head>
+<body class="J_scroll_fixed">
+
+	<div class="wrap jj" style="background:#fff">
+		<div class="common-form">
+		   <div class="ibox-content">
+			<div class="container" style="width:60% !important">
+				<table class="table table-bordered">
+					<tr>
+						<td style="background-color:rgba(239, 237, 237, 0.6);">
+							<h4 style="font-weight:bold">《{$server.gamename}》服务单信息</h4>
+						</td>
+						
+					</tr>
+				</table>
+				<table class="table table-bordered">
+				  
+				   <tbody>
+					  <tr>
+						 <td style="background-color:rgba(239, 237, 237, 0.6);height:60px;text-align:center;vertical-align:middle">甲方</td>
+						 <td colspan="5" style="text-align:center;vertical-align:middle">{$damaconmpany}</td>
+						 <td style="background-color:rgba(239, 237, 237, 0.6);height:60px;text-align:center;vertical-align:middle" >乙方</td>
+						 <td colspan="5" style="text-align:center;vertical-align:middle">{$server.companyname}</td>
+					  </tr>
+					  <tr>
+						 <td style="background-color:rgba(239, 237, 237, 0.6);height:60px;text-align:center;vertical-align:middle" colspan="3">合作游戏产品名称</td>
+						 <td style="background-color:rgba(239, 237, 237, 0.6);height:60px;text-align:center;vertical-align:middle" colspan="3">软件著作权登记号</td>
+						 <td style="background-color:rgba(239, 237, 237, 0.6);height:60px;text-align:center;vertical-align:middle" colspan="4">权属来源</td>
+					  </tr>
+					 <tr>
+						 <td style="height:60px;text-align:center;vertical-align:middle" colspan="3">《{$server.gamename}》</td>
+						 <td style="height:60px;text-align:center;vertical-align:middle" colspan="3">{$server.sequence}</td>
+						 <td style="height:60px;text-align:center;vertical-align:middle" colspan="4"><if condition="$sorder['class'] eq 1">代理<else/>自研</if></td>
+					  </tr>
+					  <tr>
+						 <td style="background-color:rgba(239, 237, 237, 0.6);height:60px;text-align:center;vertical-align:middle" colspan="2">本服务单有效期</td>
+						 <td style="height:60px;vertical-align:middle" colspan="8">自{$server.start_time|date='Y年m月d日',###}起至{$server.end_time|date='Y年m月d日',###}</td>
+					  </tr>
+					   <tr>
+						 <td style="background-color:rgba(239, 237, 237, 0.6);text-align:center;vertical-align:middle" colspan="2">收入分成结算方式</td>
+						 <td style="vertical-align:middle" colspan="8">
+							 <p>用户通过乙方提供或指定的收费系统为合作游戏支付的全部费用（即游戏收入总额），扣除支付通道手续费（指乙方通过其在线/移动支付和消耗系统向用户销售和提供游戏服务而发生的、需要向甲乙双方外的第三方支付的佣金和费用）及运营工具使用费后的部分作为双方利益分成的基数。</p>
+							<p>双方确认，游戏收入总额以用户实际支付的费用为限。</p>
+						</td>
+					  </tr>
+					  <tr>
+						 <td style="background-color:rgba(239, 237, 237, 0.6);height:60px;text-align:center;vertical-align:middle" colspan="2">收入分成计算公式</td>
+						 <td style="height:60px;vertical-align:middle" colspan="8">甲方收入分成=游戏收入总额×（1-通道费率）×甲方分成比例</td>
+					  </tr>
+					  <tr>
+						 <td style="background-color:rgba(239, 237, 237, 0.6);height:60px;text-align:center;vertical-align:middle" colspan="2">甲方分成比例</td>
+						 <php>$rate = 1-$server['rate'];</php>
+						 <td style="height:60px;vertical-align:middle" colspan="8">
+						 <if condition="$server['status'] neq 3">
+						 	--
+						 <else />
+						 	{$rate*100}%
+						 </if>
+						 
+						 
+						 
+						 </td>
+					  </tr>
+					  <tr>
+						 <td style="background-color:rgba(239, 237, 237, 0.6);text-align:center;vertical-align:middle" colspan="2">费率及发票</td>
+						 <td style="vertical-align:middle" colspan="8">
+							 <p>• 充值通道手续费比例：5% </p>
+							<p>	• 如乙方为一般纳税人，且甲方向乙方提供一般纳税人增值税专用发票（税率为6%），则收入分成不会扣减税费； </p>
+							<p>	• 如乙方为小规模纳税人，且甲方向乙方提供一般纳税人增值税普通发票（税率为6%），则收入分成不会扣减税费； </p>
+						</td>
+					  </tr>
+					  <tr>
+						 <td style="background-color:rgba(239, 237, 237, 0.6);height:60px;text-align:center;vertical-align:middle" colspan="2">结算周期</td>
+						 <td style="height:60px;vertical-align:middle" colspan="8">一个自然月为一个结算统计周期</td>
+					  </tr>
+					  <tr>
+						 <td style="background-color:rgba(239, 237, 237, 0.6);text-align:center;vertical-align:middle" colspan="2">支付方式及流程</td>
+						 <td style="vertical-align:middle" colspan="8">
+							 <p>• 通过银行汇付方式进行支付</p>
+							<p>• 第N个自然月结束后五个工作日内，甲方向乙方提供第N个自然月游戏合作业务的统计数据及合作收入对账单。乙方应在收到甲方统计数据后三个工作日内对统计数据进行确认并以邮件、传真或快递的方式回复乙方。如有异议乙方须在五个工作日内向甲方提出，否则视乙方同意按照甲方的统计数据进行结算。双方核对数据误差比例在3%以内时，以乙方数据为准，超过3%，以双方协商结果为依据。</p>
+								<p>双方确认统计数据及结算金额后，乙方应在3个工作日内向甲方支付相应款项，甲方收到乙方汇款，应在3个工作日内将发票邮寄给乙方；</p>
+						</td>
+					  </tr>
+					  <tr>
+						 <td style="background-color:rgba(239, 237, 237, 0.6);text-align:center;vertical-align:middle" colspan="2">甲方账户信息</td>
+						 <td style="vertical-align:middle" colspan="8">
+							<p>开户名称： {$finance.companyname}</p>
+							<p>开 户 行： {$finance.bankaddr}</p>
+							<p>银行账号： {$finance.bankaccount}</p>
+						</td>
+					  </tr>
+					  <tr>
+						 <td style="background-color:rgba(239, 237, 237, 0.6);text-align:center;vertical-align:middle" colspan="2">乙方收件信息</td>
+						 <td style="vertical-align:middle" colspan="8">
+							<p>地址： {$server.addr}</p>
+							<p>联系人：{$server.linkman}</p>
+							<p>电话： {$server.link_tel}</p>
+						</td>
+					  </tr>
+					  <tr>
+						 <td style="vertical-align:middle" colspan="5">
+							 <p>甲方：</p>
+							  <br/>
+							 <p>盖章：</p>
+								<br/>
+							 <p>日期</p>
+						 </td>
+						  <td style="vertical-align:middle" colspan="5">
+							 <p>乙方：</p>
+							  <br/>
+							 <p>盖章：</p>
+								<br/>
+							 <p>日期</p>
+						 </td>
+					  </tr>
+					  <tr style="visibility:hidden">
+						 <td style="width:10%"></td>
+						 <td style="width:10%"></td>
+						 <td style="width:10%"></td>
+						 <td style="width:10%"></td>
+						 <td style="width:10%"></td>
+						 <td style="width:10%"></td>
+						 <td style="width:10%"></td>
+						 <td style="width:10%"></td>
+						 <td style="width:10%"></td>
+						 <td style="width:10%"></td>
+					  </tr>
+				   </tbody>
+				</table>
+			</div>
+			</div>
+			<div class="form-actions">
+				   
+				    <a class="btn" href="{:U('Game/index')}">{:L('BACK')}</a>
+			    </div>
+		</div>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	
+</body>
+</html>

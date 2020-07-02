@@ -1,0 +1,83 @@
+#Info .newGamesInfo .info-list .item-wrap{padding:0 15px;margin:auto -15px;transition:background-color .3s}
+#Info .newGamesInfo .info-list .item-wrap:hover{background-color:#f0f0f0}
+#Info .newGamesInfo .info-list a.item{display:block;font-size:14px;padding:6px 0;color:#333;padding-left:10px;position:relative;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;transition:color .3s}
+#Info .newGamesInfo .info-list a.item:hover{color:#E73C44}
+#Info .newGamesInfo .info-list a.item span.dot{position:absolute;left:0;top:12px;display:inline-block;width:4px;height:4px;background:#333;transition:background .3s}
+#Info .newGamesInfo .info-list a.item:hover span.dot{background:#E73C44}
+#Info .infoDetailHotVideos{margin-top:15px}
+#Info .infoDetailHotVideos .main-video{display:block;width:100%;height:206px;position:relative}
+#Info .infoDetailHotVideos .main-video img{display:block;width:100%;height:100%}
+#Info .infoDetailHotVideos .main-video .cover{position:absolute;top:0;left:0;bottom:0;right:0;transition:.3s}
+#Info .infoDetailHotVideos .main-video:hover .cover{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#7F000000', endColorstr='#7F000000');background:rgba(0,0,0,.4)}
+#Info .infoDetailHotVideos .main-video .cover .title{z-index:2;display:block;filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#99000000', endColorstr='#99000000');background:rgba(0,0,0,.3);position:relative;top:170px;padding-left:5px;height:36px;line-height:36px;text-align:center;color:#fff;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;font-size:14px}
+#Info .infoDetailHotVideos .main-video .cover:hover .title{color:#D9D9D9;filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#B2000000', endColorstr='#B2000000');background:rgba(0,0,0,.4)}
+#Info .infoDetailHotVideos .sub-videos{margin-top:10px}
+#Info .infoDetailHotVideos .sub-videos a{display:block;font-size:14px;padding-top:6px;padding-bottom:6px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap}
+#Info .infoDetailHotVideos .sub-videos a img{margin-right: 5px;}
+#Info .gameList .rankContent .orderBy li {position: relative;cursor: pointer;clear: both;overflow: hidden;padding: 10px 10px;border-bottom: 1px dashed #D5D5D5;}
+#Info .gameList .rankContent .orderBy li div{float: left;color: #333;}
+#Info .gameList .rankContent .orderBy li div.div1{background: #dfdfdf;color: #666;height: 20px;width: 20px;text-align: center;border-radius: 5px;line-height: 20px;margin-top: 4px;}
+#Info .gameList .rankContent .orderBy li div.div2 div{float: left;margin-left: 5px;}
+#Info .gameList .rankContent .orderBy li div.div2 .pic{display: none;}
+#Info .gameList .rankContent .orderBy li div.div2 .text p{display: none;}
+#Info .gameList .rankContent .orderBy li:hover div.div1{height: 85px;line-height: 85px;}
+#Info .gameList .rankContent .orderBy li:hover div.div2 .pic,#Info .gameList .rankContent .orderBy li:hover div.div2 .text p{display: block;}
+#Info .gameList .rankContent .orderBy li div.div2 .text {font-size: 12px;color: #666;}
+#Info .gameList .rankContent .orderBy li div.div2 .text h2{font-size: 14px;color: #333;}
+#Info .gameList .rankContent .orderBy li div.div3{position: absolute;right: 25px;bottom: 0px;}
+#Info .gameList .rankContent .orderBy li div.div3 .button{padding: 0 15px;display: none;border-radius: 5px;color: #7ac234;border: 1px solid #7ac234;cursor: pointer;}
+#Info .gameList .rankContent .orderBy li:hover div.div3{bottom: 15px;}
+#Info .gameList .rankContent .orderBy li:hover div.div3 .button{display: block;}
+#Info .gameList .rankContent .orderBy li:hover div.div3 .button:hover{background: #7ac234;color: #fff;}
+#Info .gameList .rankContent .orderBy li:hover div.div3 img{display: none;}
+#Info .gameList .rankContent .orderBy li:nth-child(1) div.div1{background: #e73c44;color: #fff;}
+#Info .gameList .rankContent .orderBy li:nth-child(2) div.div1{background: #f97b3d;color: #fff;}
+#Info .gameList .rankContent .orderBy li:nth-child(3) div.div1{background: #ffa800;color: #fff;}
+/*#Info .gameList .rankContent .orderBy li:nth-child(1) div.div2 .pic{display: block;}
+#Info .gameList .rankContent .orderBy li:nth-child(1) div.div2 .text p{display: block;}
+#Info .gameList .rankContent .orderBy li:nth-child(1) div.div1{height: 85px;line-height: 85px;}
+#Info .gameList .rankContent .orderBy li:nth-child(1) div.div3{bottom: 20px;}
+#Info .gameList .rankContent .orderBy li:nth-child(1) div.div3 img{display: none;}
+#Info .gameList .rankContent .orderBy li:nth-child(1) div.div3 .button{display: block;}*/
+
+
+#Info .gameList .rankContent .orderBy li.hover div.div2 .text p{display: block;}
+#Info .gameList .rankContent .orderBy li.hover div.div1{height: 85px;line-height: 85px;}
+#Info .gameList .rankContent .orderBy li.hover div.div2 .pic,#Info .gameList .rankContent .orderBy li:hover div.div2 .text p{display: block;}
+#Info .gameList .rankContent .orderBy li.hover div.div3{bottom: 15px;}
+#Info .gameList .rankContent .orderBy li.hover div.div3 .button{display: block;}
+#Info .gameList .rankContent .orderBy li.hover div.div3 .button:hover{background: #7ac234;color: #fff;}
+#Info .gameList .rankContent .orderBy li.hover div.div3 img{display: none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Info .detail-Text{font-size: 14px;text-indent: 2em;color: #333;line-height: 28px;}
+#Info .detail-Text {width: 100%;}
+#Info .detail-Text  img{width: 100%;margin: 10px 0;}
+
+#Info .indexContent .detail-Text .title{text-align: center;margin-top: 20px;border-bottom: none;margin-bottom:15px;}
+#Info .detail-Text .title h2{font-size: 22px;color: #333;font-weight: bold;margin-bottom: 15px;}
+#Info .detail-Text .title p{font-size: 14px;color: #666;}
+#Info .about-new .title{border-bottom: 1px solid #D5D5D5;position: relative;padding: 0;margin-bottom: 20px;}
+#Info .about-new .title span{display: inline-block;position: absolute;padding-bottom: 10px;border-bottom: 3px solid #e73c44;bottom: 0;padding: 0 10px 10px 10px;color: #333;font-size: 20px;font-weight: bold;}
+#Info .about-new {clear: both;overflow: hidden;margin-bottom: 100px;}
+#Info .about-new .text{float: left;width: 50%;}
+#Info .about-new .text a.item{display:block;font-size:14px;padding:6px 0;color:#333;padding-left:10px;position:relative;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;transition:color .3s;text-overflow: ellipsis;white-space: nowrap;}
+#Info .about-new .text a.item span.dot{position:absolute;left:0;top:12px;display:inline-block;width:4px;height:4px;background:#333;transition:background .3s}

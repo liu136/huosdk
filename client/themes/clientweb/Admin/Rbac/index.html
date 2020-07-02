@@ -1,0 +1,84 @@
+<admintpl file="header" />
+
+<link rel="shortcut icon" href="favicon.ico"> <link href="/public/h/css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="/public/h/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link href="/public/h/css/plugins/chosen/chosen.css" rel="stylesheet">
+    <link href="/public/h/css/plugins/cropper/cropper.min.css" rel="stylesheet">
+    <link href="/public/h/css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+
+    <link href="/public/h/css/animate.min.css" rel="stylesheet">
+    <link href="/public/h/css/style.min862f.css?v=4.1.0" rel="stylesheet">
+
+</head>
+<body>
+	<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="{:U('rbac/index')}">{:L('ADMIN_RBAC_INDEX')}</a></li>
+			<li><a href="{:U('rbac/roleadd')}">{:L('ADMIN_RBAC_ROLEADD')}</a></li>
+		</ul>
+
+		<form action="{:U('Rbac/listorders')}" method="post">
+			<div class="ibox-content">
+		    <table class="table table-striped table-bordered table-hover dataTables-example" style="margin-bottom:5px">
+				<thead>
+					<tr>
+						<th align="left">{:L('ROLE_NAME')}</th>
+						<th align="left">角色类别</th>
+						<th align="left">{:L('ROLE_DESCRIPTION')}</th>
+						<th width="40" align="left">{:L('STATUS')}</th>
+						<th width="120">{:L('ACTIONS')}</th>
+					</tr>
+				</thead>
+				<tbody>
+					<foreach name="roles" item="vo">
+					<tr>
+						<td>{$vo.name}</td>
+						<td>
+							<if condition="$vo['typeid'] eq 2">
+								内部管理
+							<else/> 
+								外部渠道 
+							</if>
+						</td>
+						<td>{$vo.remark}</td>
+						<td>
+							<if condition="$vo['status'] eq 1">
+								<font color="red">√</font>
+							<else /> 
+								<font color="red">╳</font>
+							</if>
+						</td>
+						<td>
+							<if condition="$vo.id elt 50">
+								系统用户无法修改
+							<else />
+								<a href="{:U('Rbac/authorize',array('id'=>$vo['id']))}">{:L('ROLE_SETTING')}</a>|
+								<!-- <a href="javascript:open_iframe_dialog('{:U('rbac/member',array('id'=>$vo['id']))}','成员管理');">成员管理</a>| -->
+								<a href="{:U('Rbac/roleedit',array('id'=>$vo['id'],'typeid'=>$vo['typeid']))}">{:L('EDIT')}</a>|
+								<a class="js-ajax-delete" href="{:U('Rbac/roledelete',array('id'=>$vo['id'], 'typeid'=>$vo['typeid'], 'name'=>$vo['name']))}">{:L('DELETE')}</a>
+							</if>
+						</td>
+					</tr>
+					</foreach>
+				</tbody>
+			</table>
+			</div>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+
+	<script src="/public/h/js/plugins/chosen/chosen.jquery.js"></script>
+    <script src="/public/h/js/content.min.js?v=1.0.0"></script>
+    <script src="/public/h/js/plugins/chosen/chosen.jquery.js"></script>
+    <script src="/public/h/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+    <script src="/public/h/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="/public/h/js/plugins/clockpicker/clockpicker.js"></script>
+    <script src="/public/h/js/plugins/cropper/cropper.min.js"></script>
+    <script src="/public/h/js/demo/form-advanced-demo.min.js"></script>
+
+    <script src="/public/h/js/plugins/jeditable/jquery.jeditable.js"></script>
+    <script src="/public/h/js/plugins/dataTables/jquery.dataTables.js"></script>
+    <script src="/public/h/js/plugins/dataTables/dataTables.bootstrap.js"></script>
+    <script src="/public/h/js/content.min.js?v=1.0.0"></script>
+</body>
+</html>

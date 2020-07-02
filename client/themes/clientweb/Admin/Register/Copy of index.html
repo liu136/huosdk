@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/jquery-easyui-1.4.3/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/jquery-easyui-1.4.3/themes/icon.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/base.css">
+	<script type="text/javascript" src="__PUBLIC__/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/jquery-easyui-1.4.3/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/outlook2.js"></script>
+	
+	<script type="text/javascript" src="__PUBLIC__/js/dp/WdatePicker.js"></script>
+
+<script>
+	$(function(){
+		$('#dg').datagrid({
+			columns:[[
+				{field:'id',title:'id',hidden:'hidden'},
+				{field:'reg_time',title:'注册时间'},
+				{field:'username',title:'注册账号'},
+				{field:'imei',title:'imeil码'},
+				{field:'agentgame',title:'注册渠道'},
+				{field:'deviceinfo',title:'注册设备'},
+				{field:'game',title:'游戏'},
+				{field:'money',title:'累积充值金额'},
+				{field:'paycount',title:'累积充值次数'},
+				{field:'login_time',title:'最近登录时间'},
+				{field:'logincount',title:'最近登录次数'},
+				{field:'owner',title:'渠道专员'},
+				{field:'agentname',title:'渠道名称'}
+				
+			]]
+		});
+	});
+
+	//查询
+	function doSearch(){
+		$('#dg').datagrid('load',{
+			start: $('#start').val(),
+			end: $('#end').val(),
+			username: $('#username').val(),
+			imeil: $('#imeil').val(),
+			agent: $('#agent').val(),
+			gameid: $('#gameid').combobox('getValue'),
+			owner: $('#owner').val()
+		});
+	}
+	var url;
+	function editUser(urls){
+		var row = $('#dg').datagrid('getSelected');
+		if (row){
+			$('#w').window('open');
+			$('#fm').form('load',row);
+			url = urls;
+		}
+	}
+
+	function saveUser(){
+		$('#fm').form('submit',{
+			url: url,
+			onSubmit: function(){
+				return $(this).form('validate');
+			},
+			success: function(result){
+				var result = eval('('+result+')');
+				if (result.success){
+					$('#w').window('close');		// close the dialog
+					$('#dg').datagrid('reload');	// reload the user data
+					$.messager.show({
+						title: 'success',
+						msg: result.msg
+					});
+				} else {
+					$.messager.show({
+						title: 'Error',
+						msg: result.msg
+					});
+				}
+			}
+		});
+	}
+	
+	function frozenUser(urls) {
+		var row = $('#dg').datagrid('getSelected');
+		if (row){
+			$('#frozendiv').window('open');
+			$('#frozenfm').form('load',row);
+			url = urls;
+		}
+	}
+	
+	function savefrozen() {
+		$('#frozenfm').form('submit',{
+			url: url,
+			onSubmit: function(){
+				return $(this).form('validate');
+			},
+			success: function(result){
+				var result = eval('('+result+')');
+				if (result.success){
+					$('#frozendiv').window('close');		// close the dialog
+					$('#dg').datagrid('reload');	// reload the user data
+					$.messager.show({
+						title: 'success',
+						msg: result.msg
+					});
+				} else {
+					$.messager.show({
+						title: 'Error',
+						msg: result.msg
+					});
+				}
+			}
+		});
+	}
+</script>
+</head>
+<body>
+<div style="margin:5px 0;"></div>
+		<div  title="DataGrid">
+			<table id="dg" class="easyui-datagrid" style="height:480px" url="{:U('register/regList')}" toolbar="#toolbar" title="Load Data" pagination="true" singleSelect="true">		
+			</table>
+
+			<div id="toolbar" style="padding:5px;height:auto">
+				<div style="margin-bottom:5px">
+					<a href="#" class="easyui-linkbutton" iconCls="icon-edit" plain="true" onClick="editUser('{:U('register/updatePsw')}')">修改密码</a>
+					<a href="#" class="easyui-linkbutton" iconCls="icon-edit" plain="true" onClick="frozenUser('{:U('register/frozen/flag/1')}')">冻结账号</a>
+				</div>
+				
+				<div>
+					<table>
+					<tr>
+					<td>开始时间:</td> <td><input id="start" class="easyui-my97" name="start" onClick="new WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'});"/></td>
+				
+					<td>结束时间:</td> <td><input id="end" class="easyui-my97" name="end" onClick="new WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'});"></td>
+					
+					<td>账号:</td> <td><input id="username" class="easyui-textbox" type="text" name="username" style="width:110px"></td>
+					
+					<td>imeil码:</td> <td><input id="imeil" class="easyui-textbox" type="text" name="imeil" style="width:110px"></td>
+					
+					<td>渠道号:</td> <td><input id="agent" class="easyui-textbox" type="text" name="agent" style="width:110px"></td>
+					</tr>
+
+					<tr>
+					<td> 游戏: </td>
+					<td>
+					<input id="gameid" class="easyui-combobox" name="gameid" 
+							data-options="url:'{:U('Game/gameCombobox')}',
+							method:'post',
+							valueField:'appid',
+							textField:'name'" style="width:110px">
+					</td>
+					
+					<td>渠道专员: </td>
+					<td><input type="text" class="easyui-textbox" id="owner" name="owner" style="width:110px"></td>
+					</tr>
+					</table>
+					
+					<a href="#" class="easyui-linkbutton" iconCls="icon-search" onClick="doSearch()">查询</a>
+				</div>
+			</div>
+			
+			<div id="w" class="easyui-window" title="Modal Window" data-options="modal:true,closed:true" buttons="#dlg-buttons" style="width:800px;height:350px;padding:10px;">
+				<div class="easyui-layout" data-options="fit:true">
+					<div data-options="region:'center'" style="padding:10px;">
+						<form id="fm" method="post" enctype="multipart/form-data" novalidate>
+							<table>
+								<tr>
+									<td></td>
+									<td><input name="id" type="hidden"></input></td>
+								</tr>
+								<tr>
+									<td>账号:</td>
+									<td><input name="username" id="username" data-options="disabled:false" type="text"></input></td>
+								</tr>
+								<tr>
+									<td>请填写密码:</td>
+									<td><input name="password" id="password" type="password"></input><font color="red">*</font></td>
+								</tr>
+								<tr>
+									<td>请填写确认密码:</td>
+									<td><input name="chkpassword" id="chkpassword" type="password"></input><font color="red">*</font></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td><input name="action" type="hidden" value="updatepsw"></td>
+								</tr>
+								
+							</table>
+					
+							</form>
+						</div>
+						<div data-options="region:'south',border:false" style="text-align:right;padding:5px 0 0;">
+							<a href="#" class="easyui-linkbutton" iconCls="icon-ok" onClick="saveUser()">保存</a>
+							<a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onClick="javascript:$('#w').window('close');">取消</a>
+						</div>
+					</div>	
+			</div>
+			
+			
+			
+			<div id="frozendiv" class="easyui-window" title="Modal Window" data-options="modal:true,closed:true" buttons="#dlg-buttons" style="width:200px;height:150px;padding:10px;">
+				<div class="easyui-layout" data-options="fit:true">
+					<div data-options="region:'center'" style="padding:10px;">
+						<form id="frozenfm" method="post" enctype="multipart/form-data" novalidate>
+							<table>
+								<tr>
+									<td></td>
+									<td><input name="id" type="hidden"></input></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>确定冻结该账号吗？</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td><input name="action" type="hidden" value="frozenpsw"></td>
+								</tr>
+							</table>
+							
+							</form>
+						</div>
+						<div data-options="region:'south',border:false" style="text-align:right;padding:5px 0 0;">
+							<a href="#" class="easyui-linkbutton" iconCls="icon-ok" onClick="savefrozen()">保存</a>
+							<a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onClick="javascript:$('#frozendiv').window('close');">取消</a>
+						</div>
+					</div>	
+			</div>
+</div>
+</body>
+</html>

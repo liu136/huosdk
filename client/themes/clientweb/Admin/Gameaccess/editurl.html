@@ -1,0 +1,36 @@
+<admintpl file="header" />
+</head>
+<body class="J_scroll_fixed">
+	<div class="wrap jj">
+		<div class="common-form">
+		  <div class="ibox-content">
+			<form method="post" class="form-horizontal J_ajaxForm" action="{:U('Gameaccess/editurl_post')}">
+				<fieldset>
+					<div class="control-group">
+						<label class="control-label">游戏:</label>
+						<div class="controls">
+							<input type="text" class="input" name="gamename" value="{$game.gamename}" readonly>
+						</div>
+					</div>
+					
+					<div class="control-group">
+						<label class="control-label">回调地址:</label>
+						<div class="controls">
+							<input type="text" class="input" name="cpurl" value="{$game['cpurl']}">
+						</div>
+					</div>
+				</fieldset>
+				<div class="form-actions">
+				     <input type="hidden" class="input" name="id" value="{$game.id}">
+					<button type="submit"
+						class="btn btn-primary btn_submit J_ajax_submit_btn">更新</button>
+					<a class="btn" href="__URL__">返回</a>
+				</div>
+			</form>
+			</div>
+		</div>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,81 @@
+<admintpl file="header" />
+    
+    <link rel="shortcut icon" href="favicon.ico"> <link href="/public/h/css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="/public/h/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link href="/public/h/css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="/public/h/css/animate.min.css" rel="stylesheet">
+    <link href="/public/h/css/style.min862f.css?v=4.1.0" rel="stylesheet">
+	
+    <link rel="stylesheet" href="/public/h/plugins/multiselect/lib/google-code-prettify/prettify.css" />
+    <link rel="stylesheet" href="/public/h/plugins/multiselect/css/style.css" />
+</head>
+<body>
+    
+	    <div class="ibox-content">
+            <form class="form-horizontal" method="post" action="{:U('Agent/doedit_salesman')}">
+		
+			    <div class="form-group">
+                                <label class="col-sm-3 control-label">业务员名称</label>
+
+                                <div class="col-sm-8">
+                                    <input type="text" name="salename" value="{$salesinfo.salename}" autocomplete="off"><span>如有重名请用标识识别，如：张三1，张三2</span>
+                                </div>
+                </div>
+			    <div class="form-group">
+                                <label class="col-sm-3 control-label">联系电话</label>
+
+                                <div class="col-sm-8">
+                                    <input type="text" name="mobile" value="{$salesinfo.mobile}" autocomplete="off">
+                                </div>
+                </div>
+			    <div class="form-group">
+                                <label class="col-sm-3 control-label">邮箱</label>
+                                
+                                <div class="col-sm-8">
+                                    <input type="text"  name="email" value="{$salesinfo.email}" autocomplete="off">
+                                </div>
+                </div>
+            
+			    <div class="form-group">
+                                <label class="col-sm-3 control-label">地址</label>
+
+                                <div class="col-sm-8">
+                                    <input type="text" name="address" value="{$salesinfo.address}" autocomplete="off">
+                                </div>
+                </div>
+            
+			   
+			    <div class="form-actions">
+			    	<input type="hidden" name="salesid" value="{$salesinfo.id}">
+				    <button type="submit" class="btn btn-primary js-ajax-submit">添加</button>
+				    <a class="btn" href="{:U('agent/salesman')}">返回</a>
+			    </div>
+		    </form>
+        </div>
+    
+<script src="/public/h/js/plugins/cropper/cropper.min.js"></script>
+<script src="/public/h/js/content.min.js?v=1.0.0"></script>
+<script src="/public/h/js/plugins/iCheck/icheck.min.js"></script>
+<script>
+        $(document).ready(function(){$(".i-checks").iCheck({checkboxClass:"icheckbox_square-green",radioClass:"iradio_square-green",})});
+</script>
+
+<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
+<script type="text/javascript" src="/public/h/plugins/multiselect/dist/js/multiselect.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // make code pretty
+    window.prettyPrint && prettyPrint();
+
+    $('#search').multiselect({
+        search: {
+            left: '<input type="text" name="q" class="form-control" placeholder="Search..." />',
+            right: '<input type="text" name="q" class="form-control" placeholder="Search..." />',
+        }
+    });
+});
+</script>
+</body>
+</html>

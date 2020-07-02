@@ -1,0 +1,50 @@
+<admintpl file="header" />
+</head>
+<body >
+<div class="wrap js-check-wrap" >
+    <ul class="nav nav-tabs" >
+		<li class="active"><a href="{:U('Hotkey/index')}">热词设置</a></li>
+		<!-- <li class="active"><a href="{:U('Hotkey/add')}">添加热词</a></li> -->
+    </ul >
+    <form action="{:U('Hotkey/editPost')}" method="post" class="form-horizontal js-ajax-forms"
+          enctype="multipart/form-data" >
+        <div class="row-fluid" >
+            <div class="span9" >
+                <table class="table table-bordered" >
+                    <tr>
+                        <th>热词一</th >
+                        <td >
+                            <input type="text" name="key_one" value="{$items['key_one']}" placeholder="热词一" />
+                        </td >
+                    </tr>
+					<tr>
+                        <th>热词二</th >
+                        <td >
+                            <input type="text" name="key_two" value="{$items['key_two']}" placeholder="热词二" />
+                        </td >
+                    </tr>
+					<tr>
+                        <th>热词三</th >
+                        <td >
+                            <input type="text" name="key_three" value="{$items['key_three']}" placeholder="热词三" />
+                        </td >
+                    </tr>
+					<tr>
+                        <th>热词四</th >
+                        <td >
+                            <input type="text" name="key_four" value="{$items['key_four']}" placeholder="热词四" />
+                        </td >
+                    </tr>
+					
+                </table >
+            </div >
+        </div >
+        <div class="form-actions" >
+            <button class="btn btn-primary js-ajax-submit" type="submit" >修改</button >
+        </div >
+    </form >
+</div >
+<script type="text/javascript" src="__PUBLIC__/js/common.js" ></script >
+
+</body >
+</html>

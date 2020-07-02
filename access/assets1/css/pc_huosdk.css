@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+*{padding:0;margin:0;font-family:Microsoft YaHei;}
+*html{background-image:url(about:blank);background-attachment:fixed;}
+body{font-family:Microsoft YaHei;font-size:12px; background:#f3f3f3; color:#000;min-width:1140px;}
+ol,ul{list-style:none;}
+img{border:0;}
+em,i{font-style:normal}
+table{border-collapse:collapse; }
+*:focus{outline:0;}
+a{color:#333;text-decoration:none; cursor:pointer}
+a:hover{color:#ff6000; text-decoration:underline}
+.general{clear: both;overflow: hidden;width:1140px; margin:0 auto;}
+ 
+ .user_tit{margin-bottom: 20px}
+ .user_right .tab{clear: both;overflow: hidden;display: none;}
+ .user_right .tab.active{display: block;}
+
+
+
+/*用户中心*/
+.left_menu{width:240px; float:left; background:#fff; margin-top:20px;border-bottom:1px solid #dfdfdf}
+.left_menu li{width:100%;float:left;height:65px;line-height:65px;border-bottom:1px solid #e6e6e6}
+.left_menu li a{width:100%;float:left;font-size:18px;text-align:center;}
+.left_menu li a:hover{text-decoration:none}
+.left_menu li.hover a{ background:url(../img/user_libg.png) no-repeat left center;color:#ff6200}
+.left_menu li.hover,.left_menu li:hover{background: #e73c44;}
+.left_menu li.hover a,.left_menu li:hover a{color: #fff;}
+
+.user_right{width:860px;float:right;background:#fff;margin-top:20px;border-bottom:1px solid #dfdfdf; padding-bottom:100px;text-indent: 2em;}
+.user_center_top{width:100%;float:left;border-bottom:1px solid #e6e6e6;padding:30px 0;}
+.user_center_top .p1{width:100px;float:left;margin:0 30px 0 40px;display:inline;}
+.user_center_top .p1 img{width:100px;height:100px;display:block;border-radius:50%;}
+.user_center_top .p2{width:55%;float:left;color:#999;line-height:25px;}
+.user_center_top .p2 span{color:#333;display:block;font-size:22px;font-weight:bold;line-height:40px;}
+.user_center_top .p3{width:20%;float:left;margin-top:30px}
+.user_center_top .p3 a{width:106px;height:34px;line-height:34px;color:#e54c3d;float:left;border:2px solid #e54c3d;font-size:14px; text-align:center;}
+.user_center_top .p3 a:hover{color:#fff;background:#e54c3d;text-decoration:none}
+
+.user_tit{width:100%;float:left;font-size:24px;color:#333;line-height:40px;height:40px;margin-top:20px;}
+.user_tit p{margin-left:15px;padding-left: 15px;border-left: 3px solid #e73c44;}
+.user_tit p span{color:#f43f08}
+.user_c_list{width:100%;float:left;padding:15px 0 10px 0;height:480px;overflow:auto;}
+.user_c_list li{width:80px;float:left;margin:15px 0 0 26px;display:inline}
+.user_c_list li a{display:block;font-size:14px;text-align:center}
+.user_c_list li a img{width:80px;height:80px;display:block;}
+.user_c_list li a p{line-height:25px;height:25px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}

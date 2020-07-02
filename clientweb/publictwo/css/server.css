@@ -1,0 +1,23 @@
+.ser_con {
+	padding: 50px;
+	min-height: 300px;
+	background: #FFFFFF;
+	margin-top: 20px;
+}
+.ser_con > p{
+	font-size: 16px;
+	text-indent: 2em;
+	line-height: 2;
+}
+.ser_con > p.server_icon{
+	padding: 10px 0 10px 20px;
+	background: url(../img/ser_icon.png) no-repeat;
+	font-size: 20px;
+	height: 40px;
+}
+.ser_con > p.ser_icon_qq{
+	background-position:3px 5px ;
+}
+.ser_con > p.ser_icon_phone{
+	background-position:3px -62px ;
+}

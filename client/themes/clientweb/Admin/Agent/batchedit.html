@@ -1,0 +1,155 @@
+<admintpl file="header" />
+    
+    <link rel="shortcut icon" href="favicon.ico">  <link href="/public/h/css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="/public/h/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link href="/public/h/css/plugins/chosen/chosen.css" rel="stylesheet">
+    <link href="/public/h/css/plugins/cropper/cropper.min.css" rel="stylesheet">
+    <link href="/public/h/css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+
+    <link href="/public/h/css/animate.min.css" rel="stylesheet">
+    <link href="/public/h/css/style.min862f.css?v=4.1.0" rel="stylesheet">
+	
+    <link rel="stylesheet" href="/public/h/plugins/multiselect/lib/google-code-prettify/prettify.css" />
+    <link rel="stylesheet" href="/public/h/plugins/multiselect/css/style.css" />
+</head>
+<body>
+    
+        <ul class="nav nav-tabs">
+			<li ><a href="{:U('Agent/index')}">渠道列表</a></li>
+			<li><a href="{:U('user/addAgent')}" target="_self">添加渠道</a></li>
+			   <li class="active"><a href="{:U('Agent/batchedit')}" target="_self">权限批量分配</a></li>
+		</ul>
+	    <div class="ibox-content">
+            <form class="form-horizontal" method="post" action="{:U('Agent/batchedit_post')}">
+		
+			    <div class="form-group">
+                            <label class="col-sm-3 control-label">游戏:</label>
+                                 <div class="col-sm-8">
+                                    <select data-placeholder="选择游戏..." class="chosen-select" name="appid" tabindex="2">
+                                      <foreach name="games" key="k" item="vo">
+									    <option value="{$k}">{$vo}</option>
+								     </foreach>
+                                   </select>
+                            </div>
+								 
+                </div>
+							
+			    <div class="form-group">
+				<label class="col-sm-3 control-label">渠道选择</label>
+				<div class="col-sm-4">
+			    <div id="wrap" class="container" style="padding-top:10px">            
+            
+                    <div class="row">
+                        <div class="col-xs-5" style="padding-left:0px">
+						    未选择列表
+                            <select name="from[]" id="search" class="form-control" size="8" multiple="multiple">
+								
+                            </select>
+							
+                        </div>
+                
+                        <div class="col-xs-2" style="margin-top:20px">
+                            <button type="button" id="search_rightAll" class="btn btn-primary btn-block">全部选择</button>
+                            <button type="button" id="search_rightSelected" class="btn btn-default btn-block">选择<i class="glyphicon glyphicon-chevron-right"></i></button>
+                            <button type="button" id="search_leftSelected" class="btn btn-default btn-block">取消<i class="glyphicon glyphicon-chevron-left"></i></button>
+                            <button type="button" id="search_leftAll" class="btn btn-primary btn-block">全部取消</button>
+                        </div>
+                
+                        <div class="col-xs-5">
+						   已选择列表
+                            <select name="to[]" id="search_to" class="form-control" size="8" multiple="multiple">
+							    
+							</select>
+							
+                        </div>
+                    </div>
+                </div>
+                   
+				</div>
+				</div>
+				   
+			    <div class="form-actions">
+				    <button type="submit" class="btn btn-primary js-ajax-submit">{:L('SAVE')}</button>
+				    <a class="btn" href="{:U('agent/index')}">{:L('BACK')}</a>
+			    </div>
+		    </form>
+        </div>
+    
+<script src="/public/h/js/plugins/cropper/cropper.min.js"></script>
+<script src="/public/h/js/content.min.js?v=1.0.0"></script>
+    <script src="/public/h/js/content.min.js?v=1.0.0"></script>
+    <script src="/public/h/js/plugins/chosen/chosen.jquery.js"></script>
+    <script src="/public/h/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="/public/h/js/plugins/clockpicker/clockpicker.js"></script>
+    <script src="/public/h/js/content.min.js?v=1.0.0"></script>
+	
+<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
+<script type="text/javascript" src="/public/h/plugins/multiselect/dist/js/multiselect.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $(".chosen-select").chosen().change(function(){
+	     var appid = $(".chosen-select").val();
+		 
+		 $.ajax({   
+                type: "POST",  
+                dataType: "JSON",  
+                url: "{:U('Agent/noagent')}",  
+                data: "appid=" + appid,  
+                success: function(data) { 
+				    var htmlstr = "";
+					$("#search").empty();
+                    for(var o in data){
+                         htmlstr = htmlstr + "<option value='"+o+"' data-position='"+o+"'>"+data[o]+"</option>";
+                    }
+					if(htmlstr != ""){
+					   $("#search").append(htmlstr);
+					}
+					$('#search').multiselect('refresh');
+					$('#search_to').multiselect('refresh');
+                   
+                }  
+            });     
+
+        $.ajax({   
+                type: "POST",  
+                dataType: "JSON",  
+                url: "{:U('Agent/agentlist')}",  
+                data: "appid=" + appid,  
+                success: function(data) { 
+					var htmlstr = "";
+					$("#search_to").empty();
+                    for(var o in data){
+                         htmlstr = htmlstr + "<option value='"+o+"' data-position='"+o+"'>"+data[o]+"</option>";
+                    }
+					if(htmlstr != ""){
+					   $("#search_to").append(htmlstr);
+					}
+					$('#search').multiselect('refresh');
+					$('#search_to').multiselect('refresh');
+                }  
+            }); 	
+
+        $('#search').multiselect({
+          search: {
+            left: '<input type="text" name="q" class="form-control" placeholder="搜索..." />',
+            right: '<input type="text" name="q" class="form-control" placeholder="搜索..." />',
+          }
+        });			
+	 }
+	);
+	
+    // make code pretty
+    window.prettyPrint && prettyPrint();
+
+    $('#search').multiselect({
+        search: {
+            left: '<input type="text" name="q" class="form-control" placeholder="搜索..." />',
+            right: '<input type="text" name="q" class="form-control" placeholder="搜索..." />',
+        }
+    });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+#Info{background: #fff;}
+#Info .main{width:685px;float:left;background:#fff;position:relative;    padding: 0 10px;}
+#Info .main .info-tabs .info-list{display: none;}
+#Info .main .info-tabs .info-list.active{display: block;}
+#Info .main .pageWrapper{width:730px;bottom:0;margin:36px 0;text-align: center;}
+#Info .side{width:300px;float:right}
+#Info .side .gameList{width:100%;margin-top:15px}
+#Info .side a.xxzhushou-link{display:block;margin-bottom:15px}
+#Info .side a.xxzhushou-link img{display:block;width:100%;margin:0}
+#Info .indexContent .title{height:58px;box-sizing:border-box;border-bottom:1px solid #d6d6d6;padding:0 22px}
+#Info .indexContent .title a{cursor: pointer;display:inline-block;width:100px;text-align:center;line-height:56px;font-size:20px;color:#333}
+#Info .indexContent .title a.active{border-bottom:2px solid #e74c3c;color:#e74c3c}
+#Info .indexContent .title a:hover{color:#e74c3c}
+#Info .indexContent .content{}
+#Info .indexContent .content .item{display:block;padding:16px 24px;border-bottom:1px dashed #ddd;position:relative;z-index:4;transition:.3s;-ms-transition:.3s}
+#Info .indexContent .content .item:hover{background-color:#f7f7f7;box-shadow:0 0 4px #f1f1f1;z-index:5}
+#Info .indexContent .content .item.img{padding-left:224px}
+#Info .indexContent .content .item.img img{position:absolute;width:180px;height:120px;left:24px;top:20px}
+#Info .indexContent .content .item .titlePlacehoder{height:30px;line-height:30px;font-size:18px;margin-bottom:8px}
+#Info .indexContent .content .item.img .titlePlacehoder{height:auto}
+#Info .indexContent .content .item .titlePlacehoder a{font-weight:700;color:#333;font-size:18px}
+#Info .indexContent .content .item:hover .titlePlacehoder a{color:#e74c3c}
+#Info .indexContent .content .item .titlePlacehoder span{float:right;color:#b9b9b9;font-size:12px}
+#Info .indexContent .content .item.img .titlePlacehoder span{display:block;text-align:left;float:none}
+#Info .indexContent .content .item .desc{width: 630px;line-height:20px;color:#575757;min-height:60px;font-size:14px; -webkit-box-orient: vertical;-webkit-line-clamp: 3;display: -webkit-box;text-overflow: ellipsis;overflow: hidden;}
+#Info .indexContent .content .item.img .desc{width: 424px;}
+#Info .indexContent .content .item .desc a{margin-left:4px;color:#e74c3c}
+#Info .indexContent .content .item .box{position: relative;}
+#Info .indexContent .content .item .box a{margin-left: 4px;color: #e74c3c;font-size: 14px; position: absolute;right: -30px;bottom: 0;}

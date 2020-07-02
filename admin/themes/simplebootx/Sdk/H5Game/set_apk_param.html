@@ -1,0 +1,150 @@
+<admintpl file="header" />
+</head>
+<body class="J_scroll_fixed" >
+<div class="wrap js-check-wrap" >
+    <ul class="nav nav-tabs" >
+        <li ><a href="{:U('H5Game/index')}" >游戏列表</a ></li >
+        <li class="active" ><a href="#" >编辑APK参数</a ></li >
+    </ul >
+    <div class="common-form" >
+        <form method="post" class="form-horizontal js-ajax-form" action="{:U('Sdk/H5Game/set_apk_param_post')}" >
+            <fieldset >
+                <div class="control-group" >
+                    <label class="control-label" >游戏:</label >
+                    <div class="controls" >
+                        <label class="control-label" style="text-align:left" >{$games.name}</label >
+                    </div >
+                </div >
+
+                <input id="appid" name="appid" type="hidden" value="{$games.id}" >
+
+             <div class="control-group" >
+                    <label class="control-label" >包名:</label >
+                    <label>
+                    <input type="text" name="packName" id="packName" value="{$apk.package_name}" >
+                    </label>
+                    <div class="controls" ></div >
+            </div >
+            
+            
+            
+             <div class="control-group" >
+                    <label class="control-label" > 游戏ICON(1024*1024):</label >
+                    <label>
+                   	 <div class="span3" >
+                            <table class="table table-bordered" >
+                               
+                                <tr >
+                                    <td >
+                                        <div style="text-align: center;" >
+                                     
+                                               <php >$logourl = !empty($apk['icon'])?$apk['icon']:'';</php >
+                                            <input type="hidden" name="thumb" id="thumb" value="{$logourl|default=''}" >
+                                            <a href="javascript:upload_one_image('图片上传','#thumb');" >
+                                                <if condition="empty($logourl)" >
+                                                    <img src="__PUBLIC__/assets/images/default-thumbnail.png" id="thumb-preview"
+                                                         width="135" style="cursor: hand" />
+                                                    <else />
+                                                    <img src="{$logourl}" id="thumb-preview"
+                                                         width="135" style="cursor: hand" />                                    </if >
+                                            </a >
+                                            <input type="button" class="btn btn-small"
+                                                   onclick="$('#thumb-preview').attr('src','__PUBLIC__/assets/images/default-thumbnail.png');$('#thumb').val('');return false;"
+                                                   value="取消图片" >
+                                        </div >                        </td >
+                                </tr >
+                                <!--<tr >-->
+                                    <!--<td ><b >游戏网页大图(166*189)</b ></td >-->
+                                <!--</tr >-->
+                                <!--<tr >-->
+                                    <!--<td >-->
+                                        <!--<div style="text-align: center;" >-->
+                                            <!--<php >$logourl = empty($gameinfo[mobile_icon])?$game[icon]:$gameinfo[mobile_icon];</php >-->
+                                            <!--<input type="hidden" name="bigimage" id="bigimage"-->
+                                                   <!--value="{:sp_get_asset_upload_path($gameinfo[bigimage])}" >-->
+                                            <!--<a href="javascript:upload_one_image('图片上传','#bigimage');" >-->
+                                                <!--<if condition="empty($gameinfo['bigimage'])" >-->
+                                                    <!--<img src="__PUBLIC__/assets/images/default-thumbnail.png"-->
+                                                         <!--id="bigimage-preview"-->
+                                                         <!--width="135" style="cursor: hand" />-->
+                                                    <!--<else />-->
+                                                    <!--<img src="{:sp_get_asset_upload_path($gameinfo['bigimage'])}"-->
+                                                         <!--id="bigimage-preview"-->
+                                                         <!--width="135" style="cursor: hand" />-->
+                                                <!--</if >-->
+                                            <!--</a >-->
+                                            <!--<input type="button" class="btn btn-small"-->
+                                                   <!--onclick="$('#bigimage-preview').attr('src','__PUBLIC__/assets/images/default-thumbnail.png');$('#bigimage').val('');return false;"-->
+                                                   <!--value="取消图片" >-->
+                                        <!--</div >-->
+            
+                                    <!--</td >-->
+                                <!--</tr >-->
+                                <php > $single_yes=$game['category']==1?"checked":"";
+                                       $single_no=$game['category']==2?"checked":"";
+                                       $class_android=$game['classify']==1?"checked":"";
+                                       $class_other=$game['classify']==4?"checked":"";
+                                       $hot_yes=$game['is_hot']==2?"checked":"";
+                                       $hot_no=$game['is_hot']==1?"checked":"";                    </php >
+                            </table >
+                        </div >
+                  
+                    
+                    </label>
+                    
+            </div >
+            
+            
+            
+            
+            
+            
+            <div class="control-group" >
+             <label class="control-label" >--- 签名设置---</label >
+            <label class="control-label" >(不填使用后台默认配置)</label >
+            </div >
+            
+            <div class="control-group" >
+                    <label class="control-label" >keystore 文件名:</label >
+                    <label>
+                    <input type="text" name="keystore" id="keystore" value="{$apk.keystore}">
+                    </label>
+                    <div class="controls" ></div >
+            </div >
+            
+             <div class="control-group" >
+                    <label class="control-label" >别名:</label >
+                    <label>
+                    <input type="text" name="aliaskey" id="aliaskey" value="{$apk.aliaskey}">
+                    </label>
+                    <div class="controls" ></div >
+            </div >
+            
+             <div class="control-group" >
+                    <label class="control-label" ></label >
+            </div >
+            
+            
+             <div class="control-group" >
+               <div class="controls" ></div >
+            </div >
+            
+            <div class="control-group" >
+                    <label class="control-label" >keystore有效期:</label >
+                    <label>
+                    <input type="text" name="validity" id="validity" value="{$apk.validity}"> 天
+                    </label>
+                    <div class="controls" ></div >
+            </div >
+                 </fieldset >
+                        <div class="form-actions" >
+                            <button type="submit" class="btn btn-primary btn_submit js-ajax-submit" >更新</button >
+                            <a class="btn" href="{:U('H5Game/index')}" >返回</a >
+                        </div >
+        </form >
+    </div >
+</div >
+<script src="__PUBLIC__/js/common.js" ></script >
+
+</body >
+</html>

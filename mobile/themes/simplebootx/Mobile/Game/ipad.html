@@ -1,0 +1,437 @@
+<!DOCTYPE HTML>
+<html >
+<head >
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<title >{:C('BRAND_NAME')}苹果助手</title >
+<style >
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+    font-family: 微软雅黑;
+}
+
+img {
+    border: none
+}
+
+ul, li {
+    list-style: none
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+/*margin-top:75px;*/
+#main1 {
+    width: 100%;
+    height: 100%;
+}
+
+#main2 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.ios9 {
+    width: 100%;
+    height: 116px;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    background: rgba(142, 116, 78, 0.9);
+    display: none;
+}
+
+.ios9_box {
+    width: 100%;
+    height: 116px;
+    margin: auto;
+}
+
+.ios9_box .info1 {
+    width: 70%;
+    height: 28px;
+    line-height: 28px;
+    margin: auto;
+    margin-top: 25px;
+    font-size: 18px;
+    color: #FFFFFF;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center
+}
+
+.ios9_box .info2 {
+    width: 210px;
+    height: 60px;
+    margin: auto;
+}
+
+.ljxr_btn {
+    width: 92px;
+    height: 32px;
+    line-height: 32px;
+    display: block;
+    margin: auto;
+    background: #FFFFFF;
+    color: #EE4948;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block
+}
+
+.rhxr {
+    display: inline-block;
+    line-height: 57px;
+    color: #FFFFFF;
+    text-decoration: underline;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.zs {
+    color: #FFFFFF;
+}
+
+#btn1, #btn2 {
+    display: block;
+}
+
+#popweixin {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1000;
+    background: rgba(0, 0, 0, .5);
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#popweixin .tip {
+    width: 100%;
+    background: #FFFFFF;
+    z-index: 1001;
+    text-align: right;
+}
+
+.top2bottom {
+    -webkit-animation: top2bottom 1.2s ease;
+    -moz-animation: top2bottom 1.2s ease;
+    -o-animation: top2bottom 1.2s ease;
+    animation: top2bottom 1.2s ease;
+    -webkit-animation-fill-mode: backwards;
+    -moz-animation-fill-mode: backwards;
+    -o-animation-fill-mode: backwards;
+    animation-fill-mode: backwards
+}
+
+.animate-delay-1 {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s
+}
+
+#zz {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    z-index: 99;
+    background: #000000;
+    filter: alpha(opacity=60);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+    -moz-opacity: 0.6;
+    -khtml-opacity: 0.6;
+    opacity: 0.6;
+    display: none;
+    left: 0;
+    top: 0
+}
+
+#tongzhi {
+    width: 400px;
+    padding: 30px;
+    height: 380px;
+    position: fixed;
+    z-index: 9999;
+    background: #FFFFFF;
+    border-radius: 5px
+}
+
+#tongzhi h1 {
+    font-size: 38px;
+    color: #666666;
+    text-align: center;
+}
+
+#tongzhi p {
+    font-size: 24px;
+    color: #666666;
+    text-indent: 30px;
+    line-height: 1.5em;
+    margin-top: 10px;
+}
+
+#tongzhi p span {
+    color: #FF1C1C;
+}
+
+#close {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    z-index: 9999;
+    background: url('__PUBLIC__/ios/images/closed.png') no-repeat;
+    top: -15px;
+    right: -15px;
+}
+
+#new_btn {
+    width: 314px;
+    height: 54px;
+    line-height: 54px;
+    background: #5DBBE3;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    border: 3px solid #34AADC;
+    border-radius: 10px;
+    margin: auto;
+}
+
+#zhengshu {
+    color: #FFFFFF;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#zhengshu span {
+    text-decoration: underline;
+}
+
+#zhengshu span a {
+    color: #FFFFFF
+}
+
+#xinren {
+    position: absolute;
+    text-align: right
+}
+
+#xinren a {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.btn_warp {
+    width: 616px;
+    height: 65px;
+    margin: auto;
+    padding: 25px 0 40px 0;
+    text-align: center;
+    display: block
+}
+
+.pad_btn {
+    width: 273px;
+    height: 65px;
+    line-height: 65px;
+    font-size: 24px;
+    display: inline-block;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 6px;
+    margin: 0 15px;
+}
+
+.pad_btn span {
+    height: 65px;
+    line-height: 65px;
+    display: table-cell;
+    vertical-align: middle
+}
+
+@-webkit-keyframes top2bottom {
+    0% {
+        -webkit-transform: translateY(-428px);
+        opacity: .6
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        opacity: 1
+    }
+}
+
+@keyframes top2bottom {
+    0% {
+        transform: translateY(-428px);
+        opacity: .6
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1
+    }
+</style >
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/ios/css/weibo.css" />
+<script type="text/javascript" src="__PUBLIC__/ios/js/jquery.min.js" ></script >
+<script type="text/javascript" src="__PUBLIC__/ios/js/mi1.js" ></script >
+<script type="text/javascript" >
+    var ios_bb = 0;
+    function checkJump(load) {
+        $("btn").href = "{$ios_app_down_url}";
+        if (load && (ios_bb < 9 || (ua.indexOf('safari', 10) < 0 || ua.indexOf('ucbrowser', 10) > 0 || ua.indexOf('baidubrowser', 10) > 0 || ua.indexOf('mqqbrowser', 10) > 0 || ua.indexOf('qhbrowser', 10) > 0 || ua.indexOf('crios', 10) > 0 || ua.indexOf('opios', 10) > 0))) {
+            setTimeout(function () {
+                window.location = "{$ios_app_down_url}";
+            }, 300);
+        }
+        if (! load)
+            popPrompt();
+    }
+</script >
+
+</head >
+<body onload="winLoad()" >
+    <div id="content" ></div >
+    <div id="zz" ></div >
+    <div id="tongzhi" style="display:none" >
+        <div id="close" ></div >
+        <h1 >通知</h1 >
+        <p >
+            如您遇到应用闪退情况，请将您的手机时间调整为<span >2014年3月份</span >，重新打开应用后，再把系统时间调回即可。
+        </p >
+        <p style="margin-bottom:10px" >具体操作：<span >【设置】-【通用】【日期与时间】-【关闭自动设置】-【修改日期】</span ></p >
+        <a href="#" onclick="checkJump(false)" id="new_btn" >立即安装最新版苹果助手</a >
+    </div >
+    <div class="ios9" id="ios9" >
+        <div class="ios9_box" >
+            <div class="info1" id="info1" >
+                安装苹果助手后，信任下证书，即可使用。证书名称：<a href="javascript:void(0)"
+                                         class="zs" >Management And Language Training S. R. O</a >
+            </div >
+            <div class="info2" >
+                <a href="{$mobileprovision_url}" id="ljxr_btn" class="ljxr_btn" >立即信任</a >
+                <a href="{:U('Game/apptrust',array('device'=>2))}" class="rhxr nosafari" >如何信任?</a >
+            </div >
+        </div >
+    </div >
+    <div id="main" >
+        <div id='popweixin' style="display:none" >
+            <div class='tip top2bottom animate-delay-1' id="weixinimg" >
+            </div >
+        </div >
+        <div id="main1" style="display:none" >
+            <div class="btn_warp" >
+                <a href="javascript:void(0)" onclick="checkJump(false)" id="btn" class="pad_btn"
+                   style="background: #FB4748" >
+                    <div style="margin: 0 auto; display: inline-block" >
+                        <span >立即安装</span >
+                    </div >
+                </a >
+            </div >
+            <p style=" width:100%; text-align:center; color:#868686; margin-top:10px;" >© 2017{:C('BRAND_NAME')}苹果助手 ALL Right Reserved.版权所有</p >
+        </div >
+
+    </div >
+
+    <script type="text/javascript" >
+        jQuery.noConflict();
+        function banben() {
+            var uaua  = navigator.userAgent;
+            var ppgz  = /OS \d+/;
+            var pp    = new RegExp(ppgz);
+            var hqbb  = uaua.match(pp);
+            var hqbb  = hqbb.toString();
+            var shuzi = /\d+/;
+            ios_bb    = hqbb.match(shuzi);
+            ios_bb    = String(ios_bb);
+            ios_bb    = Number(ios_bb);
+            var main1 = document.getElementById("main1");
+            var main2 = document.getElementById("main2");
+            if (ios_bb >= 9) {
+                main1.style.display = "block";
+                var ios9            = document.getElementsByClassName("ios9")[0];
+                setTimeout(function () {
+                    ios9.style.display = 'block';
+                }, 2000);
+
+            }
+            else {
+                main1.style.display = "block";
+            }
+        }
+        banben();
+        function listen_screen() {
+
+            // margin-left:-150px;margin-bottom:135px
+            var s_w    = document.documentElement.clientWidth;
+            var s_h    = document.documentElement.clientHeight;
+            var s_main = document.getElementById("main");
+            var s_btn  = document.getElementById("btn");
+            var s_lxwm = document.getElementById("s_lxwm");
+
+            var s_main1    = document.getElementById("main1");
+            var s_main2    = document.getElementById("main2");
+            var s_btn1     = document.getElementById("btn1");
+            var s_btn2     = document.getElementById("btn2");
+            var s_lxwm1    = document.getElementById("s_lxwm1");
+            var s_zhengshu = document.getElementById("zhengshu");
+            var s_xinren   = document.getElementById("xinren");
+
+            var s_wpx = s_w + "px";
+            var s_hpx = s_h + "px";
+            if (Number(s_w) > Number(s_h)) {
+                s_main.style.width           = "1024px";
+                s_main.style.height          = "730px";
+                s_main1.style.width          = "1024px";
+                s_main1.style.height         = "153px";
+                //s_main.style.paddingLeft = "620px";
+                s_main1.style.paddingTop     = "577px";
+                s_main1.style.background     = "url(__PUBLIC__/ios/images/pad_bg2.jpg) no-repeat";
+                s_main1.style.backgroundSize = "1024px 577px";
+
+            }
+            else {
+                s_main.style.width           = "768px";
+                s_main.style.height          = "962px";
+                s_main1.style.width          = "768px";
+                s_main1.style.height         = "193px";
+                //s_main.style.paddingLeft = "411px";
+                s_main1.style.paddingTop     = "766px";
+                s_main1.style.background     = "url(__PUBLIC__/ios/images/pad_bg1.jpg) no-repeat";
+                s_main1.style.backgroundSize = "768px 766px";
+            }
+
+        }
+        popPrompt();
+        function winLoad() {
+            listen_screen();
+            checkJump(true);
+        }
+        window.onresize = function () {
+            listen_screen();
+        }
+        window.addEventListener("orientationchange", function () {
+            listen_screen();
+        }, false);
+    </script >
+</body >
+</html >

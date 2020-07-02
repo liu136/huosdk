@@ -1,0 +1,63 @@
+.top-bar{height:40px;line-height:40px;background:#fafafa;border-bottom:1px solid #efefef;font-size:14px;color:#575757}
+.top-bar.fixed{position:fixed;top:-41px;z-index:120;width:100%}
+.top-bar .bar-left{float:left;}
+.top-bar .bar-left span{float:left;font-size:14px}
+.top-bar .bar-left span.bar-line{margin:0 10px;color:#d9d9d9;font-size:14px}
+.top-bar .bar-left .menu{float:left;cursor:pointer;position:relative;z-index:10;font-size:14px}
+.top-bar .bar-left .menu:hover{color:#e74c3c}
+.top-bar .bar-left .menu p i{display:inline-block;width:15px;height:12px;vertical-align:middle;*vertical-align:2px;margin-left:5px;background:url(../img/headerGuiderDropIcon_2e6b8d6.png?__sprite) no-repeat}
+.top-bar .bar-left .menu .menu-c{position:absolute;width:500px;height:0;overflow:hidden;background:#fff;left:0;border:0 solid #ddd;padding:0;z-index:35;opacity:0;transition:opacity ease .3s}
+.top-bar .bar-left .menu:hover .menu-c{height:auto;border-width:1px;padding:10px;opacity:1}
+.top-bar .bar-left .menu .menu-c .area1,.menu .menu-c .area3{float:left;width:100px}
+.top-bar .bar-left .menu .menu-c .area3{width:300px}
+.top-bar .bar-left .menu .menu-c .title{height:30px;line-height:30px;color:#e74c3c;font-size:14px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;padding:0 8px}
+.top-bar .bar-left .menu .menu-c .content{border-right:1px dashed #ddd;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;padding:0 8px}
+.top-bar .bar-left .menu .menu-c .area1.last .content{border-right:0}
+.top-bar .bar-left .menu .menu-c .content a{color:#575757;display:block;height:20px;line-height:20px;font-size:14px;margin-top:10px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
+.top-bar .bar-left .menu .menu-c .area3 .content a{width:33.333%;float:left}
+.top-bar .bar-left .menu .menu-c .content a:hover{color:#e74c3c}
+.top-bar .bar-right{float:right}
+.top-bar .bar-right .loginArea{float:right;margin-right:20px;font-size:14px}
+.loginArea span.bar-line{margin:0 5px;color:#d9d9d9;cursor:auto}
+.loginArea span{cursor:pointer}
+.loginArea .loginHref{color:#e74c3c}
+.top-bar .bar-right .share{float:right;margin-top:6.5px}
+.top-bar .bar-right .share a{display:inline-block;width:30px;height:27px;margin:0 4px;float:left}
+.top-bar .bar-right .share a.icon-xl{background:url(../img/headerWechat_dd72190.png?__sprite) no-repeat;position:relative}
+.top-bar .bar-right .share a.icon-xl img.weixin-qrcode{position:absolute;top:36px;z-index:1000;width:150px;max-width:150px!important;display:none;left:-60px}
+.top-bar .bar-right .share a.icon-xl:hover .weixin-qrcode{display:inline}
+.top-bar .bar-right .share a.icon-xl span{position:absolute;top:183px;z-index:1000;width:150px;line-height:18px;padding-bottom:6px;color:#3f3f3f;background-color:#fff;text-align:center;max-width:150px!important;display:none;left:-60px}
+.top-bar .bar-right .share a.icon-xl:hover span{display:block}
+.top-bar .bar-right .share a.icon-wx{background:url(../img/homePageWeixin_7083927.png?__sprite) no-repeat}
+.top-bar .bar-right .share a.icon-qq{padding-left:22px;width:52px;line-height:24px;margin-top:2px;background:url(../img/qq-black_941d36c.png?__sprite) no-repeat}
+#header{background:#fff}
+#header .head-top{padding:20px 0}
+#header .head-top .logo{float:left}
+#header .head-top .search{float:left;margin:14px 0 0 204px}
+#header .head-top .search .hot-words{color:#919191;font-size:14px;margin-top:10px}
+#header .head-top .search .hot-words a{display:inline-block;color:#919191;margin:0 8px}
+#header .head-top .search .hot-words a:hover{text-decoration:underline}
+#header .head-top .search .search-c{width:498px;height:34px;line-height:34px;border:1px solid #e73c44;position:relative;z-index:0}
+#header .head-top .search .search-txt{width:357px;display:block;float:left;height:100%;border:0 none;color:#999;position:relative;text-indent:15px;font-size:14px}
+#header .head-top .search .search-btn{display:block;float:right;width:68px;height:100%;position:relative;border:0 none;background-image:url(../img/headerSearcher_7d8ce37.png?__sprite);background-repeat:no-repeat;background-position:6px 10px;background-color:#e73c44;cursor:pointer;text-indent:15px;color:#fff;font-family:"微软雅黑",sans-serif,"Heiti SC light","Droid Sans",Arial}
+.head-top .search .search-c .scope{display:block;float:left;height:100%;text-indent:15px;width:73px;cursor:pointer;font-size:14px;color:#333;background-color:#F3F3F3;background-image:url(../img/search-down_83d1fcf.png?__sprite);background-repeat:no-repeat;background-position:44px 14px}
+.head-top .search .search-c .scope.open{background-image:url(../img/search-up_f349ded.png?__sprite);background-position:44px 14px}
+.head-top .search .search-c .search-scopes{position:absolute;width:74px;height:0;overflow:hidden;z-index:10;transition:all .3s}
+.head-top .search .search-c .search-scopes.open{height:142px}
+.head-top .search .search-c .search-scopes li{width:100%;height:35px;line-height:35px;text-align:center;font-size:14px;border-bottom:1px solid #fff;background-color:#f3f3f3;cursor:pointer}
+.head-top .search .search-c .search-scopes .scope-hide{opacity:0;filter:alpha(opacity=0);border-bottom-width:0}
+.head-top .search .search-c .search-scopes li:hover{color:#e73c44}
+.head-top .search .search-c .search-scopes li.last{border-bottom:0}
+.head-top .search .search-txt.width-scopes{border:0 none;color:#999;position:relative;padding-left:0;font-size:14px}
+.loginArea .login_after{position:relative;z-index:111}
+.loginArea .login_after .welcome{color:#e73c44}
+.userInfo{display:none;padding-top:11px;position:absolute;left:50%;top:19px;top:18px\9\0;margin-left:-275px;width:552px}
+.userInfo .u_allow{width:23px;height:11px;position:absolute;top:1px;left:50%;margin-left:-12px;background:url(../img/allow_cbbe5f4.png?__sprite) no-repeat}
+.userInfo .userInfo_m{background:#fff;border:1px solid #ddd}
+.userInfo .userInfo_m dt,.userInfo_list li{overflow:hidden;_zoom:1}
+.userInfo .userInfo_m span{float:left;text-align:center;font-size:12px;height:45px;line-height:45px;padding:0}
+.userInfo .userInfo_m dt span{font-size:16px}
+.userInfo_m dt span,.userInfo_list li span{width:33.3333%}
+.userInfo .userInfo_m dt{background:#f5f2f2;color:#000}
+.userInfo .userInfo_m .userInfo_list li.odd{background:#fbfafa}
+.loginArea .login_after:hover .userInfo{display:block}

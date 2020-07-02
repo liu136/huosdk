@@ -1,0 +1,12 @@
+---------------------------------------------------------------
+[ 2020-04-21T17:54:06+08:00 ] 122.114.239.136 59.42.237.54 GET /index.php/index/Index/getIndexSeo
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'Rb7siFodGf'@'127.0.0.1' (using password: YES)
+---------------------------------------------------------------
+[ 2020-04-21T17:54:07+08:00 ] 122.114.239.136 59.42.237.54 GET /index.php/index/Index/getIndexData
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'Rb7siFodGf'@'127.0.0.1' (using password: YES)
+---------------------------------------------------------------
+[ 2020-04-21T17:54:07+08:00 ] 122.114.239.136 59.42.237.54 GET /index.php/index/Index/getHeader
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'Rb7siFodGf'@'127.0.0.1' (using password: YES)
+---------------------------------------------------------------
+[ 2020-04-21T17:54:07+08:00 ] 122.114.239.136 59.42.237.54 GET /index.php/index/Index/getFooter
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'Rb7siFodGf'@'127.0.0.1' (using password: YES)

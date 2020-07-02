@@ -1,0 +1,52 @@
+<admintpl file="header" />
+</head>
+<body>
+	
+	<div class="ibox-content">
+	 <form method="post" class="form-horizontal J_ajaxForm" action="{:U('Proclamation/addagent_post')}">
+		             <div class="control-group">
+                                 <label class="control-label">游戏:</label>
+                                 <div class="controls">
+                                  <input type="text" class="form-control" name="gameid" style="width:30%;" value="{$pmation.gamename}" readonly="true"> 
+
+                                  </div>
+                     </div>
+				    
+					<div class="control-group">
+                                <label class="control-label">公告标题:</label>
+
+                                <div class="controls">
+                                    <input type="text" class="form-control"  value="{$pmation.title}" name="title" style="width:30%;" readonly="true"> 
+
+                                </div>
+                     </div>
+					<div class="control-group">
+					<label class="control-label">渠道名称:</label>
+
+                                 <div class="radio i-checks">
+									  <foreach name="agentlist" item="vo">
+								       <label> <input type="checkbox" name="agentname[]"  value="{$vo.agentname}"   
+										<?php
+											if ($vo['ischeack'] >0) {
+												echo "checked='checked'";
+											} 
+											?>							
+									   id="active_true"> <i></i>{$vo.agentnicename}</label>   
+										&nbsp;&nbsp;
+									  </foreach>
+                                 </div>
+                                
+					
+					</div>
+				
+				<div class="form-actions">
+					<input type="hidden" name="pid" value="{$pmation.id}">
+					<button type="submit"
+						class="btn btn-primary btn_submit J_ajax_submit_btn">保存</button>
+					<a class="btn" href="__URL__">返回</a>
+				</div>
+			</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

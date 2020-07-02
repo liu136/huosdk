@@ -1,0 +1,220 @@
+{
+    "game_info": {
+        "game_name": "龙之谷",
+        "game_icon": "/upload/20170324/58d4cdb49b926.png",
+        "app_id": 362611,
+        "type": [
+            "角色扮演",
+            "逃脱",
+            "赛车",
+            "公益服",
+            "新游",
+            "热门"
+        ],
+        "status": 2,
+        "down_cnt": 0,
+        "version": "1.0",
+        "ios_url": "",
+        "android_url": "http://down.2Lyx.com/d.php?fn=lzg_362611/lzg_362611.apk",
+        "game_desc": "《龙之谷》手游是一款由腾讯运营，以端游《龙之谷》为故事背景制作的3DARPG手游。游戏原汁原味复刻了端游的剧情、世界观，带你重回记忆中的阿尔特里亚，重现最激爽的3D无锁定战斗，给你畅快的指尖战斗体验！和小伙伴一起组队屠龙，更有竞技场可以一决高下，社交、公会系统让你再续前缘，重新找回当年的好友！",
+        "image": "null",
+        "size": "",
+        "game_shots":[
+            "/upload/20170329/58db213637923.jpg",
+            "/upload/20170329/58db213b5c439.jpg",
+            "/upload/20170329/58db21413392f.jpg",
+            "/upload/20170329/58db214957169.jpg",
+            "/upload/20170329/58db214ee9681.jpg"
+        ]
+    },
+    "server_list": [
+        {
+            "type": "1,18,36,37,39,40",
+            "start_time": "02-28 00:00",
+            "app_id": 2,
+            "game_name": "暗黑黎明2",
+            "status": "开服",
+            "ios_url": "",
+            "android_url": "http://down.2Lyx.com/d.php?fn=tlbb_2/tlbb_2.apk",
+            "icon": "/upload/20170324/58d4d17bb9ec2.png",
+            "game_type": "热门"
+        },
+        {
+            "type": "1,37,39,40",
+            "start_time": "03-01 11:30",
+            "app_id": 8,
+            "game_name": "御剑情缘",
+            "status": "预告",
+            "ios_url": "",
+            "android_url": "http://down.2lyx.com/d.php?fn=yjqy_8/yjqy_8.apk",
+            "icon": "/upload/20170324/58d4d0bfcb515.png",
+            "game_type": "热门"
+        },
+        {
+            "type": "37,39,40",
+            "start_time": "02-28 15:32",
+            "app_id": 1,
+            "game_name": "demo",
+            "status": "开服",
+            "ios_url": null,
+            "android_url": "43214",
+            "icon": "/upload/20170324/58d4d0966eb2e.png",
+            "game_type": "热门"
+        },
+        {
+            "type": "1",
+            "start_time": "02-28 16:00",
+            "app_id": 117,
+            "game_name": "坦克传奇OL",
+            "status": "开服",
+            "ios_url": "",
+            "android_url": "http://down.2Lyx.com/d.php?fn=tkcq_117/tkcq_117.apk",
+            "icon": "/upload/20170324/58d4cab2c261d.jpg",
+            "game_type": "角色扮演"
+        },
+        {
+            "type": "1",
+            "start_time": "03-01 00:00",
+            "app_id": 117,
+            "game_name": "坦克传奇OL",
+            "status": "预告",
+            "ios_url": "",
+            "android_url": "http://down.2Lyx.com/d.php?fn=tkcq_117/tkcq_117.apk",
+            "icon": "/upload/20170324/58d4cab2c261d.jpg",
+            "game_type": "角色扮演"
+        },
+        {
+            "type": "1",
+            "start_time": "03-30 00:00",
+            "app_id": 117,
+            "game_name": "坦克传奇OL",
+            "status": "预告",
+            "ios_url": "",
+            "android_url": "http://down.2Lyx.com/d.php?fn=tkcq_117/tkcq_117.apk",
+            "icon": "/upload/20170324/58d4cab2c261d.jpg",
+            "game_type": "角色扮演"
+        },
+        {
+            "type": "1,39,40",
+            "start_time": "03-24 10:27",
+            "app_id": 29,
+            "game_name": "妹型杀器",
+            "status": "预告",
+            "ios_url": "",
+            "android_url": " http://down.2Lyx.com/d.php?fn=mxsq_29/mxsq_29.apk",
+            "icon": "/upload/20170324/58d4d081217f3.png",
+            "game_type": "热门"
+        },
+        {
+            "type": "37,39,40",
+            "start_time": "03-30 15:58",
+            "app_id": 1,
+            "game_name": "demo",
+            "status": "预告",
+            "ios_url": null,
+            "android_url": "43214",
+            "icon": "/upload/20170324/58d4d0966eb2e.png",
+            "game_type": "热门"
+        },
+        {
+            "type": "1,18,36,37,39,40",
+            "start_time": "03-31 15:59",
+            "app_id": 2,
+            "game_name": "暗黑黎明2",
+            "status": "预告",
+            "ios_url": "",
+            "android_url": "http://down.2Lyx.com/d.php?fn=tlbb_2/tlbb_2.apk",
+            "icon": "/upload/20170324/58d4d17bb9ec2.png",
+            "game_type": "热门"
+        },
+        {
+            "type": "37,39,40",
+            "start_time": "03-29 15:59",
+            "app_id": 32,
+            "game_name": "天下荣耀",
+            "status": "预告",
+            "ios_url": null,
+            "android_url": "321321",
+            "icon": "/upload/20170324/58d4d2011835d.png",
+            "game_type": "热门"
+        },
+        {
+            "type": "37,39,40",
+            "start_time": "03-30 16:23",
+            "app_id": 1,
+            "game_name": "demo",
+            "status": "预告",
+            "ios_url": null,
+            "android_url": "43214",
+            "icon": "/upload/20170324/58d4d0966eb2e.png",
+            "game_type": "热门"
+        }
+    ],
+    "gift_info": [],
+    "gift_count": 0,
+    "post_news": [],
+    "post_news_count": 0,
+    "post_stragetys": [],
+    "post_stragetys_count": 0,
+    "game_like": [
+        {
+            "app_id": 2,
+            "game_name": "暗黑黎明2",
+            "game_icon": "/upload/20170324/58d4d17bb9ec2.png"
+        },
+        {
+            "app_id": 8,
+            "game_name": "御剑情缘",
+            "game_icon": "/upload/20170324/58d4d0bfcb515.png"
+        },
+        {
+            "app_id": 9,
+            "game_name": "全民大主宰",
+            "game_icon": "/upload/20170324/58d4d353bc1e8.png"
+        },
+        {
+            "app_id": 12,
+            "game_name": "沙巴克传奇",
+            "game_icon": "/upload/image/1486460184.png"
+        },
+        {
+            "app_id": 18,
+            "game_name": "我叫MT3",
+            "game_icon": "/upload/20170324/58d4d0644f7b3.png"
+        },
+        {
+            "app_id": 19,
+            "game_name": "神魔圣域",
+            "game_icon": "/upload/image/1477751507.png"
+        },
+        {
+            "app_id": 25,
+            "game_name": "魔兽永恒",
+            "game_icon": "/upload/20170324/58d4d160aa686.jpg"
+        },
+        {
+            "app_id": 29,
+            "game_name": "妹型杀器",
+            "game_icon": "/upload/20170324/58d4d081217f3.png"
+        }
+    ],
+    "game_comment": {
+        "game_comment": {
+            "game_avg_socre": "3.2",
+            "comment_star": {
+                "1": "56%",
+                "2": "0%",
+                "3": "0%",
+                "4": "0%",
+                "5": "44%"
+            },
+            "game_cates": [
+                "画面超赞",
+                "运行流畅",
+                "动作带感",
+                "音效很棒"
+            ]
+        }
+    },
+    "member_comment": []
+}

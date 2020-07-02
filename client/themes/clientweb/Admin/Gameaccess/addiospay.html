@@ -1,0 +1,64 @@
+<admintpl file="header" />
+<link href="/public/h/css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="/public/h/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link href="/public/h/css/plugins/chosen/chosen.css" rel="stylesheet">
+    <link href="/public/h/css/plugins/cropper/cropper.min.css" rel="stylesheet">
+
+    <link href="/public/h/css/animate.min.css" rel="stylesheet">
+    <link href="/public/h/css/style.min862f.css?v=4.1.0" rel="stylesheet">
+	
+    <link rel="stylesheet" href="/public/h/plugins/multiselect/lib/google-code-prettify/prettify.css" />
+    <link rel="stylesheet" href="/public/h/plugins/multiselect/css/style.css" />
+</head>
+<body class="J_scroll_fixed">
+    <ul class="nav nav-tabs">
+		    <li ><a href="{:U('Gameaccess/iospay')}">版本支付列表</a></li>
+			<li class="active"><a href="{:U('Gameaccess/addiospay')}">添加版本支付</a></li>
+			
+		</ul>
+	    <div class="ibox-content">
+            <form class="form-horizontal" method="post" id="fm" action="{:U('Gameaccess/addiospay_post')}">
+		
+			    <div class="form-group">
+                            <label class="col-sm-3 control-label">游戏:</label>
+                            <div class="col-sm-8">
+                                    <select data-placeholder="选择游戏..." class="chosen-select" name="appid" tabindex="2">
+                                      <foreach name="games" key="k" item="vo">
+									    <option value="{$k}">{$vo}</option>
+								     </foreach>
+                                   </select>
+                            </div>
+								 
+                </div>
+				
+				<div class="form-group">
+                        <label class="col-sm-3 control-label">版本号:</label>
+
+                        <div class="col-sm-8">
+                                <input type="text" class="form-control" name="versions" placeholder="请输入版本" autocomplete="off">
+                        </div>
+                </div>
+				
+				<div class="form-actions">
+				    <button type="submit"
+						       class="btn btn-primary btn_submit J_ajax_submit_btn" id='save'>保存</button>
+				    <a class="btn" href="{:U('Gameaccess/iospay')}">{:L('BACK')}</a>
+			    </div>
+		     </form>
+        </div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	<script src="/public/h/js/plugins/chosen/chosen.jquery.js"></script>
+    <script src="/public/h/js/content.min.js?v=1.0.0"></script>
+    <script src="/public/h/js/plugins/chosen/chosen.jquery.js"></script>
+    <script src="/public/h/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+    <script src="/public/h/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="/public/h/js/plugins/clockpicker/clockpicker.js"></script>
+    <script src="/public/h/js/plugins/cropper/cropper.min.js"></script>
+    <script src="/public/h/js/demo/form-advanced-demo.min.js"></script>
+
+    <script src="/public/h/js/plugins/jeditable/jquery.jeditable.js"></script>
+    <script src="/public/h/js/plugins/dataTables/jquery.dataTables.js"></script>
+    <script src="/public/h/js/plugins/dataTables/dataTables.bootstrap.js"></script>
+    <script src="/public/h/js/content.min.js?v=1.0.0"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<admintpl file="header" />
+</head>
+<body class="J_scroll_fixed">
+	<div class="wrap jj">
+		<div class="common-form">
+			<form method="post" class="form-horizontal J_ajaxForm" action="{:U('Member/editAPP_post')}">
+				<fieldset>
+
+					<div class="control-group">
+						<label class="control-label">账号:</label>
+						<div class="controls">
+							<input type="text" class="input" name="username" value="{$username}" readonly>
+						</div>
+					</div>
+					<div class="control-group" >
+						<label class="control-label">密码:</label>
+						<div class="controls">
+							<input type="password" class="input" name="password" value="">
+						</div>
+					</div>
+					
+				</fieldset>
+				<div class="form-actions">
+					<input type="hidden" name="id" value="{$id}" />
+					<button type="submit"
+						class="btn btn-primary btn_submit J_ajax_submit_btn">更新</button>
+					<a class="btn" href="{:U('Member/useraccess')}">返回</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

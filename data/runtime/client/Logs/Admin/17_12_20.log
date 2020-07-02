@@ -1,0 +1,8 @@
+[ 2017-12-20T21:28:16+08:00 ] 218.19.99.96 /Main/index.html
+ERR: 1356:View 'db_sdk_2.c_tagentgamepayview' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them
+ [ SQL语句 ] : SHOW COLUMNS FROM `db_sdk_2`.`c_tagentgamepayview`
+
+[ 2017-12-20T21:28:31+08:00 ] 218.19.99.96 /Main/index.html
+ERR: 1356:View 'db_sdk_2.c_tagentgamepayview' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them
+ [ SQL语句 ] : SHOW COLUMNS FROM `db_sdk_2`.`c_tagentgamepayview`
+

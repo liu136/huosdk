@@ -1,0 +1,26 @@
+.main{
+	min-height: 600px;
+}
+.box_lq{
+	width: 720px;
+}
+.lb_js{
+	width: 100%;
+	margin: 0;
+	position: relative;
+}
+.lb_js ul{
+	float: none;
+}
+.lb_js ul li{
+	float: none;
+}
+.an1{
+	float: none;
+	position: absolute;
+	right: 90px;
+	top:35px;
+}
+.r_240{
+	margin: 0;
+}

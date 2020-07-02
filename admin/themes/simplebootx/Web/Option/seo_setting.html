@@ -1,0 +1,55 @@
+<admintpl file="header" />
+</head>
+<body >
+<div class="wrap js-check-wrap" >
+
+    <form method="post" class="js-ajax-form" action="{:U('Link/listorders')}" >
+        <!--<div class="table-actions" >-->
+            <!--<button class="btn btn-primary btn-small js-ajax-submit" type="submit" >{:L('SORT')}</button >-->
+        <!--</div >-->
+        <php >$status=array("1"=>L('DISPLAY'),"0"=>L('HIDDEN'));</php >
+        <table class="table table-hover table-bordered table-list" >
+            <thead >
+            <tr >
+
+                <th width="200" >设置名</th >
+                <th >设置值</th >
+                <th width="120" >{:L('ACTIONS')}</th >
+            </tr >
+            </thead >
+            <tbody >
+
+            <tr >
+                <td >标题(title)</td >
+                <td >{$data.option_value.title}</td >
+                <td >
+                    <a href="{:U('Option/seo_edit',array('name'=>'title','value'=>$data['option_value']['title']))}" >{:L('EDIT')}</a >
+                </td >
+            </tr >
+
+            <tr >
+                <td >关键字(keywords)</td >
+                <td >{$data.option_value.keywords}</td >
+                <td >
+                    <a href="{:U('Option/seo_edit',array('name'=>'keywords','value'=>$data['option_value']['keywords']))}" >{:L('EDIT')}</a >
+                </td >
+            </tr >
+
+
+            <tr >
+                <td >描述(description)</td >
+                <td >{$data.option_value.description}</td >
+                <td >
+                    <a href="{:U('Option/seo_edit',array('name'=>'description','value'=>$data['option_value']['description']))}" >{:L('EDIT')}</a >
+                </td >
+            </tr >
+
+            </tbody >
+
+        </table >
+
+    </form >
+</div >
+<script src="__PUBLIC__/js/common.js" ></script >
+</body >
+</html>

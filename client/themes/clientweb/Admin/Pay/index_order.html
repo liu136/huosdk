@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/jquery-easyui-1.4.3/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/jquery-easyui-1.4.3/themes/icon.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/base.css">
+	<script type="text/javascript" src="__PUBLIC__/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/jquery-easyui-1.4.3/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/outlook2.js"></script>
+	
+	<script type="text/javascript" src="__PUBLIC__/js/dp/WdatePicker.js"></script>
+<script>
+	var myview = $.extend({}, $.fn.datagrid.defaults.view, {
+		renderFooter: function(target, container, frozen){
+		var opts = $.data(target, 'datagrid').options;
+		var rows = $.data(target, 'datagrid').footer || [];
+		var fields = $(target).datagrid('getColumnFields', frozen);
+		var table = ['<table class="datagrid-ftable" cellspacing="0" cellpadding="0" border="0"><tbody>'];
+		 
+		for(var i=0; i<rows.length; i++){
+			var styleValue = opts.rowStyler ? opts.rowStyler.call(target, i, rows[i]) : '';
+			var style = styleValue ? 'style="' + styleValue + '"' : '';
+			table.push('<tr class="datagrid-row" datagrid-row-index="' + i + '"' + style + '>');
+			table.push(this.renderRow.call(this, target, fields, frozen, i, rows[i]));
+			table.push('</tr>');
+		}
+		 
+		table.push('</tbody></table>');
+		$(container).html(table.join(''));
+		}
+	});
+	$(function(){
+	$(".datagrid-view .datagrid-view2 .datagrid-body").height(249);
+	var flag = $("#flag").val();
+		$('#dg').datagrid({
+			view:myview,
+			showFooter : true,
+			
+			rowStyler: function(index,row){
+				if (row.orderid == '充值总金额'){
+					return 'background-color:#6293BB;color:#fff;font-weight:bold;';
+				}
+			}
+		});
+	});
+
+	//查询
+	function doSearch(){
+		var flag = $("#flag").val();
+			$('#dg').datagrid('load',{
+				start: $('#start').val(),
+				end: $('#end').val(),
+				username: $('#username').val(),
+				orderid: $('#orderid').val(),
+				agent: $('#agent').val(),
+				paytype: $('#paytype').combobox('getValue'),
+				gameid: $('#gameid').combobox('getValue'),
+				status: $('#status').combobox('getValue'),
+				kuaisu: $('#kuaisu').combobox('getValue'),
+				regagent: $('#regagent').val(),
+				regagentname: $('#regagentname').val(),
+				owner: $('#owner').val()
+			});
+			
+	}
+	
+	function check() {
+		if (confirm("确定要结算？")) {
+			$("#light").show();
+			$("#fade").show();
+		} else {
+			return false;
+		}
+	}
+	
+</script>
+</head>
+<body>
+<div style="margin:5px 0;"></div>
+		<div  title="DataGrid">
+			<table id="dg" class="easyui-datagrid" style="height:505px" url="{:U('pay/indexList')}" toolbar="#toolbar" title="Load Data" pagination="true">
+				<thead>
+					<tr>
+						<if condition="$flag eq 2">
+						<th field="ck" checkbox="true"></th>
+						</if>
+						<th field="orderid" align="left">订单号</th>
+						<th field="game" align="left">游戏</th>
+						<th field="username" align="left">账号</th>
+						<th field="amount" align="left">金额</th>
+						<th field="status" align="left">状态</th>
+						<th field="serverid" align="left">游戏区服</th>
+						<th field="create_time" align="left">时间</th>
+						<th field="payname" align="left">充值方式</th>
+						<th field="agent" align="left">充值渠道号</th>
+						<th field="agentname" align="left">充值渠道名称</th>
+						<th field="regagent" align="left">注册渠道名称</th>
+						<th field="owner" align="left">渠道专员</th>
+					</tr>
+				</thead>
+			</table>
+			<div id="toolbar" style="padding:5px;height:auto">
+				<if condition="$flag eq 2">
+				<div style="margin-bottom:5px">
+					<a class="easyui-linkbutton" id="downloads" iconCls="icon-down" plain="true" href="{:U('pay/indexList/downloads/1')}">点击下载</a>
+				</div>
+				</if>
+				<table>
+					<tr>
+					<td>开始时间:</td>
+					<td><input id="start" class="easyui-my97" name="start" 
+					data-options="disabled:false,startDate:'%y-%M-%d '" datefmt="yyyy-MM-dd "  style="width:135px" onClick="new WdatePicker({dateFmt:'yyyy-MM-dd '});"></td>
+				
+					<td>结束时间:</td> <td><input id="end" class="easyui-my97" name="end" 
+					data-options="disabled:false,startDate:'%y-%M-%d '" datefmt="yyyy-MM-dd " style="width:135px" onClick="new WdatePicker({dateFmt:'yyyy-MM-dd'});"></td>
+					<td>订单号:</td> <td><input id="orderid" class="easyui-textbox" type="text" name="imeil" style="width:135px"></td>
+					<td>游戏:</td>
+					<td><input id="gameid" class="easyui-combobox" name="gameid" data-options="url:'{:U('Game/gameCombobox')}', method:'post',valueField:'appid',textField:'name',panelHeight:'auto'" style="width:135px"></td>
+					</tr>
+					<tr>
+					<td>充值账号:</td> <td><input id="username" class="easyui-textbox" type="text" name="username" style="width:135px"></td>
+					<td>充值状态:</td>
+					<td><select class="easyui-combobox" id="status" style="width:135px;">
+						<option value="3" selected>请选择支付状态</option>
+						<option value="0" >待支付</option>
+						<option value="1" >支付成功</option>
+						<option value="2" >支付失败</option>
+						</select>
+						</td>
+					
+					<td>快速查询:
+					<td><select class="easyui-combobox" id="kuaisu" style="width:135px;">
+						<option value="0" selected>请选择快速时间</option>
+						<option value="1">今天</option>
+						<option value="2">昨天</option>
+						<option value="3">前天</option>
+						<option value="4">近7天</option>
+						<option value="5">本月</option>
+						<option value="6">上月</option>
+						<option value="7">今年</option>
+						<option value="8">去年</option>
+					</select></td>
+						<td>充值方式:</td>
+						<td>
+							<input id="paytype" class="easyui-combobox" name="paytype" data-options="url:'{:U('pay/getPaytype')}', method:'post',valueField:'payname',textField:'realname',panelHeight:'auto'" style="width:135px">
+						</td>
+					</tr>
+					<tr>
+						<!--td>充值渠道号:</td> <td><input id="agent" class="easyui-textbox" type="text" name="agent" style="width:135px"></td-->
+						<td>注册渠道号</td>
+						<td><input id="regagent" class="easyui-textbox" type="text" name="regagent" style="width:135px"></td>
+						<!--td>充值渠道名称:</td> <td><input id="payagentname" class="easyui-textbox" type="text" name="payagentname"  style="width:135px"></td-->
+						<td>注册渠道名称:</td> <td><input id="regagentname" class="easyui-textbox" type="text" name="regagentname"  style="width:135px"></td>
+						<td>渠道专员:</td> <td><input id="owner" class="easyui-textbox" type="text" name="owner"  style="width:135px"></td>
+						
+					</tr>
+					<tr>
+						<td><a href="#" class="easyui-linkbutton" iconCls="icon-search" onClick="doSearch()">查询</a></td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<input type="hidden" id="flag" value="<{$flag}>">	
+
+<div id="fade" class="black_overlay"></div>
+</body>
+</html>

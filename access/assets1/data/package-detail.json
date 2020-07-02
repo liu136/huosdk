@@ -1,0 +1,32 @@
+{
+    "gift_info":[
+        {"game_name":"无敌战神", "game_icon":"http://img.guopan.cn/2017-02-27/1488163135775.png","gift_title":"新手礼包","remain":"256", "remain_bfb":"25.6%","start_time":"2017-3-7 17:27:07","end_time":"2018-3-7 17:27:24","gift_content":"复活圣水*5、绑定元宝*500、30W金币、传送石*10、小人参血灵*2、攻击药水*5、防御药水*5","remark":"游戏内点击【福利】→【礼包激活】输入正确礼包码兑换使用"}
+    ],
+    "gift_relation":[
+        {"gift_id":1,"game_icon":"http://img.guopan.cn/2016-02-02/AZIOS_1.png","gift_title":"新手礼包","remain_bfb":"88.5%"},
+        {"gift_id":1,"game_icon":"http://img.guopan.cn/2016-02-02/AZIOS_1.png","gift_title":"新手礼包","remain_bfb":"88.5%"},
+        {"gift_id":1,"game_icon":"http://img.guopan.cn/2016-02-02/AZIOS_1.png","gift_title":"新手礼包","remain_bfb":"88.5%"},
+        {"gift_id":1,"game_icon":"http://img.guopan.cn/2016-02-02/AZIOS_1.png","gift_title":"新手礼包","remain_bfb":"88.5%"},
+        {"gift_id":1,"game_icon":"http://img.guopan.cn/2016-02-02/AZIOS_1.png","gift_title":"特权礼包","remain_bfb":"88.5%"},
+        {"gift_id":1,"game_icon":"http://img.guopan.cn/2016-02-02/AZIOS_1.png","gift_title":"特权礼包","remain_bfb":"88.5%"},
+        {"gift_id":1,"game_icon":"http://img.guopan.cn/2016-02-02/AZIOS_1.png","gift_title":"特权礼包","remain_bfb":"88.5%"},
+        {"gift_id":1,"game_icon":"http://img.guopan.cn/2016-02-02/AZIOS_1.png","gift_title":"特权礼包","remain_bfb":"88.5%"}
+    ],
+    "game_info":[{"app_id":1,"game_name":"无敌战神","game_type":"角色","game_desc":"《无敌战神》秉承传奇经典设置，力求带给玩家原汁原味的传奇体验。游戏当中的人物、怪物均采用全新设计的高品质模型，动作更为自然，形象精致生动;游戏场景精美宏大，音效清晰逼真，极具代入感;华丽的技能和优良的操作手感带来极致的战斗体验","android_down_url":"http://www.guopan.cn/dede/appload.php?pt=android&type=101&special=wudizhanshen","ios_down_url":"http://www.guopan.cn/dede/appload.php?pt=android&type=101&special=wudizhanshen"}],
+    "game_news":[
+        {"post_id":10065,"post_title":"无敌战神好玩吗？无敌战神玩法攻略介绍"},
+        {"post_id":10065,"post_title":"无敌战神好玩吗？无敌战神玩法攻略介绍"},
+        {"post_id":10065,"post_title":"无敌战神好玩吗？无敌战神玩法攻略介绍"},
+        {"post_id":10065,"post_title":"无敌战神好玩吗？无敌战神玩法攻略介绍"},
+        {"post_id":10065,"post_title":"无敌战神好玩吗？无敌战神玩法攻略介绍"},
+        {"post_id":10065,"post_title":"无敌战神好玩吗？无敌战神玩法攻略介绍"},
+        {"post_id":10065,"post_title":"无敌战神好玩吗？无敌战神玩法攻略介绍"},
+        {"post_id":10065,"post_title":"无敌战神好玩吗？无敌战神玩法攻略介绍"},
+        {"post_id":10065,"post_title":"无敌战神好玩吗？无敌战神玩法攻略介绍"},
+        {"post_id":10065,"post_title":"无敌战神好玩吗？无敌战神玩法攻略介绍"},
+        {"post_id":10065,"post_title":"无敌战神好玩吗？无敌战神玩法攻略介绍"},
+        {"post_id":10065,"post_title":"无敌战神好玩吗？无敌战神玩法攻略介绍"},
+        {"post_id":10065,"post_title":"无敌战神好玩吗？无敌战神玩法攻略介绍"},
+        {"post_id":10065,"post_title":"无敌战神好玩吗？无敌战神玩法攻略介绍"}
+    ]
+}

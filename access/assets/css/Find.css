@@ -1,0 +1,71 @@
+li{list-style:none;}
+.middle{width: 1100px;margin: 0 auto;color: #333;}
+.Find{margin-top: 0px;padding-bottom: 50px;background-color: #fff;}
+.Find ul.kind {/*background:#fdfcfb ;*/padding-left: 0px;border-bottom: 2px solid #E73C44;}
+.Find ul.kind  li{clear: both;overflow:hidden;border-bottom: 1px solid #d5d5d5;padding-bottom: 15px;padding-left: 20px;padding-right: 30px;width: 1050px;padding-top: 15px;}
+.Find ul.kind  li b{color: #E73C44;display: block;float: left;width: 50px;margin-top: 10px;}
+.Find ul.kind  li a{line-height: 20px;height: 20px;display: inline-block;padding: 5px 13px;cursor: pointer;margin: 0 4px;white-space: nowrap;}
+.Find ul.kind  li div{float: left;width: 1000px;line-height: 40px;}
+.Find ul.kind li a.all,.Find ul.kind  li a:hover{padding: 5px 13px;border-radius: 5px;background: #e73c44;color: #fff;}
+.Find .zui p.title{padding: 8px 10px;border-bottom: 2px solid #D5D5D5;position: relative;height: 30px;}
+.Find .zui p.title a {cursor: pointer;border-bottom: 3px solid transparent;display: inline-block;padding-bottom: 20px;position: absolute;bottom: -1px;width: 65px;text-align: center;font-size: 16px;}
+.Find .zui p.title a.active,.Find .zui p.title a:hover{color: #E73C44;font-size: 16px;border-bottom: 3px solid #E73C44;}
+.Find .zui p.title a.two{left: 75px;}
+.Find .zui .tabs {margin-top: 30px;}
+.Find .zui .tabs .content{clear: both;overflow: hidden;display: none;}
+.Find .zui .tabs .content.active{display: block;}
+.Find .zui .content ul{clear: both;overflow: hidden;}
+.Find .zui .content li{height: 205px;border-bottom: 1px dashed #D5D5D5;padding-bottom: 20px;margin-bottom: 20px;float: left;width: 20%;text-align: center;font-size: 14px;color: #666;line-height: ;}
+.Find .zui .content li:hover .button{background: #E73C44;color: #fff;}
+.Find .zui .content li:hover img{transform: scale(1.05);}
+.Find .zui .content li img{border-radius: 14px;transition: transform .2s;}
+.Find .zui .content li h2{font-size: 16px;margin: 0;}
+.Find .zui .content li p{margin-top: 5px;margin-bottom: 0px;}
+.Find .zui .content li span{cursor: pointer;}
+.Find .zui .content li .button{font-size: 16px;cursor: pointer;color: #E73C44;text-align: center;width: 80px;height: 30px;line-height: 30px;border: 1px solid #E73C44;display: block;border-radius: 5px;margin: 0 auto;}
+.Find .zui .content li .button:hover{background: #E73C44;color: #fff;}
+.Find .page{text-align: center;}
+.Find .page p{display: inline-block;margin: 0 auto;height: 32px;}
+.Find .page a{cursor: pointer;padding: 8px 12px;color: #333;background: #D5D5D5;margin: 0 1px;}
+.Find .page a:hover,.Find .page a.active{color: #fff;background: #E73C44;}
+
+
+
+
+
+
+
+/*************************************公益服******************************************/
+li{list-style: none;}
+.Find.common .banner{position: relative;width: 100%;height: 460px;overflow: hidden;}
+.Find.common .banner .prev,.next{transition: all 0.5s; font-family: "宋体";font-size: 140px;font-weight: bold;line-height: 50px;text-align:center;color: #fff;position: absolute;width: 30px; height: 50px;opacity:0;top: 215px;z-index: 10;cursor: pointer;}
+.Find.common .prev{left: 0px;}
+.Find.common .next{right: 0px;}
+.Find.common .banner a.prev:hover{opacity: 0.9;color: #fff;}
+.Find.common .banner a.next:hover{opacity: 0.9;color: #fff;}
+.Find.common .banner:hover .prev{left: 200px;opacity: 0.4;}
+.Find.common .banner:hover .next{right: 200px;opacity: 0.4;}
+.Find.common .banner .img{position: absolute;height: 460px;width: 100%;top: 0;left: 0;}
+.Find.common .banner .img li{position: absolute;width: 100%;height: 460px;overflow: hidden;}
+.Find.common .banner .img li a{width: 1920px; left: 50%;margin-left: -960px;position: absolute;}
+.Find.common .port{position: absolute;bottom: 20px;text-align: center;width: 100%;}
+.Find.common .port ol{clear: both;overflow: hidden;display: inline-block;*display: inline;*zoom: 1;}
+.Find.common .port li{cursor: pointer;margin: 0 4px;background: #8d8286;float: left;width: 15px; height: 15px;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;-o-border-radius: 50%;-ms-border-radius:50%;}
+.Find.common .port li.default{background: #d53d3c;}
+
+
+.Find .zui .tabs{margin-top: 0;} 
+.Find .zui .tabs .content{padding-top: 5px;}
+.Find .zui .content li{transition: all .2s;padding-top: 30px;width: 19.9%;}
+.Find .zui .content li:hover{padding-top: 34px;transform: translateY(-2px);box-shadow: 1px 1px 6px #a0a0a0;padding-top: 30px;position:relative}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,141 @@
+<admintpl file="header" />
+
+</head>
+<body class="J_scroll_fixed" >
+<div class="wrap js-check-wrap" >
+    <ul class="nav nav-tabs" >
+        <li class="active" ><a href="#" target="_self" >游戏版本强更控制</a ></li >
+        <!--<li><a href="{:U('Agent/Agent/add')}" target="_self">添加渠道</a></li>-->
+    </ul >
+    <form class="well form-search" method="get" action='__SELF__' >
+        <div class="search_type cc mb10" >
+            <div class="mb10" >
+                    <span class="mr20" >
+                        游戏： 
+                        {$app_select}
+                        &nbsp;&nbsp;
+                        渠道名称:
+                        {$agent_select}
+                        <input type="submit" class="btn btn-primary" value="搜索" /> &nbsp;&nbsp;
+                       <a href="{:U('Version/set_update_switch_condition',array('app_id'=>$app_id))}" class="btn btn-primary">版本控制 </a >
+                        &nbsp;&nbsp;
+                       <!-- <a class="btn btn-xs btn-info update_agurl_btn" href="javascript:;"
+                           data-agid="{$app_id}" >更新分包</a > -->
+                        <if condition="$update_status eq 1">
+                        <a class="btn btn-xs btn-info update_status_btn" href="javascript:;" data-appid="{$app_id}" data-status="0" >关闭更新</a >
+                        <else/>
+                         <a class="btn btn-xs btn-info update_status_btn" href="javascript:;" data-appid="{$app_id}" data-status="1" >开启更新</a >
+                        </if>
+                    </span >
+                    
+            </div >
+        </div >
+    </form >
+    <form class="js-ajax-form" action="" method="post" >
+        <table class="table table-hover table-bordered table-list" >
+            <thead >
+            <tr >
+                <th width="50" >游戏</th >
+                <th width="50" >渠道ID</th >
+                <th width="50" >渠道名称</th >            
+                <th width="50" >更新状态</th >
+                <th width="50" >更新版本号</th >
+                <th width="50" >更新时间</th >
+                <th width="100" >下载地址</th >
+            </tr >
+            </thead >
+            <tr >
+                    <!--<td >{$vo.create_time|date="Y-m-d H:i:s",###}</td > -->
+                    <td >{$game_name}</td >
+                    <td >0</td >
+                    <td >官包</td >
+                    <td>
+                        <php >$status=(in_array(0,$data['update_agent_id'])?($data['is_update']==1?($data['force_update']==1?'<span style="color:red;">强更</span>':'<span style="color:brown;">更新</span>'):'关闭'):'关闭');</php >
+                        {$status}
+                    </td>
+                    <td> 
+                        <php >$statu=(in_array(0,$data['update_agent_id'])?$data['version']:'');</php >{$statu}
+                    </td>
+                    <td></td>
+                    <td>
+                        <if condition="$is_ios">
+                            <if condition="isset($url['ios'])" >
+                                 {$url['ios']}<br />
+                                <a href="{:U('Version/editurl',array('app_id'=>$app_id))}" >修改</a >
+                                <else />
+                                暂无地址<br />
+                                <a href="{:U('Version/addurl',array('app_id'=>$app_id))}" >添加</a >
+                            </if >
+                        </else>
+                            {$url[0]}
+                        </if>
+                    </td>
+                    
+            </tr >
+            <foreach name="items" key="k" item="vo" >
+                <tr >
+                    <!--<td >{$vo.create_time|date="Y-m-d H:i:s",###}</td > -->
+                    <td >{$vo.game_name}</td >
+                    <td >{$vo.agent_id}</td >
+                    <td >{$vo.agent_name}</td >
+                    
+                    <td>
+                        <php >$status=(in_array($items[$k]['agent_id'],$data['update_agent_id'])?($data['is_update']==1?($data['force_update']==1?'<span style="color:red;">强更</span>':'<span style="color:brown;">更新</span>'):'关闭'):'关闭');</php >
+                        {$status}
+                    </td>
+                    <td> 
+                        <php >$statu=(in_array($items[$k]['agent_id'],$data['update_agent_id'])?$data['version']:'');</php >{$statu}
+                    </td>
+                    <td>
+                        <php>$date=date('Y-m-d H:i:s',$items[$k]['update_time']); </php>{$date}
+                    </td>
+                    <td>
+                        
+                            {$url[$items[$k]['agent_id']]}
+                        
+                    </td>
+                    
+                </tr >
+            </foreach >
+        </table >
+        <div class="pagination" >{$page}</div >
+    </form >
+</div >
+<script src="__PUBLIC__/js/common.js" ></script >
+<script src="__PUBLIC__/js/jquery.blockUI.min.js" ></script >
+<script src="__PUBLIC__/js/clipboard.min.js" ></script >
+<script src="__PUBLIC__/huoshu/clipboard.js" ></script >
+<script>
+$(".update_agurl_btn").click(function () {
+        var app_id = $(this).attr("data-agid");
+        var url  = "{:U('Sdk/Version/Updatetime')}";
+        $.post(url, {"app_id": app_id}, function (res) {
+            if (res.error === '0') {
+                yxalert(res.msg);
+                reload_delay();
+            } else if (res.error === '1') {
+                yxalert(res.msg);
+            }
+        });
+    });
+$(".update_status_btn").click(function () {
+        var r=confirm("确定执行吗？");
+        if(r==true){
+            var app_id = $(this).attr("data-appid");
+            var status = $(this).attr("data-status");
+            var url  = "{:U('Sdk/Version/Isupdate')}";
+            $.post(url, {"app_id": app_id,"status": status}, function (res) {
+                if (res.error === '0') {
+                    yxalert(res.msg);
+                    reload_delay();
+                } else if (res.error === '1') {
+                    yxalert(res.msg);
+                }else if(res.error === '2'){
+                     yxalert(res.msg);
+                }
+            });
+        }
+    });
+</script>
+</body >
+</html>

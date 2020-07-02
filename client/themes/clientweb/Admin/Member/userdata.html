@@ -1,0 +1,140 @@
+<admintpl file="header" />
+
+<link rel="shortcut icon" href="favicon.ico"> <link href="/public/h/css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="/public/h/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link href="/public/h/css/plugins/chosen/chosen.css" rel="stylesheet">
+    <link href="/public/h/css/plugins/cropper/cropper.min.css" rel="stylesheet">
+    <link href="/public/h/css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+
+    <link href="/public/h/css/animate.min.css" rel="stylesheet">
+    <link href="/public/h/css/style.min862f.css?v=4.1.0" rel="stylesheet">
+
+</head>
+<body class="J_scroll_fixed">
+	<div class="wrap J_check_wrap">
+		<!-- <ul class="nav nav-tabs">
+			 <li class="active"><a href="{:U('Admin/Member/index')}">玩家列表</a></li>
+			 <li><a href="{:U('Admin/Member/loginindex')}">玩家登陆列表</a></li>
+		</ul> -->
+        
+		<div class="ibox-content">
+                        <form role="form" class="form-inline" method="post" action="{:U('Member/index')}">
+						    <div class="form-group">
+                                <label class="font-noraml">玩家账号：</label>
+                                <input type="text" placeholder="请输入账号" name="username" value="{$username}" class="form-control">
+                            </div>
+                            
+                            <div class="form-group">
+	                            <label class="font-noraml">渠道名称：</label>
+	                            <div class="input-group">
+	                               <select data-placeholder="选择账号..." class="chosen-select" name="agent_id" id="agent_id" style="width:175px;" tabindex="2">
+	                                  <foreach name="agents"  key="k" item="vo">
+								          <php>$gid_select=$k==$formget['agent_id'] ?"selected":"";</php>
+								          <option value="{$k}"{$gid_select}>{$vo}</option>
+					            	  </foreach>
+	                              </select>
+	                             </div>
+                            </div>
+
+							<div class="form-group" id="data_5">
+                                 <label class="font-noraml">时间：</label>
+                                 <div class="input-daterange input-group" id="datepicker">
+                                    <input type="text" class="input-sm form-control" name="start_time" value="{$formget.start_time|default=''}" />
+                                    <span class="input-group-addon">到</span>
+                                    <input type="text" class="input-sm form-control" name="end_time" value="{$formget.end_time}" />
+                                 </div>
+								 <button class="btn btn-primary" name='submit' type="submit" value="搜索">搜索</button>
+								 <button class="btn btn-primary" name='submit' type="submit" value="导出xls">导出xls</button>
+                              </div>
+                     </form>
+         </div>
+       
+	   <form class="J_ajaxForm" action="" method="post">
+	   <div class="ibox-content">
+		<table class="table table-striped table-bordered table-hover dataTables-example" style="margin-bottom:5px">
+			<thead>
+				<tr>					
+					<th>账号</th>					
+					<!-- <th>手机</th>-->
+					<th>最后登录IP</th> 
+					<th>最后登录时间</th>
+					<th>注册IMEI码</th>
+					<th>注册类型</th>
+					<th>注册游戏</th>
+					<th>注册渠道</th>
+					<th>注册时间</th>
+					<th>状态</th>					
+					<th>管理操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				<php>$members_flag=array("0"=>"正常","1"=>"冻结");</php>
+				<php>$fromflagarr = array('1'=>'SDK','5'=>'APP');</php>
+				<foreach name="members" item="vo">
+				<tr>
+					<td>{$vo.username}</td>
+					<!-- <td>{$vo.mobile}</td> -->
+					<td>{$vo.ip}</td>
+					<td>
+						<if condition="$vo['last_login_time'] eq 0">
+							该用户还没登陆过
+						<else />
+							{$vo.last_login_time|date='Y-m-d  H:i:s',###}
+						</if>
+					</td>
+					<td>{$vo.imei}</td>
+					<td>{$fromflagarr[$vo['fromflag']]}</td>
+					<td>
+						<if condition="$vo['fromflag'] != 5">
+							{$vo['gamename']}
+						</if>
+					</td>
+					<td>{$vo.agentnicename}</td>
+					<td>{$vo.reg_time|date='Y-m-d  H:i:s',###}</td>
+					<td>{$members_flag[$vo['flag']]}</td>
+					<td>
+						<if condition="sp_auth_check(sp_get_current_admin_id(),'admin/member/edit')">
+						     <a href='{:U("Member/edit",array("id"=>$vo["id"]))}'>修改</a> | 
+					    </if>
+
+						<if condition="$vo['flag'] eq 0">
+						    <if condition="sp_auth_check(sp_get_current_admin_id(),'admin/member/ban')">
+						       <a href="{:U('Member/ban',array('id'=>$vo['id']))}" class="J_ajax_dialog_btn" data-msg="您确定要冻结此用户吗？">冻结</a>
+					        </if>
+						<else />
+						    <if condition="sp_auth_check(sp_get_current_admin_id(),'admin/member/cancelban')">
+						       <a href="{:U('Member/cancelban',array('id'=>$vo['id']))}" class="J_ajax_dialog_btn" data-msg="您确定要解封此用户吗？">解封</a>
+					        </if>
+						</if>
+
+						<if condition="$uid eq 1">
+						     <a href='{:U("Member/setptb",array("id"=>$vo["id"]))}'>平台币</a>
+					    </if>
+					</td>
+				</tr>
+				</foreach>
+			</tbody>
+		</table>
+		<div class="pagination">{$page}</div>
+		</div>
+		<if condition="empty($members)">
+       		<div class="ibox-content" style="text-align:center;font-size:18px;font-weight:bold;border:none">暂无相关内容</div>
+       </if>
+	  </form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	<script src="/public/h/js/plugins/chosen/chosen.jquery.js"></script>
+    <script src="/public/h/js/content.min.js?v=1.0.0"></script>
+    <script src="/public/h/js/plugins/chosen/chosen.jquery.js"></script>
+    <script src="/public/h/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+    <script src="/public/h/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="/public/h/js/plugins/clockpicker/clockpicker.js"></script>
+    <script src="/public/h/js/plugins/cropper/cropper.min.js"></script>
+    <script src="/public/h/js/demo/form-advanced-demo.min.js"></script>
+
+    <script src="/public/h/js/plugins/jeditable/jquery.jeditable.js"></script>
+    <script src="/public/h/js/plugins/dataTables/jquery.dataTables.js"></script>
+    <script src="/public/h/js/plugins/dataTables/dataTables.bootstrap.js"></script>
+    <script src="/public/h/js/content.min.js?v=1.0.0"></script>
+</body>
+</html>

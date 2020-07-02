@@ -1,0 +1,26 @@
+body,html{padding:0;margin:0;width:100%;font-family:"Microsoft YaHei",sans-serif,"Heiti SC light","Droid Sans",Arial}
+.cf:before,.cf:after,.clearfix:before,.clearfix:after
+{content:" ";display:table}
+.cf:after,.clearfix:after
+{content:'\0020';display:block;height:0;clear:both}
+.border-box{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box}
+.fl{float:left}
+.fr{float:right}
+.txl{text-align:left}
+.txc{text-align:center}
+.txr{text-align:right}
+.txoverhide{text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
+a.block{display:block}
+a.block>span{display:block}
+.w100{width:100%}
+.h100{height:100%}
+.posrel{position:relative}
+.posabs{position:absolute}
+.posfix{position:fixed}
+.hide{display:none}
+.user-tab #myMessage
+.user-tab #myMessage .messages.hide.block{display: block;}
+.user-tab #myMessage .messages.hide span{background-image: url(http://cdn2.guopan.cn/frontend/pc/static/gpgame/css/privateCenterWidget_1_z_71cb398.png);    background-position: 260px 20px;    background-color: #fff;
+    height: 48px;
+    line-height: 48px;
+    padding-left: 73px;display: block;background-repeat: no-repeat;text-align: left;}

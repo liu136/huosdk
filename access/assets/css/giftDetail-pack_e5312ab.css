@@ -1,0 +1,92 @@
+#Gift-details{background: #fff;}
+#Gift-details .wrapperBox{border: 1px solid #d5d5d5;}
+#Gift-details .giftInfo{padding:20px;padding-left:180px;position:relative;height:180px;background:#fff;border:1px solid #e6e6e6}
+#Gift-details .giftInfo .icon{position:absolute;left:20px;top:20px;border-radius:24px;width:140px;height:140px}
+#Gift-details .download-guide-wrap{height:80px;width:100%;position:relative;background-repeat:no-repeat;background-position:left top;background-image:url(http://cdn2.guopan.cn/frontend/pc/static/img/lb-guide-bg_7224659.png?__sprite)}
+#Gift-details .download-guide-wrap a{position:absolute;right:0;top:0}
+#Gift-details .download-guide-wrap img{height:80px}
+#Gift-details .download-guide-wrap:hover img{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:bounce;animation-name:bounce;-webkit-transform-origin:center bottom;transform-origin:center bottom}
+@-webkit-keyframes bounce{from,20%,53%,80%,to{-webkit-animation-timing-function:cubic-bezier(0.215,.61,.355,1);animation-timing-function:cubic-bezier(0.215,.61,.355,1);-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
+40%,43%{-webkit-animation-timing-function:cubic-bezier(0.755,.050,.855,.060);animation-timing-function:cubic-bezier(0.755,.050,.855,.060);-webkit-transform:translate3d(0,-30px,0);transform:translate3d(0,-30px,0)}
+70%{-webkit-animation-timing-function:cubic-bezier(0.755,.050,.855,.060);animation-timing-function:cubic-bezier(0.755,.050,.855,.060);-webkit-transform:translate3d(0,-15px,0);transform:translate3d(0,-15px,0)}
+90%{-webkit-transform:translate3d(0,-4px,0);transform:translate3d(0,-4px,0)}}
+@keyframes bounce{from,20%,53%,80%,to{-webkit-animation-timing-function:cubic-bezier(0.215,.61,.355,1);animation-timing-function:cubic-bezier(0.215,.61,.355,1);-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
+40%,43%{-webkit-animation-timing-function:cubic-bezier(0.755,.050,.855,.060);animation-timing-function:cubic-bezier(0.755,.050,.855,.060);-webkit-transform:translate3d(0,-30px,0);transform:translate3d(0,-30px,0)}
+70%{-webkit-animation-timing-function:cubic-bezier(0.755,.050,.855,.060);animation-timing-function:cubic-bezier(0.755,.050,.855,.060);-webkit-transform:translate3d(0,-15px,0);transform:translate3d(0,-15px,0)}
+90%{-webkit-transform:translate3d(0,-4px,0);transform:translate3d(0,-4px,0)}}
+#Gift-details .giftInfo .title{font-size:22px;color:#333}
+#Gift-details .giftInfo .has{font-size:14px;color:#575757;line-height:20px;margin-top:10px}
+#Gift-details .giftInfo .has div{display:inline-block;vertical-align:middle;margin-right:4px}
+#Gift-details .giftInfo .has .holder{height:10px;background:#f5f5f5;width:250px;border:1px solid #e74c3c;position:relative}
+#Gift-details .giftInfo .has .holder .fill{height:100%;background:#e74c3c;position:absolute;left:0;top:0}
+#Gift-details .giftInfo .time{margin-top:10px;font-size:14px;color:#575757}
+#Gift-details .giftInfo .platform{margin-top:10px}
+#Gift-details .giftInfo .platform .button{padding: 5px 30px;background: #E73C44;color: #fff;font-size: 18px;border-radius: 5px;cursor: pointer;}
+#Gift-details .giftInfo .platform img{cursor:pointer;display:inline-block;margin-right:20px}
+#Gift-details .giftInfo .platform img.disabled{cursor:auto}
+#Gift-details .giftInfo .codePlaceholder{height:34px;border:1px solid #e4e4e4;display:inline-block;padding:0 56px 0 37px;position:relative;overflow:hidden;border-radius:2px;margin-right:15px}
+#Gift-details .giftInfo .codePlaceholder .platform{position:absolute;left:0;top:0;height:34px;width:37px;margin:0;background-color:#f3f3f3;background-repeat:no-repeat}
+#Gift-details .giftInfo .codePlaceholder.a .platform{background-image:url(http://cdn2.guopan.cn/frontend/pc/static/img/HoverAndroid_bb9b83e.png?__sprite);background-position:8px 8px}
+#Gift-details .giftInfo .codePlaceholder.i .platform{background-image:url(http://cdn2.guopan.cn/frontend/pc/static/img/HoverIOS_9cd3965.png?__sprite);background-position:8px 8px}
+#Gift-details .giftInfo .codePlaceholder .copy{position:absolute;top:0;right:0;height:34px;width:56px;text-align:center;line-height:34px;cursor:pointer;color:#fff}
+#Gift-details .giftInfo .codePlaceholder.a .copy{background:#a4cd29}
+#Gift-details .giftInfo .codePlaceholder.i .copy{background:#00aeff}
+#Gift-details .giftInfo .codePlaceholder .code{padding:0 5px;width:120px;line-height:34px;height:34px;border:0;display:block}
+#Gift-details .getGift{position:fixed;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;background-color:#f8f8f8;-webkit-box-shadow:0 0 13px rgba(194,194,194,.75);-moz-box-shadow:0 0 13px rgba(194,194,194,.75);box-shadow:0 0 13px rgba(194,194,194,.75);overflow:hidden;z-index:9999;background-color:#fff;left:50%;top:50%;padding-bottom:30px;box-sizing:border-box}
+#Gift-details .getGift .getLoading{position:absolute;width:100%;height:100%;background:#fff url(http://cdn2.guopan.cn/frontend/pc/static/img/getGiftAgain-loading_0e6e0f4.gif) no-repeat center center;z-index:99;filter:alpha(opacity=80);-moz-opacity:.8;opacity:.8}
+#Gift-details .getGift .giftTitle{text-align:center;color:#333;font-size:18px;background-color:#f8f8f8;border-bottom:#eee 1px solid;width:100%;display:block;padding:10px 0}
+#Gift-details .getGift .giftContent{position:relative;padding:10px 45px 0;display:block;font-size:14px}
+#Gift-details .getGift .giftContent .contentList{padding-top:20px;clear:both;position:relative}
+#Gift-details .getGift .giftContent .contentList>p{position:relative}
+#Gift-details .getGift .giftContent .contentList .icon-giftSuc{background-image:url(http://cdn2.guopan.cn/frontend/pc/static/img/giftInfo-suc_d89716e.png?__sprite);display:inline-block;width:30px;height:30px;background-repeat:no-repeat;position:relative;top:8px;margin-right:10px}
+#Gift-details .getGift .giftContent .contentList .gift{font-size:14px;height:35px;width:182px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;float:left;vertical-align:middle}
+#Gift-details .getGift .giftContent .contentList input.gift{background-color:#fafafa;border:solid 1px #e6e6e6;height:17px;line-height:17px;padding:9px 0 9px 8px}
+#Gift-details .getGift .giftContent .contentList .phone{float:left;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;background-color:#fb7831;display:block;width:100px;color:#fff;text-align:center;height:36px;margin-left:10px;border:0;cursor:pointer}
+#Gift-details .getGift .giftContent .contentList .phone:hover{background-color:#d96628}
+#Gift-details .getGift .giftContent .contentList .suc,.getGift .giftContent .contentList .suc:hover{background-color:#c4c4c4}
+#Gift-details .getGift .giftContent .contentList .code{width:292px}
+#Gift-details .getGift .giftContent .contentList .sub{background-color:#52b3f7;width:300px;color:#fff;text-align:center;height:27px;padding-top:9px}
+#Gift-details .getGift .giftContent .contentList .sub:hover{background-color:#469dda}
+#Gift-details .getGift .giftContent .contentList span{position:absolute;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;background-color:#fff;left:0;top:-2px;font-size:12px;padding:3px 7px}
+#Gift-details .getGift .giftContent .contentList .error{border:#de0000 1px solid;color:#de0000}
+#Gift-details .getGift .giftContent .contentList .right{border:solid 1px #46bd43;color:#46bd43}
+#Gift-details .getGift .giftContent .close{position:absolute;display:block;width:18px;height:18px;background:url(http://cdn2.guopan.cn/frontend/pc/static/img/closeBtn_633eaf7.png?__sprite) no-repeat;top:-34px;right:15px;cursor:pointer}
+#Gift-details .getGift .giftContent .contentList .error i{width:12px;height:7px;position:absolute;display:block;background:url(http://cdn2.guopan.cn/frontend/pc/static/img/getGift-span-bottom-e_9783e79.png?__sprite) no-repeat;left:4px;bottom:-7px}
+#Gift-details .getGift .giftContent .contentList .right i{width:12px;height:7px;position:absolute;display:block;background:url(http://cdn2.guopan.cn/frontend/pc/static/img/getGift-span-bottom-r_d10e70f.png?__sprite) no-repeat;left:4px;bottom:-7px}
+#Gift-details .getGift .giftContent .contentList .copy{background-color:#fb7831;display:block;color:#fff;text-align:center;height:27px;padding-top:9px;width:90px;-webkit-border-radius:0 4px 4px 0;-moz-border-radius:0 4px 4px 0;border-radius:0 4px 4px 0;background-color:#e73c44;margin-left:-1px}
+#Gift-details .getGift .giftContent .contentList .copy-no{background-color:#e6e6e6}
+#Gift-details .getGift .giftContent .contentList .getAgain{position:relative;background-color:#1da6ed;display:block;color:#fff;text-align:center;height:27px;padding-top:9px;width:90px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;margin-left:10px}
+#Gift-details .getGift .giftContent .contentList .getAgain:hover{background-color:#1a97d8}
+#Gift-details .getGift .giftContent .contentList .copyCon{width:265px}
+#Gift-details .getGift .giftContent .contentList .copyConAgain{width:200px}
+#Gift-details .getGift .contentDown{border-top:#eee 1px solid;display:block;position:relative;padding:30px 60px 0;margin-top:20px;display:block;font-size:16px;color:#333;text-align:center;overflow:hidden;box-sizing:border-box;width:100%}
+#Gift-details #confirmValidCode{margin-bottom:10px}
+#Gift-details .getGift .contentDown p{padding-bottom:10px}
+#Gift-details .getGift .contentDown .title{font-size:22px;color:#d62626}
+#Gift-details .getGift .contentDown .andriod{margin-left:30px}
+#Gift-details .getGift input:-moz-placeholder,{font-size:14px;font-family:"Microsoft YaHei",sans-serif,"Heiti SC light","Droid Sans",Arial}
+#Gift-details .getGift input::-moz-placeholder{font-size:14px;font-family:"Microsoft YaHei",sans-serif,"Heiti SC light","Droid Sans",Arial}
+#Gift-details .getGift input:-ms-input-placeholder{font-size:14px;font-family:"Microsoft YaHei",sans-serif,"Heiti SC light","Droid Sans",Arial}
+#Gift-details .getGift input::-webkit-input-placeholder{font-size:14px;font-family:"Microsoft YaHei",sans-serif,"Heiti SC light","Droid Sans",Arial}
+#Gift-details .giftDesc{margin-top:15px;border:1px solid #e6e6e6}
+#Gift-details .giftDesc .contentHolder{margin-bottom:25px;font-size:14px}
+#Gift-details .relGift{}
+#Gift-details .relGift.contentHolder .item{width:20%;float:left;margin-top: 15px;}
+/*#Gift-details .relGift.contentHolder .item.last{margin-top:15px}*/
+#Gift-details .relGift.contentHolder .item img{width:84px;height:84px;border-radius:14px;margin:0 auto;display:block;transition:transform .3s}
+#Gift-details .relGift.contentHolder .item .text{width:84px;margin:0 auto;text-align:center;overflow:hidden;display:block;font-size:14px;height:40px;line-height:20px;margin-top:10px}
+#Gift-details .relGift.contentHolder .item .has{color:#575757;font-size:14px;width:84px;text-align:center;margin:0 auto}
+#Gift-details .relGift.contentHolder .item .has span{color:#e74c3c;font-size:14px}
+#Gift-details .relGift.contentHolder .item:hover img{transform:scale(1.06)}
+#Gift-details .relGift.contentHolder .item:hover text{color:#e74c3c}
+#Gift-details .gameInfo{margin-bottom:15px;border:1px solid #e6e6e6}
+#Gift-details .gameInfo .title{font-size:24px;height:30px;line-height:30px;text-shadow:0 0 1px #ccc}
+#Gift-details .gameInfo .type,.gameInfo .state,.gameInfo .content{font-size:14px;line-height:25px;color:#575757}
+#Gift-details .gameInfo .content{line-height:20px}
+#Gift-details .gameInfo .btn{display:block;border:1px solid #000;border-radius:4px;margin-top:10px;text-align:center;height:34px;line-height:34px;font-size:16px;transition:all .3s}
+#Gift-details .gameInfo .btn.zone{background:#e73c44;border-color:#e73c44;color:#fff}
+#Gift-details .gameInfo .btn.zone:hover{color:#e73c44;background-color:#fff}
+#Gift-details .gameInfo .btn.download{border-color:#52ac1c;color:#fff;background-color:#52ac1c}
+#Gift-details .gameInfo .btn.download:hover{color:#52ac1c;background:#fff}
+#Gift-details .gameInfo .btn.group{border-color:#1aabff;color:#fff;background:#1aabff}
+#Gift-details .gameInfo .btn.group:hover{color:#1aabff;background:#fff}

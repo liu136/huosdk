@@ -1,0 +1,321 @@
+(function () {
+    var gLOGIN_FLAG = false;
+    var gREG_FLAG = false;
+    var gFINDPWD_FLAG = false;
+    var gfindpwdPhoneCodeGet_FLAG = false;
+    var gfindpwdPhoneOper_FLAG = false;
+    var gchgpwdOper_FLAG = false;
+    var glogoutOper_FLAG = false;
+    var gVisitREG_FLAG = false;
+    
+
+    $(document).ready(function () {
+        if(isWeiXin()){
+            $('#wechat_login_btn').parent().remove();
+        }
+        
+        
+    $(".see_icon").on("click", function () {
+        var type = $(".login_pwd").attr("type");
+        if (type == 'text') {
+            $(".login_pwd").attr("type", "password");
+            $(this).removeClass("see_close_icon");
+        } else {
+            $(this).addClass("see_close_icon");
+            $(".login_pwd").attr("type", "text");
+        }
+    });
+    // 分享遮罩关闭
+    $("#shareGray").click(function () {
+        $('#gameplayShareDiv').hide();
+        $('#gameplayGzDiv').hide();
+        $(this).hide();
+    });
+    // 点击关闭按钮
+    $(".gzh_0104_close").click(function () {
+        $('.gzh_0104').hide();
+        $("#shareGray").hide();
+    });
+        
+        
+        
+        
+               //确定退出
+        $("#logoutBtnYes").click(function () {
+            $('#logoutOper').click();
+        });
+        // 取消退出
+        $("#logoutBtnNo").click(function () {
+            $("#logoutNoticeDiv").hide();
+            $('.gray').hide();
+        });
+        
+        
+        
+        
+        function doLogin() {
+            if (true === gLOGIN_FLAG) {
+                return false;
+            }
+            var login_username_val = $.trim($('#login_username').val());
+            var login_password_val = $.trim($('#login_password').val());
+
+            if ((login_username_val === '') || (login_password_val === '')) {
+                showNotice('帐号或密码为空');
+                return false;
+            }
+
+            if (cPasswd(login_password_val)) {
+                showNotice('不支持中文的密码哦 ');
+                return false;
+            }
+            ;
+
+            //gLOGIN_FLAG = true;
+        }
+
+        $(document).keyup(function (evnet) {
+            if ($('#loginDiv').is(':visible') && evnet.keyCode == '13') {
+                doLogin();
+            }
+        });
+
+        // 切换登陆弹窗
+        $('#loginA').click(function () {
+            $('.thisWinPop').hide();
+            $('#loginDiv').show();
+            resetValue();
+        });
+        // 关闭登陆注册框
+        $("#loginBackA, #regBackA").click(function () {
+            $(".thisWinPop").hide();
+            if (typeof closeLogin == 'function') {
+                closeLogin();
+            }
+        });
+        // 登录操作
+        $('#loginOper').click(function () {
+            doLogin();
+        });
+        // 切换注册弹窗
+        $('#regA').click(function () {
+            $('.thisWinPop').hide();
+            $('#regDiv').show();
+            resetValue();
+        });
+        // 注册操作
+        $('#regOper').click(function () {
+            if (true === gREG_FLAG) {
+                return false;
+            }
+
+            var reg_username_val = $.trim($('#reg_username').val());
+            var reg_password_val = $.trim($('#reg_password').val());
+            var reg_repassword_val = $.trim($('#reg_repassword').val());
+
+            if ((reg_username_val === '') || (reg_password_val === '')) {
+                showNotice('帐号或密码为空');
+                return false;
+            }
+            if (reg_username_val.length < 6 || reg_username_val.length > 15) {
+                showNotice('帐号最少6位，最长15位');
+                return false;
+            }
+            ;
+
+            if (!cName(reg_username_val)) {
+                showNotice('帐号必须是字母、数字、下划线 ');
+                return false;
+            }
+            ;
+
+            if (reg_password_val.length < 6 || reg_password_val.length > 15) {
+                showNotice('密码最少6位，最长15位');
+                return false;
+            }
+            ;
+
+            if (cPasswd(reg_password_val)) {
+                showNotice('不支持中文的密码哦 ');
+                return false;
+            }
+            ;
+
+            if (reg_password_val != reg_repassword_val) {
+                showNotice('两次输入密码不一致');
+                return false;
+            }
+
+        });
+
+        // 找回密码弹窗
+        $('#findpwdA').click(function () {
+            $('.thisWinPop').hide();
+            $('#findpwdDiv').show();
+            resetValue();
+        });
+        // 找回密码返回
+        $('#findpwdBackA').click(function () {
+            $('.thisWinPop').hide();
+            $('#loginDiv').show();
+            resetValue();
+        });
+
+        // 验证手机返回
+        $('#findpwdPhoneBackA').click(function () {
+            $('.thisWinPop').hide();
+            $('#loginDiv').show();
+            resetValue();
+        });
+
+        // 修改密码返回
+        $('#chgpwdBackA').click(function () {
+            $('.thisWinPop').hide();
+            $('#loginDiv').show();
+            resetValue();
+        });
+
+        $('.data-more-login-btn').click(function () {
+            moreLoginHide();
+            login();
+        });
+
+        //关闭绑定手机提示
+        $("#bandohoneBackA,#bandohoneBackB").click(function () {
+            $('#userInfoDiv').hide();
+            $("#bangPhoneNoticeDiv").hide();
+            $(".gray").hide();
+            SuspendedBall.ShowBall();
+        });
+        // 打开侧边栏绑定手机
+        $('#bindPhoneC').click(function () {
+            $("#userInfoDiv").hide();
+            $("#conDiv").show();
+            $("#ballConDiv").hide();
+            $('#ballUserinfoDiv').hide();
+            $('#bindPhoneDiv').show();
+            $('.gray').hide();
+            resetValue();
+        });
+    })
+        // 对外提供接口
+    window.showNotice = showNotice;
+    window.resetValue = resetValue;
+    window.setTimes = setTimes;
+    window.cPhone = cPhone;
+    window.cPasswd = cPasswd;
+    window.cName = cName;
+    window.bandPhoneNotice = bandPhoneNotice;
+    window.taskNotice = taskNotice;
+
+})(jQuery);
+
+function moreLoginShow() {
+    $('#moreLoginDiv').show();
+    $("#userInfoDiv").show();
+    $("#loginDiv").hide();
+}
+
+function moreLoginHide() {
+    $('#moreLoginDiv').hide();
+    $("#userInfoDiv").hide();
+    $(".gray").hide();
+}
+
+function login() {
+    $('#loginDiv').show();
+    $("#userInfoDiv").show();
+}
+ function cName(str) {
+        //if (str.length < 6 || str.length > 15){return false;}
+        var rules = /^[a-zA-Z][a-za-z0-9]+$/; //帐号必须是字母、数字
+        return rules.test(str);
+    }
+
+    function cPasswd(str) {
+        //if (str.length < 6 || str.length > 16){return false;}
+        var rules = /[\u4E00-\u9FA5]/i;
+        return rules.test(str);
+    }
+
+    function cPhone(str) {
+        var rules = /^1(3[0-9]|4[57]|5[0-35-9]|7[0135678]|8[0-9])\d{8}/i;
+        return rules.test(str);
+    }
+    
+      var countdown = 60;
+      
+    //倒计时
+       function setTimes(obj) {
+        if (countdown == 60) {
+            var html = '<a target="_self" href="javascript:;" class="get2"></a>';
+            obj.hide().after(html);
+        }
+        countdown--;
+        obj.next('a').text('重新发送' + countdown + 's');
+        var t = setTimeout(function () {
+            setTimes(obj);
+        }, 1000);
+        if (countdown <= 0) {
+            obj.show().next('a').remove();
+            clearTimeout(t);
+            countdown = 60;
+        }
+    }
+        // 弹出提示框
+    function showNotice(msg) {
+        $('#noticeDiv').html(msg);
+        $('#noticeDiv').show();
+        /*
+         var x = ($(window).outerWidth() - $('#noticeDiv').outerWidth()) / 2 + 'px';
+         var y = ($(window).outerHeight() - $('#noticeDiv').outerHeight()) / 2 + 'px';
+         $('#noticeDiv').css({
+         'top': y,
+         'left': x
+         });*/
+        $('#noticeDiv').delay(2000).fadeOut();
+    }
+    
+        // 清空input框
+    function resetValue() {
+        $('input[type="text"]').val('');
+        $('input[type="password"]').val('');
+        $('.error').html('');
+    }
+    //未绑定手机提示
+    function bandPhoneNotice(msg) {
+        // console.log('bandphone');
+        var msg = {
+            cmd: "gobackurl",
+            data: {},
+        };
+        window.frames[0].postMessage(msg, '*');
+    }
+    //任务完成提示
+    function taskNotice(msg, score, url) {
+        $('#task_notice .user_winpop_record').html(msg);
+        $("#task_notice").show();
+        if (url != '') {
+            $("#task_kown_btn").attr('data-url', url);
+        }
+
+        if (score) {
+            var new_score = parseInt($("#my_score").attr('score')) + parseInt(score);
+            $("#my_score").attr('score', new_score);
+            var score_str = new_score.toString();
+            var re = /(?=(?!(\b))(\d{3})+$)/g;
+            $("#my_score").text(score_str.replace(re, ","));
+        }
+    }
+    
+
+    //判断是否是微信浏览器的函数
+    function isWeiXin(){
+      var ua = window.navigator.userAgent.toLowerCase();
+      //通过正则表达式匹配ua中是否含有MicroMessenger字符串
+      if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+      return true;
+      }else{
+      return false;
+      }
+    }

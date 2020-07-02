@@ -1,0 +1,13 @@
+#Login{background: url(pc_app/assets/img/u62.jpg) no-repeat;width: 100%;position: relative;padding-bottom: 60px;background-size: 100% 100%;}
+#Login .Content{height: 500px;position: relative;}
+#Login .Content .content{color: #666;position: absolute;width: 320px;height: 360px;padding: 0 20px;right: 200px;top: 60px;font-size: 14px;background: #f0f3e0;}
+#Login .Content h2{color: #E73C44;font-size: 30px;margin-bottom: 10px;margin-top: 20px;}
+#Login .Content p a{color: #ff8c00;cursor: pointer;}
+#Login .Content input{border:1px solid #D5D5D5;height: 40px;line-height: 40px;padding: 0 8px;width: 96%;margin-top: 15px;border-radius: 5px;outline: none;background: #eaeaea;}
+#Login .Content .p{clear: both;overflow: hidden;margin-top: 30px;margin-bottom: 10px;}
+#Login .Content .p label{float: left;cursor: pointer;}
+#Login .Content .p label input{width: 13px;height: 13px;margin-top: 0;}
+#Login .Content .p span{float: right;cursor: pointer;}
+#Login .Content button{margin-top: 0px;width: 100%;text-align: center;color: #fff;background: #E73C44;border: none;font-size: 18px;height: 40px;line-height: 40px;border-radius: 5px;cursor: pointer;}
+#Login .Content button:hover{background: #E42121;border-radius: 5px;}
+.loginPwd{margin-bottom: 20px;}

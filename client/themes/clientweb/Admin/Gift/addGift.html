@@ -1,0 +1,130 @@
+<admintpl file="header" />
+
+ <link rel="shortcut icon" href="favicon.ico"> <link href="/public/h/css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="/public/h/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link href="/public/h/css/plugins/chosen/chosen.css" rel="stylesheet">
+    <link href="/public/h/css/plugins/cropper/cropper.min.css" rel="stylesheet">
+    <link href="/public/h/css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+	
+	 <link href="__PUBLIC__/bootstrap-fileinput-master/css/fileinput.css" media="all" rel="stylesheet" type="text/css" />
+        <script src="__PUBLIC__/bootstrap-fileinput-master/js/fileinput.js" type="text/javascript"></script>
+        <script src="__PUBLIC__/bootstrap-fileinput-master/js/fileinput_locale_zh.js" type="text/javascript"></script>
+        <script src="__PUBLIC__/bootstrap-fileinput-master/js/fileinput_locale_es.js" type="text/javascript"></script>
+
+    <link href="/public/h/css/animate.min.css" rel="stylesheet">
+    <link href="/public/h/css/style.min862f.css?v=4.1.0" rel="stylesheet">
+
+</head>
+<body class="J_scroll_fixed">
+	<div class="wrap jj">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('Gift/giftList')}">礼包列表</a></li>
+			<li class="active"><a href="{:U('Gift/addGift')}" target="_self">添加礼包</a></li>
+		</ul>
+
+		<div class="ibox-content">
+           <form method="post" class="form-horizontal J_ajaxForm" enctype="multipart/form-data" action="{:U('Gift/addgift_post')}">
+		             <div class="control-group">
+                                 <label class="control-label">游戏:</label>
+                                 <div class="controls">
+                                    <select data-placeholder="选择游戏..." class="chosen-select" name="appid" tabindex="2">
+                                     <foreach name="games"  key="k" item="vo">
+								          <php>$gid_select=$k==$formget['gid'] ?"selected":"";</php>
+								          <option value="{$k}"{$gid_select}>{$vo}</option>
+							           </foreach>
+                                   </select>
+                                  </div>
+                     </div>
+				    
+					<div class="control-group">
+                                <label class="control-label">礼包标题:</label>
+
+                                <div class="controls">
+                                    <input type="text" class="form-control" name="title" style="width:50%;" placeholder="请输入标题" >
+                                </div>
+                     </div>
+					 
+					 <div class="control-group">
+						<label class="control-label">礼包图标：</label>
+						<div class="controls">
+							<label class="control-label">尺寸：178*178</span>
+						</div>
+					</div>
+					
+					<div class="control-group">
+						<label class="control-label"></label>
+						<div class="controls">
+							<div id="kv-avatar-errors" class="center-block" style="width:800px;display:none"></div>
+					        <div class="uploadlogo uploadimg" style="width:200px">
+						       <input id="avatar" name="icon" type="file" class="file-loading">
+					        </div>
+						</div>
+					</div>
+
+					<div class="control-group">
+						<label class="control-label">礼包码:</label>
+						<div class="controls">
+							<textarea id="code" name="code" rows="12" cols="75" style="resize:none;width:50%;" ></textarea>
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label">礼包内容:</label>
+						<div class="controls">
+							<textarea class="form-control comment-postbox" name="content" style="height:120px;width: 50%;"></textarea>
+						</div>
+					</div>
+					<div class="control-group" id="data_5">
+                                 <label class="control-label">兑换期限:</label>
+                                 <div class="input-daterange input-group" id="datepicker">
+                                    <input type="text" class="input-sm form-control" name="starttime" />
+                                    <span class="input-group-addon">到</span>
+                                    <input type="text" class="input-sm form-control" name="endtime"/>
+                                 </div>
+                    </div>
+				<div class="form-actions">
+					<button type="submit"
+						class="btn btn-primary btn_submit J_ajax_submit_btn">保存</button>
+					<a class="btn" href="__URL__">返回</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	<script>
+    
+		var btnCust = ''; 
+		$("#avatar").fileinput({
+			overwriteInitial: true,
+			maxFileSize: 1024,
+			maxFileCount: 1,
+			showClose: false,
+			showCaption: false,
+			browseLabel: '',
+			removeLabel: '',
+			browseIcon: '<i class="fa fa-folder-open-o"></i>添  加',
+			removeIcon: '<i class="fa fa-trash-o"></i>清 除',
+			removeTitle: 'Cancel or reset changes',
+			elErrorContainer: '#kv-avatar-errors',
+			msgErrorClass: 'alert alert-block alert-danger',
+			defaultPreviewContent: '<img src="__PUBLIC__/bootstrap-fileinput-master/img/add_img.png" alt="添加" style="width:160px">',
+			layoutTemplates: {main2: '{preview} ' +  btnCust + ' {remove} {browse}'},
+			allowedFileExtensions: ["jpg", "png", "gif"]
+		});
+		
+	</script>
+	
+	<script src="/public/h/js/content.min.js?v=1.0.0"></script>
+    <script src="/public/h/js/plugins/chosen/chosen.jquery.js"></script>
+    <script src="/public/h/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+    <script src="/public/h/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="/public/h/js/plugins/clockpicker/clockpicker.js"></script>
+    <script src="/public/h/js/plugins/cropper/cropper.min.js"></script>
+    <script src="/public/h/js/demo/form-advanced-demo.min.js"></script>
+
+    <script src="/public/h/js/plugins/jeditable/jquery.jeditable.js"></script>
+    <script src="/public/h/js/plugins/dataTables/jquery.dataTables.js"></script>
+    <script src="/public/h/js/plugins/dataTables/dataTables.bootstrap.js"></script>
+    <script src="/public/h/js/content.min.js?v=1.0.0"></script>
+	
+</body>
+</html>

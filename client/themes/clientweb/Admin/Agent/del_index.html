@@ -1,0 +1,136 @@
+<admintpl file="header" />
+
+ <link rel="shortcut icon" href="favicon.ico"> <link href="/public/h/css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="/public/h/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link href="/public/h/css/plugins/chosen/chosen.css" rel="stylesheet">
+    <link href="/public/h/css/plugins/cropper/cropper.min.css" rel="stylesheet">
+    <link href="/public/h/css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+
+    <link href="/public/h/css/animate.min.css" rel="stylesheet">
+    <link href="/public/h/css/style.min862f.css?v=4.1.0" rel="stylesheet">
+
+	<!-- Data Tables -->
+    <link href="/public/h/css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
+
+</head>
+<body class="J_scroll_fixed">
+	<div class="wrap J_check_wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('Agent/index')}">渠道列表</a></li>
+			<li><a href="{:U('user/addagent')}" target="_self">添加渠道</a></li>
+			<li class="active"><a href="{:U('Agent/del_index')}" target="_self">恢复删除</a></li>
+		</ul>
+		<div class="ibox-content">
+                        <form role="form" class="form-inline" method="post" action="{:U('Agent/index')}">
+						  <div class="ibox-content" style="border-width:0px 0;padding: 10px 20px 5px">
+                            <div class="form-group">
+                                 <label class="font-noraml">渠道账号：</label>
+                                 <div class="input-group">
+                                    <select data-placeholder="选择账号..." class="chosen-select" name="agent_id" id="agent_id" style="width:175px;" tabindex="2">
+                                       <foreach name="agents"  key="k" item="vo">
+								          <php>$gid_select=$k==$formget['agent_id'] ?"selected":"";</php>
+								          <option value="{$k}"{$gid_select}>{$vo}</option>
+							            </foreach>
+                                   </select>
+                                  </div>
+								 
+                            </div>
+                            <div class="form-group">
+                                <label class="font-noraml">渠道名称：</label>
+                                <input type="text" placeholder="请输入名称" name="agentnicename"  value="{$formget['agentnicename']}" class="form-control">
+                            </div>
+                               <div class="form-group">
+                                   <label class="font-noraml">渠道类别： </label>
+                                   <div class="input-group">
+                                    <select data-placeholder="选择类别..." class="chosen-select" name="roleid"  style="width:175px;" tabindex="2">
+                                      <foreach name="roles"  key="k" item="vo">
+								         <php>$rid_select=$k==$formget['roleid'] ?"selected":"";</php>
+								         <option value="{$k}"{$rid_select}>{$vo}</option>
+							          </foreach>
+                                     
+                                    </select>
+                                  </div>
+                               </div>
+                             <button class="btn btn-primary" name='submit' type="submit" value="搜索">搜索</button>
+							</div>
+                        </form>
+                    </div>
+		
+		<form class="J_ajaxForm" action="" method="post">
+			<div class="ibox-content">
+               <table class="table table-striped table-bordered table-hover dataTables-example" style="margin-bottom:5px">
+				<thead>
+					<tr>
+						<th width="10%">渠道类别</th>
+						<th width="50">渠道号</th>
+						<th width="50">渠道名称</th>
+						<th width="50">最后登录IP</th>
+						<th width="80">最后登录时间</th>
+						<th width="50">E-mail</th>
+						<th width="50">手机</th>
+						<th width="50">状态</th>
+						<th width="60">管理操作</th>
+					</tr>
+				</thead>
+				<php>
+				$status=array("0"=>"禁用","1"=>"正常","2"=>"未验证");
+				</php>
+				<foreach name="users" item="vo">
+				<tr>
+					<td>{$vo['rolename']}</td>
+					<td>{$vo.user_login}</td>
+					<td>{$vo.user_nicename}</td>
+					<td>{$vo.last_login_ip}</td>
+					<td>
+						<if condition="$vo['last_login_time'] eq 0">
+								该用户还没登陆过
+						<else />
+							{$vo.last_login_time}
+						</if>
+					</td>
+					<td>{$vo.user_email}</td>
+					<td>{$vo.mobile}</td>
+					<td>{$status[$vo['user_status']]}</td>
+					<td>
+						<!-- <if condition="$vo['role_id'] eq 1">
+							<font color="#cccccc">修改</font> | <font color="#cccccc">禁用</font>
+						<else/>
+							<a href="{:U('user/editagent',array('id'=>$vo['id']))}">修改</a> | 
+							<if condition="$vo['user_status'] eq 1">
+								<a href="{:U('Agent/ban',array('id'=>$vo['id']))}" class="J_ajax_del">禁用</a>
+							<else />
+								<a href="{:U('Agent/cancelban',array('id'=>$vo['id']))}" class="J_ajax_del">启用</a>
+							</if>
+						</if> -->
+						<!-- <if condition="$_SESSION['roletype'] eq 1"> -->
+							<a href="javascript:if(confirm('确实要恢复已经删除的该渠道信息吗？'))location='{:U('Agent/recoveryAgent',array('id'=>$vo['id']))}'">恢复</a>
+							|<a href="javascript:if(confirm('注意：彻底删除后，不可恢复'))location='{:U('Agent/thoroughAgent',array('id'=>$vo['id']))}'">删除</a>
+						<!-- </if> -->
+					</td>
+				</tr>
+				</foreach>
+				
+			</table>
+			<div class="pagination">{$Page}</div>
+          </div>
+          <if condition="empty($users)">
+       		<div class="ibox-content" style="text-align:center;font-size:18px;font-weight:bold;border:none">暂无相关内容</div>
+       </if>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	<script src="/public/h/js/plugins/chosen/chosen.jquery.js"></script>
+    <script src="/public/h/js/content.min.js?v=1.0.0"></script>
+    <script src="/public/h/js/plugins/chosen/chosen.jquery.js"></script>
+    <script src="/public/h/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+    <script src="/public/h/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="/public/h/js/plugins/clockpicker/clockpicker.js"></script>
+    <script src="/public/h/js/plugins/cropper/cropper.min.js"></script>
+    <script src="/public/h/js/demo/form-advanced-demo.min.js"></script>
+
+    <script src="/public/h/js/plugins/jeditable/jquery.jeditable.js"></script>
+    <script src="/public/h/js/plugins/dataTables/jquery.dataTables.js"></script>
+    <script src="/public/h/js/plugins/dataTables/dataTables.bootstrap.js"></script>
+    <script src="/public/h/js/content.min.js?v=1.0.0"></script>
+</body>
+</html>

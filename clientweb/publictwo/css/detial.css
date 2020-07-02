@@ -1,0 +1,455 @@
+/*游戏内页轮播*/
+.v_div{
+	padding: 20px;
+	position: relative;
+	
+}
+.v_pic{
+	width: 100%;
+	height:417px;
+	overflow: hidden;
+	position: relative;
+}
+.v_p_big{
+	position: absolute;
+	top:0;
+	left: 0;
+	z-index: 1;
+}
+.v_p_big li{
+	width: 231px;
+	height: 400px;
+	float: left;
+	margin: 10px;
+	opacity: .3;
+	-webkit-opacity: .3;
+	-moz-opacity: .3;
+	filter:alpha(opacity=30);
+	-ms-filter:alpha(opacity=30);
+	border: 2px solid #FFFFFF;
+	transition: border-color .5s;
+	-moz-transition: border-color .5s;
+	-webkit-transition: border-color .5s;
+	-ms-transition: border-color .5s;
+}
+.v_p_big li img{
+	width: 100%;
+	height: 400px;
+}
+.v_p_big li.active{
+	opacity: 1;
+	-webkit-opacity: 1;
+	-moz-opacity: 1;
+	filter:alpha(opacity=100);
+	-ms-filter:alpha(opacity=100);
+	border-color: #00AAEF;
+}
+.v_btn{
+	display: block;
+	width: 50px;
+	height: 100%;
+	position: absolute;
+	z-index: 3;
+	top:0;
+	opacity: .5;
+	-webkit-opacity: .5;
+	-moz-opacity: .5;
+	filter:alpha(opacity=50);
+	-ms-filter:alpha(opacity=50);
+	transition: opacity .3s;
+	-moz-transition: opacity .3s;
+	-webkit-transition: opacity .3s;
+	-ms-transition: opacity .3s;
+}
+.v_div:hover .v_btn{
+	opacity: 1;
+	-webkit-opacity: 1;
+	-moz-opacity: 1;
+	filter:alpha(opacity=100);
+	-ms-filter:alpha(opacity=100);
+}
+.v_left{
+	left: 0;
+	background: url(../img/v_btn.png) no-repeat left;
+}
+.v_right{
+	right:0 ;
+	background: url(../img/v_btn.png) no-repeat right;
+}
+/**/
+.detial_con {
+	background: #FFFFFF;
+}
+
+.detial_con .left {
+	width: 800px;
+	text-align: center;
+}
+
+.detial_con .left> h2 {
+	font-size: 30px;
+	font-weight: normal;
+	text-align: center;
+	padding: 10px;
+	color: #333333;
+}
+
+.detial_con .left> em {
+	font-style: normal;
+	color: #666666;
+	margin-right: 10px;
+}
+
+.d_c_word p {
+	font-size: 16px;
+	text-indent: 2em;
+	text-align: left;
+	line-height: 2;
+}
+
+.d_c_word {
+	padding: 0 30px;
+}
+
+.d_c_word img {
+	max-width: 100%;
+}
+
+
+/**/
+
+.detial_con .right {
+	width: 350px;
+}
+
+.game_detial {
+	width: 100%;
+	height: 150px;
+}
+
+.game_detial> a>img {
+	float: left;
+	width: 128px;
+	height: 128px;
+}
+
+.g_d_con {
+	float: right;
+	width: 200px;
+}
+
+.g_d_con h3 {
+	font-size: 20px;
+	font-weight: normal;
+	color: #333333;
+	padding: 10px 0;
+	max-width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.g_d_con h3:hover {
+	color: #F13D6D;
+}
+
+.g_d_con span {
+	margin-right: 10px;
+	font-size: 14px;
+}
+
+.g_d_btn {
+	display: block;
+	width: 90px;
+	float: left;
+	text-align: center;
+	height: 25px;
+	line-height: 25px;
+	border-radius: 5px;
+	background: #F13D6D;
+	color: #FFFFFF;
+	font-size: 14px;
+	border: 1px solid;
+	margin: 20px 10px 0 0;
+}
+
+.g_d_btn:hover {
+	color: #F13D6D;
+	background: #FFFFFF;
+}
+
+.detial_con .m_r_c_btn {
+	width: 45px;
+}
+
+
+/**/
+
+.detial_instr ul {
+	width: 100%;
+	height: 180px
+}
+
+.detial_instr ul li {
+	width: 25%;
+	float: left;
+	margin-bottom: 10px;
+}
+
+.detial_instr ul li img {
+	width: 70px;
+	height: 70px;
+}
+
+
+/**/
+
+.show2_con {
+	width: 245px;
+}
+
+
+/*游戏内页*/
+
+.game_info {
+	height: 150px;
+	padding: 20px;
+	/*	border: 1px solid #DDDDDD;*/
+	text-align: left;
+	position: relative;
+}
+
+.game_info .title {
+	margin-bottom: 10px;
+}
+
+.game_info img {
+	float: left;
+	width: 150px;
+}
+
+.g_i_con {
+	float: right;
+	width: 550px;
+	padding: 20px 0;
+}
+
+.g_i_con> h3 {
+	font-size: 26px;
+	font-weight: normal;
+	color: #333333;
+	margin-bottom: 10px;
+}
+
+.g_i_con> em {
+	font-size: 14px;
+	font-style: normal;
+	color: #666;
+	margin-right: 10px;
+}
+
+.g_i_con> p {
+	color: #999;
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+.g_i_con_btn {
+	margin-top: 20px;
+}
+
+.g_i_con_btn a {
+	display: block;
+	float: left;
+	width: 100px;
+	text-align: center;
+	font-size: 16px;
+	padding: 5px 0;
+	background: #F13D6D;
+	border: 1px solid;
+	color: #FFFFFF;
+	border-radius: 5px;
+	margin-right: 20px;
+}
+
+.gamePic {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 300px;
+	height: 190px;
+	background: #EEEEEE;
+	text-align: center;
+}
+
+.gamePic img {
+	width: 150px;
+	height: 150px;
+	margin: 20px 75px;
+}
+.g_d_pic .banner{
+	margin-top: 20px;
+}
+.game_con {
+	text-align: left;
+	margin-top: 20px;
+}
+.g_d_pic li{
+	float: left;
+	width: 100%;
+	
+}
+.g_d_pic li img{
+	width: 100%;
+	cursor: pointer;
+}
+.game_word {
+	font-size: 14px;
+	margin-top: 10px;
+	text-indent: 2em;
+	line-height: 2;
+}
+
+.g_c_list {
+	width: 50%;
+	float: left;
+	margin-top: 10px;
+}
+
+.g_c_list li {
+	width: 380px;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 10px;
+	border-bottom: 1px dashed #DDDDDD;
+	padding-bottom: 5px;
+}
+
+.g_c_list li p {
+	font-size: 16px;
+	color: #333333;
+	float: left;
+	max-width: 280px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.g_c_list li p:hover {
+	color: #F13D6D;
+}
+
+.newsDate {
+	float: right;
+	margin-top: 3px;
+	color: #666;
+}
+
+.gameGift {
+	width: 100%;
+	margin-top: 10px;
+}
+
+.gameGift li {
+	float: left;
+	width: 368px;
+	padding: 5px;
+	margin: 5px 10px;
+	border: 1px solid #DDDDDD;
+	position: relative;
+}
+
+.gameGift li:hover {
+	border-color: #F13D6D;
+}
+
+.gameGift li> span {
+	display: inline-block;
+	width: 72%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 16px;
+}
+
+.gameGift li> span a {
+	color: #333333;
+}
+
+.gameGift li:hover> span a,
+.gameGift li:hover> span {
+	color: #F13D6D;
+}
+
+.gameGift li .power {
+	margin-top: 5px;
+}
+
+.gameGift li> a {
+	display: block;
+	position: absolute;
+	top: 50%;
+	margin-top: -11px;
+	right: 5px;
+	padding: 3px 15px;
+	background: #F13D6D;
+	color: #FFFFFF;
+	border-radius: 3px;
+}
+/*礼包内页*/
+.gift{
+	height: 200px;
+}
+.gift .g_i_con{
+	height: 160px;
+	position: relative;
+	
+}
+.gift .power{
+	margin-top: 20px;
+	
+}
+.gift .power span{
+	height: 20px;
+	margin: 0;
+	width: 300px;
+	border-radius: 5px;
+	overflow: hidden;
+	float: left;
+}
+.gift .power span i{
+	height: 20px;
+}
+.gift .power p{
+	color: #999;
+	margin-bottom: 10px;
+}
+.gift .power > i{
+	font-style: normal;
+	font-size: 30px;
+	margin-left: 10px;
+	float:left;
+	position: relative;
+	bottom: 10px;
+	color: #4CAE4C;
+}
+.giftBtn{
+	position: absolute;
+	top:50%;
+	right: 10px;
+	width: 150px;
+	height: 150px;
+	line-height: 150px;
+	text-align: center;
+	color: #FFFFFF;
+	background: #4CAE4C;
+	margin-top: -75px;
+	font-size: 30px;
+	border-radius: 150px;
+	border: 5px solid #4CAE4C;
+	transition:background .3s ;
+}
+.giftBtn:hover{
+	color: #4CAE4C;
+	background: #FFFFFF;
+}

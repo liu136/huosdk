@@ -1,0 +1,69 @@
+{
+    "platform":[
+        {"platform_name":"安卓"},
+        {"platform_name":"苹果"},
+        {"platform_name":"H5"}
+    ],
+    "classify":[
+        {"classify_name":"动作"},
+        {"classify_name":"竞速"},
+        {"classify_name":"体育"},
+        {"classify_name":"角色"},
+        {"classify_name":"策略"},
+        {"classify_name":"模拟"},
+        {"classify_name":"休闲"},
+        {"classify_name":"格斗"},
+        {"classify_name":"益智"}
+    ],
+    "feature":[
+        {"feature_name":"三国"},
+        {"feature_name":"西游"},
+        {"feature_name":"西游"},
+        {"feature_name":"西游"},
+        {"feature_name":"三国"},
+        {"feature_name":"三国"},
+        {"feature_name":"三国"},
+        {"feature_name":"格斗"},
+        {"feature_name":"三国"}
+    ],
+    "new_games":[
+        {"app_id":13, "name":"光明大陆", "icon":"http://img.guopan.cn/png/20170222/d3b407973c483f17539686e2c9cfae8d.jpg","game_type":"策略", "ios_url":"http://huo.huosdk.com", "android_url":"http://huo.huosdk.com", "pc_url":"http://huo.huosdk.com","game_detail_url":"http://www.guopan.cn/gmdl/"},
+        {"app_id":12, "name":"光明大陆", "icon":"http://img.guopan.cn/png/20170222/d3b407973c483f17539686e2c9cfae8d.jpg","game_type":"策略", "ios_url":"http://huo.huosdk.com", "android_url":"http://huo.huosdk.com", "pc_url":"","game_detail_url":"http://www.guopan.cn/gmdl/"},
+        {"app_id":11, "name":"光明大陆", "icon":"http://img.guopan.cn/png/20170222/d3b407973c483f17539686e2c9cfae8d.jpg","game_type":"策略", "ios_url":"http://huo.huosdk.com", "android_url":"", "pc_url":"","game_detail_url":"http://www.guopan.cn/gmdl/"},
+        {"app_id":13, "name":"光明大陆", "icon":"http://img.guopan.cn/png/20170222/d3b407973c483f17539686e2c9cfae8d.jpg","game_type":"策略", "ios_url":"", "android_url":"", "pc_url":"","game_detail_url":"http://www.guopan.cn/gmdl/"},
+        {"app_id":12, "name":"光明大陆", "icon":"http://img.guopan.cn/png/20170222/d3b407973c483f17539686e2c9cfae8d.jpg","game_type":"策略", "ios_url":"", "android_url":"", "pc_url":"","game_detail_url":"http://www.guopan.cn/gmdl/"},
+        {"app_id":11, "name":"光明大陆", "icon":"http://img.guopan.cn/png/20170222/d3b407973c483f17539686e2c9cfae8d.jpg","game_type":"策略", "ios_url":"", "android_url":"", "pc_url":"","game_detail_url":"http://www.guopan.cn/gmdl/"},
+        {"app_id":15, "name":"光明大陆", "icon":"http://img.guopan.cn/png/20170222/d3b407973c483f17539686e2c9cfae8d.jpg","game_type":"策略", "ios_url":"", "android_url":"", "pc_url":"","game_detail_url":"http://www.guopan.cn/gmdl/"},
+        {"app_id":16, "name":"光明大陆", "icon":"http://img.guopan.cn/png/20170222/d3b407973c483f17539686e2c9cfae8d.jpg","game_type":"策略", "ios_url":"", "android_url":"", "pc_url":"","game_detail_url":"http://www.guopan.cn/gmdl/"},
+        {"app_id":17, "name":"光明大陆", "icon":"http://img.guopan.cn/png/20170222/d3b407973c483f17539686e2c9cfae8d.jpg","game_type":"策略", "ios_url":"", "android_url":"", "pc_url":"","game_detail_url":"http://www.guopan.cn/gmdl/"},
+        {"app_id":19, "name":"光明大陆", "icon":"http://img.guopan.cn/png/20170222/d3b407973c483f17539686e2c9cfae8d.jpg","game_type":"策略", "ios_url":"", "android_url":"", "pc_url":"","game_detail_url":"http://www.guopan.cn/gmdl/"},
+        {"app_id":14, "name":"光明大陆", "icon":"http://img.guopan.cn/png/20170222/d3b407973c483f17539686e2c9cfae8d.jpg","game_type":"策略", "ios_url":"", "android_url":"", "pc_url":"","game_detail_url":"http://www.guopan.cn/gmdl/"},
+        {"app_id":12, "name":"光明大陆", "icon":"http://img.guopan.cn/png/20170222/d3b407973c483f17539686e2c9cfae8d.jpg","game_type":"策略", "ios_url":"", "android_url":"", "pc_url":"","game_detail_url":"http://www.guopan.cn/gmdl/"},
+        {"app_id":13, "name":"光明大陆", "icon":"http://img.guopan.cn/png/20170222/d3b407973c483f17539686e2c9cfae8d.jpg","game_type":"策略", "ios_url":"", "android_url":"", "pc_url":"","game_detail_url":"http://www.guopan.cn/gmdl/"},
+        {"app_id":14, "name":"光明大陆", "icon":"http://img.guopan.cn/png/20170222/d3b407973c483f17539686e2c9cfae8d.jpg","game_type":"策略", "ios_url":"", "android_url":"", "pc_url":"","game_detail_url":"http://www.guopan.cn/gmdl/"},
+        {"app_id":12, "name":"光明大陆", "icon":"http://img.guopan.cn/png/20170222/d3b407973c483f17539686e2c9cfae8d.jpg","game_type":"策略", "ios_url":"", "android_url":"", "pc_url":"","game_detail_url":"http://www.guopan.cn/gmdl/"},
+        {"app_id":12, "name":"光明大陆", "icon":"http://img.guopan.cn/png/20170222/d3b407973c483f17539686e2c9cfae8d.jpg","game_type":"策略", "ios_url":"", "android_url":"", "pc_url":"","game_detail_url":"http://www.guopan.cn/gmdl/"},
+        {"app_id":13, "name":"光明大陆", "icon":"http://img.guopan.cn/png/20170222/d3b407973c483f17539686e2c9cfae8d.jpg","game_type":"策略", "ios_url":"", "android_url":"", "pc_url":"","game_detail_url":"http://www.guopan.cn/gmdl/"}
+    ],
+        "hot_games":[
+        {"app_id":1, "name":"光明大陆_热门", "icon":"http://img.guopan.cn/png/20170222/d3b407973c483f17539686e2c9cfae8d.jpg","game_type":"策略", "ios_url":"http://huo.huosdk.com", "android_url":"http://huo.huosdk.com", "pc_url":"http://huo.huosdk.com","game_detail_url":"http://www.guopan.cn/gmdl/"},
+        {"app_id":31, "name":"光明大陆_热门", "icon":"http://img.guopan.cn/png/20170222/d3b407973c483f17539686e2c9cfae8d.jpg","game_type":"策略", "ios_url":"http://huo.huosdk.com", "android_url":"http://huo.huosdk.com", "pc_url":"","game_detail_url":"http://www.guopan.cn/gmdl/"},
+        {"app_id":211, "name":"光明大陆_热门", "icon":"http://img.guopan.cn/png/20170222/d3b407973c483f17539686e2c9cfae8d.jpg","game_type":"策略", "ios_url":"http://huo.huosdk.com", "android_url":"", "pc_url":"","game_detail_url":"http://www.guopan.cn/gmdl/"},
+        {"app_id":13, "name":"光明大陆", "icon":"http://img.guopan.cn/png/20170222/d3b407973c483f17539686e2c9cfae8d.jpg","game_type":"策略", "ios_url":"", "android_url":"", "pc_url":"","game_detail_url":"http://www.guopan.cn/gmdl/"},
+        {"app_id":12, "name":"光明大陆", "icon":"http://img.guopan.cn/png/20170222/d3b407973c483f17539686e2c9cfae8d.jpg","game_type":"策略", "ios_url":"", "android_url":"", "pc_url":"","game_detail_url":"http://www.guopan.cn/gmdl/"},
+        {"app_id":12, "name":"光明大陆", "icon":"http://img.guopan.cn/png/20170222/d3b407973c483f17539686e2c9cfae8d.jpg","game_type":"策略", "ios_url":"", "android_url":"", "pc_url":"","game_detail_url":"http://www.guopan.cn/gmdl/"},
+        {"app_id":31, "name":"光明大陆", "icon":"http://img.guopan.cn/png/20170222/d3b407973c483f17539686e2c9cfae8d.jpg","game_type":"策略", "ios_url":"", "android_url":"", "pc_url":"","game_detail_url":"http://www.guopan.cn/gmdl/"},
+        {"app_id":31, "name":"光明大陆", "icon":"http://img.guopan.cn/png/20170222/d3b407973c483f17539686e2c9cfae8d.jpg","game_type":"策略", "ios_url":"", "android_url":"", "pc_url":"","game_detail_url":"http://www.guopan.cn/gmdl/"},
+        {"app_id":1, "name":"光明大陆", "icon":"http://img.guopan.cn/png/20170222/d3b407973c483f17539686e2c9cfae8d.jpg","game_type":"策略", "ios_url":"", "android_url":"", "pc_url":"","game_detail_url":"http://www.guopan.cn/gmdl/"},
+        {"app_id":21, "name":"光明大陆", "icon":"http://img.guopan.cn/png/20170222/d3b407973c483f17539686e2c9cfae8d.jpg","game_type":"策略", "ios_url":"", "android_url":"", "pc_url":"","game_detail_url":"http://www.guopan.cn/gmdl/"},
+        {"app_id":31, "name":"光明大陆", "icon":"http://img.guopan.cn/png/20170222/d3b407973c483f17539686e2c9cfae8d.jpg","game_type":"策略", "ios_url":"", "android_url":"", "pc_url":"","game_detail_url":"http://www.guopan.cn/gmdl/"},
+        {"app_id":14, "name":"光明大陆", "icon":"http://img.guopan.cn/png/20170222/d3b407973c483f17539686e2c9cfae8d.jpg","game_type":"策略", "ios_url":"", "android_url":"", "pc_url":"","game_detail_url":"http://www.guopan.cn/gmdl/"},
+        {"app_id":13, "name":"光明大陆", "icon":"http://img.guopan.cn/png/20170222/d3b407973c483f17539686e2c9cfae8d.jpg","game_type":"策略", "ios_url":"", "android_url":"", "pc_url":"","game_detail_url":"http://www.guopan.cn/gmdl/"},
+        {"app_id":16, "name":"光明大陆", "icon":"http://img.guopan.cn/png/20170222/d3b407973c483f17539686e2c9cfae8d.jpg","game_type":"策略", "ios_url":"", "android_url":"", "pc_url":"","game_detail_url":"http://www.guopan.cn/gmdl/"},
+        {"app_id":18, "name":"光明大陆", "icon":"http://img.guopan.cn/png/20170222/d3b407973c483f17539686e2c9cfae8d.jpg","game_type":"策略", "ios_url":"", "android_url":"", "pc_url":"","game_detail_url":"http://www.guopan.cn/gmdl/"},
+        {"app_id":19, "name":"光明大陆", "icon":"http://img.guopan.cn/png/20170222/d3b407973c483f17539686e2c9cfae8d.jpg","game_type":"策略", "ios_url":"", "android_url":"", "pc_url":"","game_detail_url":"http://www.guopan.cn/gmdl/"},
+        {"app_id":10, "name":"光明大陆", "icon":"http://img.guopan.cn/png/20170222/d3b407973c483f17539686e2c9cfae8d.jpg","game_type":"策略", "ios_url":"", "android_url":"", "pc_url":"","game_detail_url":"http://www.guopan.cn/gmdl/"}
+    ],
+    "hot_game_count":320,
+    "new_game_count":220
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>充值列表</title>
+	<link rel="stylesheet" href="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="/public/css/amazeui.min.css" type="text/css" />
+	<link rel="stylesheet" href="/public/css/style.css" type="text/css" />
+</head>
+<body class="bgcolor">
+
+<header data-am-widget="header" class="am-header am-header-default jz">
+		      <div class="am-header-left am-header-nav">
+		        <!--<a href="javascript:void(0);" class="">
+					<i class="am-icon-chevron-left"></i>
+				</a>-->
+		      </div>
+		      <h1 class="am-header-title">
+		          <a href="#title-link" class="">游戏充值</a>
+		      </h1>
+</header>
+
+<form action="{:U('Pay/fromsub')}" method="post" name="c">
+<foreach name="pricelist" item="vo" key="k">
+    <php>$a_select=$k==$pay['amount'] ?"active":"";</php>
+   <a href="javascript:void(0);" class="list-group-item {$a_select}" data-price="{$k}">{$vo}</a>
+</foreach>
+
+<input type="hidden" id="amount" name="amount" value="{$pay.amount}">
+<input type="hidden" name="username" value="{$pay.username}">
+<input type="hidden" name="roleid" value="{$pay.roleid}">
+<input type="hidden" name="serverid" value="{$pay.serverid}">
+<input type="hidden" name="appid" value="{$pay.appid}">
+<input type="hidden" name="productname" value="{$pay.productname}">
+<input type="hidden" name="orderdesc" value="{$pay.orderdesc}">
+<input type="hidden" name="imei" value="{$pay.imei}">
+<input type="hidden" name="agentgame" value="{$pay.agentgame}">
+<input type="hidden" name="attach" value="{$pay.attach}">
+<input type="hidden" name="cid" value="{$pay.cid}">
+<input type="hidden" name="reg_time" value="{$pay.reg_time}">
+<input type="hidden" name="paystatus" value="{$pay.paystatus}">
+<input type="hidden" name="type" value="{$pay.type}">
+<input type="hidden" name="baoming" value="{$pay.baoming}">
+
+<button type="button" id = "ok" class="btn btn-primary btn-lg btn-block" style="margin-top:10px">确认充值</button>
+</form>
+
+<script>
+		
+			$('.list-group-item').on('click', function() {
+				$(this).addClass('active').siblings().removeClass('active');
+				var price = $(this).data('price');
+				$("#amount").attr("value",price);//
+			});
+			
+			$('#ok').click(function(){
+				  $('form[name=c]').submit();
+			});
+			
+		</script>
+</body>
+</html>

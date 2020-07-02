@@ -1,0 +1,41 @@
+<admintpl file="header" />
+</head>
+<body >
+<div class="wrap" >
+    <ul class="nav nav-tabs" >
+        <li ><a href="{:U('Option/hsProduct')}" >其他产品列表</a ></li >
+        <li class="active" ><a href="{:U('Option/otherProductRecord')}?option_name=hs_product" >其他产品添加</a ></li >
+    </ul >
+    <form method="post" class="form-horizontal js-ajax-form" action="{:U('Option/operationSetting')}"
+          enctype="multipart/form-data" >
+        <fieldset >
+
+            <input name="option_name" value="{$_GET['option_name']}" type="hidden"/>
+            <input name="option_key" value="{$_GET['key']}" type="hidden"/>
+
+            <div class="control-group" >
+                <label class="control-label" >产品名称</label >
+                <div class="controls" >
+                    <input type="text" name="name" value="{$_GET['name']}">
+                    <span class="form-required" >*</span >
+                </div >
+            </div >
+            <div class="control-group" >
+                <label class="control-label" >产品路径</label >
+                <div class="controls" >
+                    <input type="text" name="url" value="{$_GET['url']}">
+                    <span class="form-required" >*</span >
+                </div >
+            </div >
+
+        </fieldset >
+        <div class="form-actions" >
+            <button type="submit" class="btn btn-primary js-ajax-submit" >{:L('SAVE')}</button >
+            <a class="btn" href="{:U('Option/hsProduct')}" >{:L('BACK')}</a >
+        </div >
+    </form >
+</div >
+<script src="__PUBLIC__/js/common.js" ></script >
+<script src="__PUBLIC__/js/previewImage.js" ></script >
+</body >
+</html>

@@ -1,0 +1,30 @@
+<admintpl file="header" />
+</head>
+<body >
+<div class="wrap js-check-wrap" >
+        <table class="table table-hover table-bordered table-list" >
+            <thead >
+            <tr >
+                <th width="200" >设置名</th >
+                <th >设置值</th >
+                <th width="120" >{:L('ACTIONS')}</th >
+            </tr >
+            </thead >
+            <tbody >
+
+            <tr >
+                <td >公司地址</td >
+                <td >{$data.option_value}</td >
+                <td >
+                    <a href="{:U('Option/company_address_edit',array('name'=>'web_company_address','value'=>$data['option_value']))}" >{:L('EDIT')}</a >
+                </td >
+            </tr >
+
+            </tbody >
+
+        </table >
+
+</div >
+<script src="__PUBLIC__/js/common.js" ></script >
+</body >
+</html>

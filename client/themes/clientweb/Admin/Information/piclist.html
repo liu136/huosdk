@@ -1,0 +1,95 @@
+<admintpl file="header" />
+<link rel="shortcut icon" href="favicon.ico"> <link href="/public/h/css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="/public/h/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link href="/public/h/css/plugins/chosen/chosen.css" rel="stylesheet">
+    <link href="/public/h/css/plugins/cropper/cropper.min.css" rel="stylesheet">
+    <link href="/public/h/css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+
+    <link href="/public/h/css/animate.min.css" rel="stylesheet">
+    <link href="/public/h/css/style.min862f.css?v=4.1.0" rel="stylesheet">
+
+	<!-- Data Tables -->
+    <link href="/public/h/css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
+</head>
+<body class="J_scroll_fixed">
+		
+	<div class="wrap J_check_wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('Information/index')}">资讯信息</a></li>
+			<li><a href="{:U('Information/addinfo')}" target="_self" >添加资讯</a></li>
+			<li class="active"><a href="{:U('Information/piclist')}" target="_self" >资讯图片</a></li>
+		</ul>
+		
+		<div class="ibox-content">
+		<form role="form" class="form-inline" method="post" action="{:U('Information/piclist')}">
+			<div class="search_type cc mb10">
+				图片类型： 
+				<select class="select_2" name="typeid">
+					<foreach name="type" key="k" item="v">
+						<option value="{$k}">{$v}</option>
+					</foreach>
+						
+				</select>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="submit" class="btn btn-warning" name='date_time' value="搜索" />
+			</div>
+		</form>
+		<form class="J_ajaxForm" action="" method="post">
+		
+			<table class="table table-hover table-bordered table-list">
+				<thead>
+					<tr>
+						<th>图片类型</th>
+						<th>图片序号</th>
+						<th>图片预览</th>
+						<th>图片标题</th>
+						<th>对应资讯编号</th>
+						<!-- <th>相关游戏</th> -->
+						<th width="150">管理操作</th>
+					</tr>
+				</thead>
+					
+				<foreach name="piclist" item="vo">
+					<tr>
+						<td>
+							<if condition="$vo.type eq 2" > 轮播图
+							<elseif condition="$vo.type eq 5" />推荐新闻
+							<elseif condition="$vo.type eq 6" />推荐攻略
+							<elseif condition="$vo.type eq 7" />推荐活动
+							<elseif condition="$vo.type eq 8" />首页最新活动
+							</if>
+						
+						</td>
+						<td>{$vo['mumber']}</td>
+						<td><img src="{$img_url}{$vo['imgname']}" width="50" height="50"></td>
+						<td>{$vo['imgtitle']}</td>
+						<td>{$vo['appid']}</td>
+					    <!-- <td>{$vo['gamename']}</td> -->
+						<td>
+					    <a href="{:U('Information/editpic',array('type'=>$vo['type'],'mumber'=>$vo['mumber'],'omumber'=>$vo['omumber']))}">修改</a> 
+					
+					</tr>
+				</foreach>
+			</table>
+			<div class="pagination">{$Page}</div>
+			<if condition="empty($piclist)">
+	       		<div class="ibox-content" style="text-align:center;font-size:18px;font-weight:bold;border:none">暂无相关内容</div>
+	       </if>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+		<script src="/public/h/js/plugins/chosen/chosen.jquery.js"></script>
+    <script src="/public/h/js/content.min.js?v=1.0.0"></script>
+    <script src="/public/h/js/plugins/chosen/chosen.jquery.js"></script>
+    <script src="/public/h/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+    <script src="/public/h/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="/public/h/js/plugins/clockpicker/clockpicker.js"></script>
+    <script src="/public/h/js/plugins/cropper/cropper.min.js"></script>
+    <script src="/public/h/js/demo/form-advanced-demo.min.js"></script>
+
+    <script src="/public/h/js/plugins/jeditable/jquery.jeditable.js"></script>
+    <script src="/public/h/js/plugins/dataTables/jquery.dataTables.js"></script>
+    <script src="/public/h/js/plugins/dataTables/dataTables.bootstrap.js"></script>
+    <script src="/public/h/js/content.min.js?v=1.0.0"></script>
+</body>
+</html>

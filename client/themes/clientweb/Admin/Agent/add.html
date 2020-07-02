@@ -1,0 +1,123 @@
+<admintpl file="header" />
+    
+    <link rel="shortcut icon" href="favicon.ico"> <link href="/public/h/css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="/public/h/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link href="/public/h/css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="/public/h/css/animate.min.css" rel="stylesheet">
+    <link href="/public/h/css/style.min862f.css?v=4.1.0" rel="stylesheet">
+	
+    <link rel="stylesheet" href="/public/h/plugins/multiselect/lib/google-code-prettify/prettify.css" />
+    <link rel="stylesheet" href="/public/h/plugins/multiselect/css/style.css" />
+</head>
+<body>
+    
+        <ul class="nav nav-tabs">
+			<li><a href="{:U('agent/index')}">渠道列表</a></li>
+			<li class="active"><a href="{:U('user/addagent')}">渠道添加</a></li>
+	    </ul>
+	    <div class="ibox-content">
+            <form class="form-horizontal" method="post" action="{:U('User/add_post')}">
+		
+			    <div class="form-group">
+                                <label class="col-sm-3 control-label">{:L('USERNAME')}</label>
+
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" name="user_login" autocomplete="off">
+                                </div>
+                </div>
+			    <div class="form-group">
+                                <label class="col-sm-3 control-label">渠道名称</label>
+
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" name="user_nicename" autocomplete="off">
+                                </div>
+                </div>
+			    <div class="form-group">
+                                <label class="col-sm-3 control-label">{:L('PASSWORD')}</label>
+                                
+                                <div class="col-sm-8">
+                                    <input type="password" class="form-control" name="user_pass" autocomplete="off">
+                                </div>
+                </div>
+            
+			    <div class="form-group">
+                                <label class="col-sm-3 control-label">{:L('EMAIL')}</label>
+
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" name="user_email" autocomplete="off">
+                                </div>
+                </div>
+            
+			    <div class="form-group">
+                                 <label class="col-sm-3 control-label">{:L('ROLE')}</label>
+								 <div class="radio i-checks">
+								     <foreach name="roles" item="vo">
+								       <label> <input type="radio" name="role_id" value="{$vo.id}" checked  id="active_true"> <i></i> {$vo.name}</label>
+						             </foreach>      
+                                 </div>
+                </div>
+			   <!-- <div class="form-group">
+				<label class="col-sm-3 control-label">游戏选择</label>
+				<div class="col-sm-4">
+			    <div id="wrap" class="container" style="padding-top:10px">            
+            
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <select name="from[]" id="search" class="form-control" size="8" multiple="multiple">
+								<foreach name="nousergames"  key="k" item="vo">
+								   <option value="{$k}" data-position="{$k}">{$vo}</option>
+								</foreach>
+                            </select>
+                        </div>
+                
+                        <div class="col-sm-2">
+                            <button type="button" id="search_rightAll" class="btn btn-block">全部选择</button>
+                            <button type="button" id="search_rightSelected" class="btn btn-block"><i class="glyphicon glyphicon-chevron-right"></i></button>
+                            <button type="button" id="search_leftSelected" class="btn btn-block"><i class="glyphicon glyphicon-chevron-left"></i></button>
+                            <button type="button" id="search_leftAll" class="btn btn-block">清空选择</button>
+                        </div>
+                
+                        <div class="col-sm-5">
+                            <select name="to[]" id="search_to" class="form-control" size="8" multiple="multiple">
+							    <foreach name="usergames"  key="k" item="vo">
+								   <option value="{$k}" data-position="{$k}">{$vo}</option>
+								</foreach>
+							</select>
+                        </div>
+                    </div>
+                </div>
+				</div>
+				</div>-->
+			    <div class="form-actions">
+				    <button type="submit" class="btn btn-primary js-ajax-submit">{:L('ADD')}</button>
+				    <a class="btn" href="{:U('agent/index')}">{:L('BACK')}</a>
+			    </div>
+		    </form>
+        </div>
+    
+<script src="/public/h/js/plugins/cropper/cropper.min.js"></script>
+<script src="/public/h/js/content.min.js?v=1.0.0"></script>
+<script src="/public/h/js/plugins/iCheck/icheck.min.js"></script>
+<script>
+        $(document).ready(function(){$(".i-checks").iCheck({checkboxClass:"icheckbox_square-green",radioClass:"iradio_square-green",})});
+</script>
+
+<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
+<script type="text/javascript" src="/public/h/plugins/multiselect/dist/js/multiselect.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // make code pretty
+    window.prettyPrint && prettyPrint();
+
+    $('#search').multiselect({
+        search: {
+            left: '<input type="text" name="q" class="form-control" placeholder="可分配权限给子渠道的游戏" />',
+            right: '<input type="text" name="q" class="form-control" placeholder="已经分配给子渠道的游戏" />',
+        }
+    });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+    <base href="/">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="description" content="游戏官网">
+
+    <title>游戏官网</title>
+    <script type="text/javascript" src="assets/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="assets/js/common.js"></script>
+	<script type="text/javascript" src="http://img3.job1001.com/js/ZeroClipboard/jquery.zclip.min.js"></script>
+	
+	<script type="text/javascript"> 
+	// event 事件参数 浏览器 在调用 dom元素的 事件时 会传入一个参数 这里面有 一些浏览器信息,比如宽高,鼠标位置等
+			var ajax = new XMLHttpRequest();
+			ajax.open('get', '/index.php/index/Index/getIndexSeo');
+			ajax.send();
+			ajax.onreadystatechange = function() {
+			if (ajax.readyState == 4 && ajax.status == 200) {
+					var data = JSON.parse(ajax.responseText);
+					document.getElementsByTagName('title')[0].innerHTML = data.title;
+					document.getElementById('keywords').content = data.keywords;
+					document.getElementById('description').content = data.description;
+				}
+			}
+			
+			$(function(){  
+				var MobileUA = (function() {  
+					var ua = navigator.userAgent.toLowerCase();  
+			  
+					var mua = {  
+						IOS: /ipod|iphone|ipad/.test(ua), //iOS  
+						IPHONE: /iphone/.test(ua), //iPhone  
+						IPAD: /ipad/.test(ua), //iPad  
+						ANDROID: /android/.test(ua), //Android Device  
+						WINDOWS: /windows/.test(ua), //Windows Device  
+						TOUCH_DEVICE: ('ontouchstart' in window) || /touch/.test(ua), //Touch Device  
+						MOBILE: /mobile/.test(ua), //Mobile Device (iPad)  
+						ANDROID_TABLET: false, //Android Tablet  
+						WINDOWS_TABLET: false, //Windows Tablet  
+						TABLET: false, //Tablet (iPad, Android, Windows)  
+						SMART_PHONE: false //Smart Phone (iPhone, Android)  
+					};  
+			  
+					mua.ANDROID_TABLET = mua.ANDROID && !mua.MOBILE;  
+					mua.WINDOWS_TABLET = mua.WINDOWS && /tablet/.test(ua);  
+					mua.TABLET = mua.IPAD || mua.ANDROID_TABLET || mua.WINDOWS_TABLET;  
+					mua.SMART_PHONE = mua.MOBILE && !mua.TABLET;  
+			  
+					return mua;  
+				}());  
+			  
+				//SmartPhone   
+				if (MobileUA.SMART_PHONE) {  
+					// 移动端链接地址  
+					document.location.href = '/mobile.php';  
+				}  
+			});  
+	</script>
+<link href="/assets/main.bundle.css" rel="stylesheet"><script type="text/javascript" src="/assets/static/polyfills.5f029712668518da6ac5.bundle.js" defer></script><script type="text/javascript" src="/assets/static/vendor.5f029712668518da6ac5.bundle.js" defer></script><script type="text/javascript" src="/assets/static/main.5f029712668518da6ac5.bundle.js" defer></script></head>
+<body>
+
+    <mnt-app>
+        <!-- loading -->
+        <div class="spinner-container">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+    </mnt-app>
+
+    
+</body>
+</html>

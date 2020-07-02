@@ -1,0 +1,111 @@
+<admintpl file="header" />
+
+<link rel="shortcut icon" href="favicon.ico"> <link href="/public/h/css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="/public/h/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link href="/public/h/css/plugins/chosen/chosen.css" rel="stylesheet">
+    <link href="/public/h/css/plugins/cropper/cropper.min.css" rel="stylesheet">
+    <link href="/public/h/css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+
+    <link href="/public/h/css/animate.min.css" rel="stylesheet">
+    <link href="/public/h/css/style.min862f.css?v=4.1.0" rel="stylesheet">
+
+</head>
+<body class="J_scroll_fixed">
+	<div class="wrap J_check_wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="{:U('Member/dataindex')}">整体数据</a></li>
+			<!--<li><a href="{:U('member/loginindex')}">登陆数据</a></li>
+			<li><a href="{:U('member/restindex')}">留存数据</a></li>
+			<li><a href="{:U('member/payindex')}">充值数据</a></li>
+-->
+		</ul>
+
+		<div class="ibox-content">
+                     <form role="form" class="form-inline" method="post" action="{:U('Member/dataindex')}">
+						  <div class="ibox-content" style="border-width:0px 0;padding: 10px 20px 5px">
+                           
+							<div class="form-group">
+		                         <label class="font-noraml">游戏：</label>
+		                         <div class="input-group">
+		                           <select data-placeholder="选择账号..." class="chosen-select" name="gid"  style="width:175px;" tabindex="2">
+		                               <foreach name="games"  key="k" item="vo">
+									   <php>$gid_select=$k==$formget['gid'] ?"selected":"";</php>
+									    <option value="{$k}"{$gid_select}>{$vo}</option>
+									   </foreach>
+		                              </select>
+		                           </div>
+				            </div>
+                            <div class="form-group">
+                                <label class="font-noraml">账号： </label>
+                                <input type="text" placeholder="请输入账号" name="username" value="{$formget['username']}" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label class="font-noraml">渠道名称：</label>
+                                <input type="text" placeholder="请输入名称" name="agentnicename"  value="{$formget['agentnicename']}" class="form-control">
+                            </div>
+                            
+				   		 	<button class="btn btn-primary" name='submit' type="submit" value="搜索">搜索</button>
+                          
+						</div>
+						
+                     </form>
+         </div>
+
+		<form class="J_ajaxForm" action="" method="post">
+			<div class="ibox-content">
+               <table class="table table-striped table-bordered table-hover dataTables-example" style="margin-bottom:5px">
+			<thead>
+				<tr>					
+                    <th style="vertical-align:middle; text-align:center;">玩家账号</th>
+                    <th>渠道名称</th>
+                    <th>游戏名称</th>
+                    <th>最近登录时间</th>
+					<th>累计充值次数</th>
+					<th>充值总额</th>
+					<th>最近充值时间</th>
+				</tr>
+			</thead>
+			<tbody>				
+				<foreach name="members" item="vo">
+				<tr>
+					<td>{$vo.username}</td>
+					<td>
+					<if condition="$vo['agentid'] elt 1">
+					   官包
+					<else />
+					    {$vo.user_nicename}
+					</if>
+					</td>
+					<td>{$vo.gamename}</td>
+					<td>{$vo.last_login_time|date='Y-m-d H:i:s',###}</td>
+					<td>{$vo.paycou}</td>
+					<td>{$vo.amount}</td>
+					<td>{$vo.creat_time|date='Y-m-d H:i:s',###}</td>
+				</tr>
+				</foreach>
+			</tbody>
+		</table>
+		<div class="pagination">{$Page}</div>
+		</div>
+		<if condition="empty($members)">
+       		<div class="ibox-content" style="text-align:center;font-size:18px;font-weight:bold;border:none">暂无相关内容</div>
+       </if>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+
+<script src="/public/h/js/plugins/chosen/chosen.jquery.js"></script>
+    <script src="/public/h/js/content.min.js?v=1.0.0"></script>
+    <script src="/public/h/js/plugins/chosen/chosen.jquery.js"></script>
+    <script src="/public/h/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+    <script src="/public/h/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="/public/h/js/plugins/clockpicker/clockpicker.js"></script>
+    <script src="/public/h/js/plugins/cropper/cropper.min.js"></script>
+    <script src="/public/h/js/demo/form-advanced-demo.min.js"></script>
+
+    <script src="/public/h/js/plugins/jeditable/jquery.jeditable.js"></script>
+    <script src="/public/h/js/plugins/dataTables/jquery.dataTables.js"></script>
+    <script src="/public/h/js/plugins/dataTables/dataTables.bootstrap.js"></script>
+    <script src="/public/h/js/content.min.js?v=1.0.0"></script>
+</body>
+</html>

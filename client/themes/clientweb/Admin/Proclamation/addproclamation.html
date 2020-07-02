@@ -1,0 +1,112 @@
+<admintpl file="header" />
+
+ <link rel="shortcut icon" href="favicon.ico"> <link href="/public/h/css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="/public/h/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link href="/public/h/css/plugins/chosen/chosen.css" rel="stylesheet">
+    <link href="/public/h/css/plugins/cropper/cropper.min.css" rel="stylesheet">
+    <link href="/public/h/css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+
+    <link href="/public/h/css/animate.min.css" rel="stylesheet">
+    <link href="/public/h/css/style.min862f.css?v=4.1.0" rel="stylesheet">
+
+</head>
+<body class="J_scroll_fixed">
+	<div class="wrap jj">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('Proclamation/index')}">公告列表</a></li>
+			<li class="active"><a href="{:U('Proclamation/addproclamation')}" target="_self">添加公告</a></li>
+		</ul>
+
+		<div class="ibox-content">
+           <form method="post" class="form-horizontal J_ajaxForm" action="{:U('Proclamation/addproc_post')}">
+		             <div class="control-group">
+                                 <label class="control-label">游戏:</label>
+                                 <div class="controls">
+                                    <select data-placeholder="选择游戏..." class="chosen-select" name="appid" tabindex="2">
+									
+                                     <foreach name="games" item="vo">
+									    <option value="{$vo.appid}" 
+										
+										>{$vo.gamename}</option>
+								      </foreach>
+                                   </select>
+                                  </div>
+                     </div>
+				    
+					<div class="control-group">
+                                <label class="control-label">公告标题:</label>
+
+                                <div class="controls">
+                                    <input type="text" class="form-control" name="title" style="width:50%;" placeholder="请输入标题" value="{$pmation.title}" >
+                                </div>
+                     </div>
+
+					<div class="control-group">
+						<label class="control-label">公告内容:</label>
+						<div class="controls">
+							<textarea id="code" name="content" rows="12" cols="75" style="resize:none;width:50%;"  >{$pmation.content}</textarea>
+						</div>
+					</div>
+					
+					<div class="control-group" id="data_5">
+                                 <label class="control-label">公告期限:</label>
+                                 <div class="input-daterange input-group" id="datepicker">
+                                    <input type="text" class="input-sm form-control" name="start_time"  
+									<?php 
+										if($pmation==null){
+											
+										}else{
+											
+											echo "value='".date('Y-m-d',$pmation['start_time'])."'";
+										}
+									?>
+									 
+									
+									/>
+                                    <span class="input-group-addon">到</span>
+                                    <input type="text" class="input-sm form-control" name="end_time"   <?php 
+										if($pmation==null){
+											
+										}else{
+										
+											echo "value='".date('Y-m-d',$pmation['end_time'])."'";
+										}
+									?>
+									/>
+                                 </div>
+                    </div>
+				<div class="form-actions">
+					<input type="hidden" name="pid" value="{$pmation.id}">
+					<input type="hidden" name="gameid" value="{$pmation.appid}">
+					<button type="submit"
+						class="btn btn-primary btn_submit J_ajax_submit_btn">
+								<?php 
+										if($pmation==null){
+											echo "保存";
+										}else{
+										
+											echo "更新";
+										}
+									?>
+						</button>
+					<a class="btn" href="__URL__">返回</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	<script src="/public/h/js/content.min.js?v=1.0.0"></script>
+    <script src="/public/h/js/plugins/chosen/chosen.jquery.js"></script>
+    <script src="/public/h/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+    <script src="/public/h/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="/public/h/js/plugins/clockpicker/clockpicker.js"></script>
+    <script src="/public/h/js/plugins/cropper/cropper.min.js"></script>
+    <script src="/public/h/js/demo/form-advanced-demo.min.js"></script>
+
+    <script src="/public/h/js/plugins/jeditable/jquery.jeditable.js"></script>
+    <script src="/public/h/js/plugins/dataTables/jquery.dataTables.js"></script>
+    <script src="/public/h/js/plugins/dataTables/dataTables.bootstrap.js"></script>
+    <script src="/public/h/js/content.min.js?v=1.0.0"></script>
+	
+</body>
+</html>

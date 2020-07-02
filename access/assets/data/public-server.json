@@ -1,0 +1,43 @@
+{
+    "game_slides":[
+        {
+            "app_id":6,
+            "name":"龙魂神裔",
+            "game_desc":"操作简单，处处暴血PK对战，还你一个真实刺激的战场。",
+            "game_shot":"http://img.guopan.cn/2016-11-04/20161104161511998.jpg"
+        },
+        {
+            "app_id":8,
+            "name":"御剑情缘",
+            "game_desc":"一场遇见 一世相守",
+            "game_shot":"http://cdn.guopan.cn/uploads/ggimg/2016-09-22/20160922114850505.jpg"
+        },
+        {
+            "app_id":20,
+            "name":"圣斗士星矢",
+            "game_desc":"30年经典漫画神作王者再临！车田正美正版授权，前所未有的MMOARPG动作手游大作",
+            "game_shot":"http://img.guopan.cn/2016-12-26/20161226114824804.jpg"
+        }
+    ],
+    "game_list_count":68,
+    "game_icon":[
+        {"game_icon":"http://img.guopan.cn/2017-01-12/1484210659490.png","game_name":"","game_type":"角色","ios_down_url":"","android_down_url":"","app_id":60045},
+        {"game_icon":"http://img.guopan.cn/2017-01-12/1484210659490.png","game_name":"","game_type":"角色","ios_down_url":"","android_down_url":"","app_id":60045},
+        {"game_icon":"http://img.guopan.cn/2017-01-12/1484210659490.png","game_name":"","game_type":"角色","ios_down_url":"","android_down_url":"","app_id":60045},
+        {"game_icon":"http://img.guopan.cn/2017-01-12/1484210659490.png","game_name":"","game_type":"角色","ios_down_url":"","android_down_url":"","app_id":60045},
+        {"game_icon":"http://img.guopan.cn/2017-01-12/1484210659490.png","game_name":"","game_type":"角色","ios_down_url":"","android_down_url":"","app_id":60045},
+        {"game_icon":"http://img.guopan.cn/2017-01-12/1484210659490.png","game_name":"","game_type":"角色","ios_down_url":"","android_down_url":"","app_id":60045},
+        {"game_icon":"http://img.guopan.cn/2017-01-12/1484210659490.png","game_name":"","game_type":"角色","ios_down_url":"","android_down_url":"","app_id":60045},
+        {"game_icon":"http://img.guopan.cn/2017-01-12/1484210659490.png","game_name":"","game_type":"角色","ios_down_url":"","android_down_url":"","app_id":60045},
+        {"game_icon":"http://img.guopan.cn/2017-01-12/1484210659490.png","game_name":"","game_type":"角色","ios_down_url":"","android_down_url":"","app_id":60045},
+        {"game_icon":"http://img.guopan.cn/2017-01-12/1484210659490.png","game_name":"","game_type":"角色","ios_down_url":"","android_down_url":"","app_id":60045},
+        {"game_icon":"http://img.guopan.cn/2017-01-12/1484210659490.png","game_name":"","game_type":"角色","ios_down_url":"","android_down_url":"","app_id":60045},
+        {"game_icon":"http://img.guopan.cn/2017-01-12/1484210659490.png","game_name":"","game_type":"角色","ios_down_url":"","android_down_url":"","app_id":60045},
+        {"game_icon":"http://img.guopan.cn/2017-01-12/1484210659490.png","game_name":"","game_type":"角色","ios_down_url":"","android_down_url":"","app_id":60045},
+        {"game_icon":"http://img.guopan.cn/2017-01-12/1484210659490.png","game_name":"","game_type":"角色","ios_down_url":"","android_down_url":"","app_id":60045},
+        {"game_icon":"http://img.guopan.cn/2017-01-12/1484210659490.png","game_name":"","game_type":"角色","ios_down_url":"","android_down_url":"","app_id":60045},
+        {"game_icon":"http://img.guopan.cn/2017-01-12/1484210659490.png","game_name":"","game_type":"角色","ios_down_url":"","android_down_url":"","app_id":60045},
+        {"game_icon":"http://img.guopan.cn/2017-01-12/1484210659490.png","game_name":"","game_type":"角色","ios_down_url":"","android_down_url":"","app_id":60045},
+        {"game_icon":"http://img.guopan.cn/2017-01-12/1484210659490.png","game_name":"","game_type":"角色","ios_down_url":"","android_down_url":"","app_id":60045}
+    ]
+}

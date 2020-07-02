@@ -1,0 +1,239 @@
+
+
+.SuspendedBall {
+    position: fixed;
+
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    z-index: 999; /*最高的层级*/
+    top: 100px;
+    right: -0.6rem;
+    display: none;
+	width:1.2rem;
+	height:1.2rem;
+}
+
+.SuspendedBall > div {
+	width: 1.2rem;
+	height: 1.2rem;
+	border-radius: 15px;
+
+	background-image: url("../img/img0605/ball.png");
+	background-repeat: no-repeat;
+	background-size: 80% auto;
+	background-position-x: 50%;
+	background-position-y: 50%;
+}
+
+/*@media screen and (min-width: 100px) {
+    .SuspendedBall {
+        display: block;
+    }
+}*/
+
+
+@keyframes SuspendedBallToLeft {
+    100% {
+        left: 0px;
+    }
+}
+
+@-webkit-keyframes SuspendedBallToLeft {
+    100% {
+        left: 0px;
+    }
+}
+
+@-moz-keyframes SuspendedBallToLeft {
+    100% {
+        left: 0px;
+    }
+}
+
+@keyframes SuspendedBallToLeft2 {
+	0% {
+        left: 0px;
+    }
+    100% {
+        left: -0.6rem;
+    }
+}
+
+@-webkit-keyframes SuspendedBallToLeft2 {
+	0% {
+        left: 0px;
+    }
+    100% {
+        left: -0.6rem;
+    }
+}
+
+@-moz-keyframes SuspendedBallToLeft2 {
+	0% {
+        left: 0px;
+    }
+    100% {
+        left: -0.6rem;
+    }
+}
+
+.ToLeft {
+	animation-name:SuspendedBallToLeft,SuspendedBallToLeft2;
+	animation-duration:0.2s,1s;
+	animation-timing-function:linear,linear;
+	animation-delay:0s,2s;
+	animation-iteration-count:1,1;
+	animation-direction:normal,normal;
+	animation-play-state:running,running;
+	animation-fill-mode:forwards,forwards;
+	/* Safari 和 Chrome */
+	-webkit-animation-name:SuspendedBallToLeft,SuspendedBallToLeft2;
+	-webkit-animation-duration:0.2s,1s;
+	-webkit-animation-timing-function:linear,linear;
+	-webkit-animation-delay:0s,2s;
+	-webkit-animation-iteration-count:1,1;
+	-webkit-animation-direction:normal,normal;
+	-webkit-animation-play-state:running,running;
+	-webkit-animation-fill-mode:forwards,forwards;
+	/* Firefox */
+	-moz-animation-name:SuspendedBallToLeft,SuspendedBallToLeft2;
+	-moz-animation-duration:0.2s,1s;
+	-moz-animation-timing-function:linear,linear;
+	-moz-animation-delay:0s,2s;
+	-moz-animation-iteration-count:1,1;
+	-moz-animation-direction:normal,normal;
+	-moz-animation-play-state:running,running;
+	-moz-animation-fill-mode:forwards,forwards;
+}
+
+@keyframes SuspendedBallToRight {
+    100% {
+        left: calc(100% - 1.2rem);
+        left: -webkit-calc(100% - 1.2rem);
+        left: -moz-calc(100% - 1.2rem);
+    }
+}
+
+@-webkit-keyframes SuspendedBallToRight {
+    100% {
+        left: calc(100% - 1.2rem);
+        left: -webkit-calc(100% - 1.2rem);
+        left: -moz-calc(100% - 1.2rem);
+    }
+}
+
+@-moz-keyframes SuspendedBallToRight {
+    100% {
+        left: calc(100% - 1.2rem);
+        left: -webkit-calc(100% - 1.2rem);
+        left: -moz-calc(100% - 1.2rem);
+    }
+}
+
+@keyframes SuspendedBallToRight2 {
+    0% {
+        left: calc(100% - 1.2rem);
+        left: -webkit-calc(100% - 1.2rem);
+        left: -moz-calc(100% - 1.2rem);
+    }
+    100% {
+        left: calc(100% - 0.6rem);
+        left: -webkit-calc(100% - 0.6rem);
+        left: -moz-calc(100% - 0.6rem);
+    }
+}
+
+@-webkit-keyframes SuspendedBallToRight2 {
+    0% {
+        left: calc(100% - 1.2rem);
+        left: -webkit-calc(100% - 1.2rem);
+        left: -moz-calc(100% - 1.2rem);
+    }
+	100% {
+        left: calc(100% - 0.6rem);
+        left: -webkit-calc(100% - 0.6rem);
+        left: -moz-calc(100% - 0.6rem);
+    }
+}
+
+@-moz-keyframes SuspendedBallToRight2 {
+	0% {
+        left: calc(100% - 1.2rem);
+        left: -webkit-calc(100% - 1.2rem);
+        left: -moz-calc(100% - 1.2rem);
+    }
+    100% {
+        left: calc(100% - 0.6rem);
+        left: -webkit-calc(100% - 0.6rem);
+        left: -moz-calc(100% - 0.6rem);
+    }
+	
+} 
+
+.ToRight {
+	animation-name:SuspendedBallToRight,SuspendedBallToRight2;
+	animation-duration:0.2s,1s;
+	animation-timing-function:linear,linear;
+	animation-delay:0s,2s;
+	animation-iteration-count:1,1;
+	animation-direction:normal,normal;
+	animation-play-state:running,running;
+	animation-fill-mode:forwards,forwards;
+	/* Safari 和 Chrome */
+	-webkit-animation-name:SuspendedBallToRight,SuspendedBallToRight2;
+	-webkit-animation-duration:0.2s,1s;
+	-webkit-animation-timing-function:linear,linear;
+	-webkit-animation-delay:0s,2s;
+	-webkit-animation-iteration-count:1,1;
+	-webkit-animation-direction:normal,normal;
+	-webkit-animation-play-state:running,running;
+	-webkit-animation-fill-mode:forwards,forwards;
+	/* Firefox */
+	-moz-animation-name:SuspendedBallToRight,SuspendedBallToRight2;
+	-moz-animation-duration:0.2s,1s;
+	-moz-animation-timing-function:linear,linear;
+	-moz-animation-delay:0s,2s;
+	-moz-animation-iteration-count:1,1;
+	-moz-animation-direction:normal,normal;
+	-moz-animation-play-state:running,running;
+	-moz-animation-fill-mode:forwards,forwards;
+}
+
+.BallBox {
+    position: fixed;
+    z-index: 999;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+    display: block;
+    width: 300px;
+    border: 1px solid #808080;
+    border-radius: 10px;
+    height: 300px;
+    display: none;
+}
+
+    .BallBox > .Bg {
+        position: absolute;
+        z-index: 998;
+        width: 300px;
+        height: 300px;
+        background-color: #ededed;
+        background-image: url("icon2.png");
+        background-repeat: no-repeat;
+        background-size: 50% auto;
+        background-position: 50% 50%;
+        border-radius: 10px;
+        filter: alpha(opacity=30);
+        -moz-opacity: 0.3;
+        opacity: 0.3;
+    }
+
+    .BallBox > .BallBoxInfo {
+        margin: 10px;
+        position: absolute;
+        z-index: 999;
+        width: 280px;
+        height: 280px;
+        overflow: auto;
+    }

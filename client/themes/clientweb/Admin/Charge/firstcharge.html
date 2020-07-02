@@ -1,0 +1,113 @@
+<admintpl file="header"/>
+</head>
+<body class="J_scroll_fixed">
+<div class="wrap">
+  
+  <div class="common-form">
+    <form class="form-horizontal J_ajaxForm" method="post" action="{:U('Charge/firstcharge_post')}">
+        <fieldset>
+		  
+          <div class="control-group">
+						<label class="control-label">游戏：</label>
+						<div class="controls">				
+						   <select class="select_2" name="gid" id="gid">
+								<foreach name="games"  key="k" item="vo">
+								  <option value="{$k}">{$vo}</option>
+								</foreach>
+						    </select>
+						</div>
+		 </div>
+         
+		 <div class="control-group">
+						<label class="control-label">账号：</label>
+						<div class="controls">
+							<input type="text" class="input-xlarge" name="username">
+						</div>
+		 </div>
+
+		 <div class="control-group">
+						<label class="control-label">区服：</label>
+						<div class="controls">
+							<input type="text" class="input-xlarge" name="server">
+						</div>
+		 </div>
+
+		 <div class="control-group">
+						<label class="control-label">角色：</label>
+						<div class="controls">
+							<input type="text" class="input-xlarge" name="role">
+						</div>
+		 </div>
+
+		 <div class="control-group">
+            <label class="control-label" for="input01">发放金额：</label>
+            <div class="controls">
+              <input type="text" class="input-xlarge" name="amount">*金额必须为整数，单位为元
+            </div>
+          </div>
+
+          <!--<div class="control-group">
+            <label class="control-label" for="input01">二级密码：</label>
+            <div class="controls">
+              <input type="password" class="input-xlarge" id="password" name="password">
+            </div>
+          </div>-->
+          
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary btn_submit  J_ajax_submit_btn">提交</button>
+          </div>
+        </fieldset>
+      </form>
+  </div>
+</div>
+
+<script type="text/javascript">
+         $(function(){  
+             $("#gid").change(function() {  
+                loadSever($("#gid").val());  
+            });  
+
+			$("#service").change(function() {  
+                loadRole($("#service").val());  
+            }); 
+              
+            function loadSever(parentid) {  
+                $.ajax({  
+                    url: '{:U("Charge/getServer")}',  
+                    type: 'POST',  
+                    dataType: 'JSON',
+					data:{appid:parentid},
+                    timeout: 5000,  
+                    error: function() { alert('Error loading data!'); },  
+                    success: function(msg) {
+                        $("#service").empty();  
+                        $.each(eval(msg), function(i, item) {  
+                            $("<option value='" + item.id + "'>" + item.service + "</option>").appendTo($("#service"));  
+                        });  
+                    }  
+                });  
+            }
+			
+			function loadRole(parentid) {  
+				var gid = $("#gid").val();
+				var checkText=$("#service").find("option:selected").text();
+                $.ajax({  
+                    url: '{:U("Charge/getRole")}',  
+                    type: 'POST',  
+                    dataType: 'JSON',  
+					data:{appid:gid,server:checkText},
+                    timeout: 5000,  
+                    error: function() { alert('Error loading data!'); },  
+                    success: function(msg) {  
+                        $("#role").empty();  
+                        $.each(eval(msg), function(i, item) {  
+                            $("<option value='" + item.id + "'>" + item.role + "</option>").appendTo($("#role"));  
+                        });  
+                    }  
+                });  
+            }  
+        })  
+</script>
+
+</body>
+</html>

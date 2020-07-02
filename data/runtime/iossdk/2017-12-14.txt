@@ -1,0 +1,3 @@
+Time : 04:25:37
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : INSERT INTO `db_sdk_2`.`c_pay` (`cid`,`orderid`,`amount`,`userid`,`roleid`,`paytype`,`productname`,`agentgame`,`serverid`,`appid`,`status`,`ip`,`imei`,`create_time`,`remark`,`regagent`) VALUES (:cid, :orderid,:amount,:userid,:roleid,:paytype,:productname,:agentgame,:serverid,:appid,:status,:ip,:imei,:create_time,:remark,:regagent)

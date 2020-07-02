@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/public/css/style2.css">
+		<script src="/public/js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+		  function clow(){
+              window.location.href = 'ndb://push';
+		  }
+		function sumToJava(number1, number2){
+				var aa = document.getElementById("rstatus").value;   //获取text的值aaa
+				window.ttw_w.goBackGameTWO(aa)
+		}
+			
+         </script>
+	</head>
+
+	<body>
+		<if condition="$typeid eq 1 "> 
+			<div class="con">
+				<div class="su">
+					<span class="info_pic"><img src="/public/img/false.png"></span>
+					<span class="info_word">操作失败1</span>
+					<input type="hidden" id="rstatus"  name="transStatus"	value="{$typeid}">
+					<a href="javascript:;" id="btn" onclick="sumToJava()" class="closeBtn">关闭</a>
+				</div>
+			</div>
+		
+		 <else /> 
+			 <div class="con">
+				<div class="su">
+					<span class="info_pic"><img src="/public/img/false.png"></span>
+					<span class="info_word">操作失败2</span>
+					<a href="javascript:;" id="btn" onclick="clow()" class="closeBtn">关闭</a>
+				</div>
+			</div>
+		 </if>
+		
+
+	</body>
+
+</html>

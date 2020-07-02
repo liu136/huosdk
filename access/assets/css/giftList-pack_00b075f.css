@@ -1,0 +1,34 @@
+#Gift-list {background: #fff;}
+#Gift-list .listHeader{position:relative}
+#Gift-list .listHeader>a>img{width:110px;height:110px;border-radius:20px;overflow:hidden;position:absolute;left:15px;top:15px}
+#Gift-list .listHeader .headerInfo{padding-left:125px;height:110px}
+#Gift-list .listHeader .headerInfo .title{height:24px;line-height:24px;padding:12px 0}
+#Gift-list .listHeader .headerInfo .title a{display:inline-block;height:24px;line-height:24px;font-size:24px;max-width:776px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap}
+#Gift-list .listHeader .headerInfo .title span{display:inline-block;width:20px;height:20px;margin-left:12px}
+#Gift-list .listHeader .headerInfo p{color:#b0b0b0;font-size:14px;margin-bottom:15px}
+#Gift-list .listHeader .headerInfo p span{color:#e74c3c}
+#Gift-list .listHeader .headerInfo .btn{height:28px}
+#Gift-list .listHeader .headerInfo .btn>a{display:inline-block;margin-right:10px;transition:all .3s}
+#Gift-list .listHeader .headerInfo .btn>span{display:inline-block;width:90px;height:28px;margin-right:10px;cursor:pointer;}
+#Gift-list .listHeader .headerInfo .btn>a.zhuanqu{border: 1px solid #ff7800;color: #ff7800;font-size: 14px;border-radius: 15px;padding: 6px 15px;}
+#Gift-list .listHeader .headerInfo .btn>a.zhuanqu:hover{background: #ff7800;color: #fff;}
+#Gift-list .lists.wrapperBox{padding:15px 0}
+#Gift-list .lists .titleHolder{margin:0 15px;padding:0;border-bottom:1px solid #d7d7d7;height:40px}
+#Gift-list .lists.wrapperBox .contentHolder{margin-top:0}
+#Gift-list .lists .one{width:50%;box-sizing:border-box;border-bottom:1px dashed #cdcdcd;float:left;overflow:hidden;padding:15px 0 15px 15px}
+#Gift-list .lists .one.atLast{border-bottom:0}
+#Gift-list .lists .one .oneContent{padding-right:15px;border-right:1px solid #cdcdcd}
+#Gift-list .lists .one .oneContent.atRight{border-right:0}
+#Gift-list .lists .one .oneContent p{line-height:20px;height:20px}
+#Gift-list .lists .one .oneContent p a{font-size:16px;display:inline-block;height:20px;line-height:20px;max-width:404px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap}
+#Gift-list .lists .one .oneContent p span{display:inline-block;width:20px;height:20px;margin-left:12px}
+#Gift-list .lists .one .oneContent .gifts{font-size:14px;color:#575757;padding:8px 0;height:40px}
+#Gift-list .lists .one .oneContent .remianing{height:32px;line-height:32px}
+#Gift-list .lists .one .oneContent .remianing span{float:left;color:#d7d7d7}
+#Gift-list .lists .one .oneContent .remianing span em{color:#e74c3c}
+#Gift-list .lists .one .oneContent .remianing .getBtn{border: 1px solid #e74c3c;color: #e74c3c;font-size: 14px;border-radius: 15px;padding: 0px 15px;}
+#Gift-list .lists .one .oneContent .remianing .getBtn{display:block;color:#e74c3c;text-align:center;float:right;}
+#Gift-list .lists .one .oneContent .remianing .getBtn:hover{background: #e74c3c;color: #fff;}
+#Gift-list .lists .one .oneContent .remianing .getBtn-02{border: 1px solid #FF7800;color: #FF7800;font-size: 14px;border-radius: 15px;padding: 0px 15px;}
+#Gift-list .lists .one .oneContent .remianing .getBtn-02:hover{background: #FF7800;color: #fff;}
+#Gift-list .lists .pageWrapper{width:730px;margin:36px auto}

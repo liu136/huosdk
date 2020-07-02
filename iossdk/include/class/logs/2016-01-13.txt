@@ -1,0 +1,11 @@
+Time : 07:29:12
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_sdk_testsdk.c_ttb' doesn't exist
+Raw SQL : select ttb from c_ttb where username=:username
+
+Time : 07:19:52
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_sdk_testsdk.c_ttb' doesn't exist
+Raw SQL : select ttb from c_ttb where username=:username
+
+Time : 03:25:30
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_sdk_testsdk.c_ttb' doesn't exist
+Raw SQL : select ttb from c_ttb where username=:username

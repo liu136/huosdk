@@ -1,0 +1,45 @@
+<admintpl file="header" />
+</head>
+<body >
+<div class="wrap js-check-wrap" >
+
+    custom_server_list_edit
+    <a href="" class="btn"></a>
+    <form class="js-ajax-form" action="" method="post" >
+        <table class="table table-hover table-bordered table-list" >
+            <thead >
+            <tr >
+                <th >appid</th >
+                <th >联系手机</th >
+                <th >客服QQ</th >
+                <th >客服邮箱</th >
+                <th >客服QQ群</th >
+                <th >客服微信号</th >
+                <th >客服微信图片地址</th >
+                <th >客服引导内容</th >
+                <th >客服工作时间</th >
+                <th >操作</th>         
+            </tr >
+            </thead >
+            <foreach name="contact" item="vo" >
+                <tr >
+                    <td >{$vo['app_id']}</td >
+                    <td >{$vo['tel']}</td >
+                    <td >{$vo['qq']}</td >
+                    <td >{$vo['email']}</td >
+                    <td >{$vo['qqgroup']}</td >
+                    <td >{$vo['wx']}</td >
+                    <td >{$vo['wx_url']}</td >
+                    <td >{$vo['content']}</td >
+                    <td >{$vo['service_time']|date='Y-m-d H:i:s',###}</td >
+                    <td><a href="{:U('Contact/custom_server_list_edit')}/{$vo['app_id']}"></a></td>
+                </tr >
+            </foreach >
+        </table >
+        <!-- <div class="pagination" >{$Page}</div > -->
+
+    </form >
+</div >
+<script src="__PUBLIC__/js/common.js" ></script >
+</body >
+</html>

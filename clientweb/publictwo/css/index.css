@@ -1,0 +1,499 @@
+
+/*资讯*/
+
+.news_left:hover .n_l_title {
+	bottom: 0;
+}
+
+.n_l_title {
+	position: absolute;
+	bottom: -50px;
+	left: 0;
+	z-index: 99;
+	width: 100%;
+	height: 50px;
+	transition: bottom .3s;
+}
+
+.n_l_title li {
+	float: left;
+	width: 25%;
+	height: 50px;
+	background: #222A45;
+	line-height: 50px;
+	text-align: center;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+.n_l_title li.active {
+	background: #AF201F;
+}
+
+
+/*热门推荐*/
+
+.TOP10 {
+	background: #FFFFFF;
+	margin-top: 20px;
+}
+
+.TOP10_con {
+	height: 100px;
+	margin-top: 10px;
+}
+
+.TOP10_con li {
+	width: 117px;
+	height: 100px;
+	float: left;
+	text-align: center;
+}
+
+.TOP10_con li img {
+	width: 100px;
+	height: 100px;
+	transform: scale(.9);
+	transition: transform .5s;
+}
+
+.TOP10_con li img:hover {
+	transform: scale(1.1);
+}
+
+
+/*资讯-攻略-活动*/
+
+.news {
+	/*	background: #FFFFFF;*/
+	margin-top: 20px;
+	padding: 0;
+	width: 1200px;
+}
+
+.news_left {
+	width: 600px;
+	height: 400px;
+	position: relative;
+	overflow: hidden;
+}
+
+.news_left li img {
+	width: 100%;
+	height: 400px;
+}
+
+
+/**/
+
+.news_right {
+	width: 525px;
+	padding: 15px 25px;
+	margin-left: 25px;
+	background: #FFFFFF;
+}
+
+.TopNews h4 {
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 20px;
+	color: #333;
+}
+
+.TopNews h4:hover {
+	color: #F13D6D;
+}
+
+.TopNews> p {
+	height: 46px;
+	overflow: hidden;
+	font-size: 14px;
+	margin-top: 5px;
+	text-indent: 2em;
+	color: #666;
+}
+
+.TopNews {
+	padding: 5px 0;
+	border-top: 1px solid #DDDDDD;
+	border-bottom: 1px dashed #DDDDDD;
+	margin: 10px 0 5px 0;
+}
+
+/*.newsList li {
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+}*/
+.newsList{
+	width: 100%;
+	margin-top: 10px;
+}
+.newsList:after{
+	content: "";
+	width: 100%;
+	display: block;
+	clear: both;
+}
+.newsList li{
+	width: 100%;
+	height: 30px;
+	font-size: 16px;
+	border-bottom: 1px dashed #CCCCCC;
+	margin: 5px 0;
+}
+/*.word_list {
+	color: #333;
+	width: 380px;
+	overflow: hidden;
+	float: left;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}*/
+
+.word_list {
+	color: #333;
+	width: 180px;
+	overflow: hidden;
+	float: left;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 14px;
+}
+.word_time {
+	float: right;
+	font-size: 12px;
+	color: #999999;
+}
+
+.word_list:hover {
+	color: #F13D6D;
+}
+
+/*.newsType {
+	float: left;
+	font-style: normal;
+}*/
+.newsType {
+	float: left;
+	font-style: normal;
+	font-size: 14px;
+}
+.news_news {
+	color: #80BBE7;
+}
+
+.news_strategy {
+	color: #F13D6D;
+}
+
+.news_active {
+	color: #F0AD4E;
+}
+
+
+
+/**/
+
+.main {
+	margin-top: 20px;
+	width: 1200px;
+	padding: 0;
+}
+
+.main .left {
+	width: 830px;
+}
+
+.main .right {
+	width: 350px;
+}
+
+.m_l,
+.m_r {
+	padding: 15px;
+	background: #FFFFFF;
+}
+
+.m_l_con {
+	width: 100%;
+	margin-top: 10px;
+}
+
+.m_l_con:after {
+	content: "";
+	display: block;
+	width: 100%;
+	clear: both;
+}
+
+.m_l_con li {
+	float: left;
+	width: 30%;
+	padding-right: 3.333%;
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.m_l_con img {
+	width: 100px;
+	height: 100px;
+	float: left;
+}
+
+.m_l_c_detial {
+	float: left;
+	width: 105px;
+	text-align: center;
+}
+
+.m_l_c_detial h4 {
+	font-size: 18px;
+	color: #333333;
+	margin-bottom: 5px;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	text-align: center;
+	font-weight: normal;
+}
+
+.m_l_c_detial h4:hover {
+	color: #F13D6D;
+}
+
+.m_l_c_detial> p {
+	color: #999999;
+	margin-bottom: 5px;
+}
+
+.m_l_btn {
+	display: block;
+	width: 90px;
+	height: 20px;
+	background: #F0AD4E;
+	color: #FFFFFF;
+	line-height: 20px;
+	text-align: center;
+	border-radius: 5px;
+	border: 1px solid;
+	margin: 0 auto 5px auto;
+}
+
+.m_l_btn:hover {
+	background: #FFFFFF;
+	color: #F0AD4E;
+	border-color: #F0AD4E;
+}
+
+
+/**/
+
+.m_r_con {
+	margin-top: 10px;
+}
+
+.event {
+	width: 100%;
+	margin-top: 10px;
+	height: 113px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.event:hover img {
+	transform: scale(1);
+}
+
+.event img {
+	width: 100%;
+	height: 113px;
+	transform: scale(1.1);
+	transition: transform .3s;
+}
+
+.m_r_con li {
+	min-height: 35px;
+	border-bottom: 1px dashed #999999;
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
+
+.m_r_con img {
+	width: 60px;
+	height: 60px;
+}
+
+.m_r_con li.active .show1 {
+	display: none;
+}
+
+.m_r_con li.active .show2 {
+	display: block;
+}
+
+.show1 {
+	height: 26px;
+}
+
+.show1 p {
+	font-size: 16px;
+	color: #333333;
+	width: 157px;
+	float: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.show1 p:hover {
+	color: #F13D6D;
+}
+
+.show1 span {
+	float: left;
+	margin-left: 10px;
+	font-size: 14px;
+	color: #999999
+}
+
+.show2 {
+	display: none;
+	height: 60px;
+	margin-bottom: 5px;
+}
+
+.show2 img {
+	float: left;
+}
+
+.show2_con {
+	float: right;
+	width: 280px;
+	position: relative;
+	height: 60px;
+}
+
+.show2_con p {
+	width: 185px;
+	float: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.show2_con> a> p {
+	font-size: 20px;
+	color: #333333;
+}
+
+.show2_con> p {
+	margin-top: 10px;
+	font-size: 14px;
+	color: #666666;
+}
+
+.m_r_c_btn {
+	position: absolute;
+	top: 50%;
+	margin-top: -15px;
+	right: 0;
+	display: block;
+	width: 80px;
+	text-align: center;
+	line-height: 25px;
+	font-size: 14px;
+	background: #F13D6D;
+	border-radius: 5px;
+	color: #FFFFFF;
+	border: 1px solid;
+}
+
+.m_r_c_btn:hover {
+	background: #FFFFFF;
+	color: #F13D6D;
+	border-color: #F13D6D;
+}
+
+
+
+/**/
+
+.topNew {
+	background: #FFFFFF;
+	margin-top: 20px;
+}
+
+.topNew ul {
+	margin-top: 10px;
+	height: 300px;
+}
+
+.topNew ul li {
+	float: left;
+	width: 390px;
+	height: 300px;
+}
+
+.topNew_con {
+	margin: 10px;
+	height: 280px;
+	position: relative;
+}
+
+.topNew_con img {
+	width: 100%;
+	height: 230px;
+}
+
+.topNew_con .mask {
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	opacity: 1;
+	background: #999999;
+}
+
+.topNew_con .mask a {
+	color: #FFFFFF;
+	display: inline-block;
+	width: 120px;
+	float: left;
+	text-align: center;
+	line-height: 50px;
+	font-size: 16px;
+}
+
+.topNew_con .mask a:hover {
+	background: #666666;
+}
+
+.topNew_con .mask a.active {
+	background: #F0AD4E;
+	width: 130px;
+}
+
+.topNew_con .mask a.active:hover {
+	background: #EC971F;
+}
+
+
+/**/
+
+.ranking {
+	padding: 0;
+	width: 1200px;
+	margin-top: 20px;
+}
+
+.ranking> div {
+	width: 356px;
+	float: left;
+	/*height: 400px;*/
+	margin-right: 21px;
+}

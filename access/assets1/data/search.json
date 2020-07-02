@@ -1,0 +1,30 @@
+{
+	"game_list":[
+		{"game_name":"龙女传奇", "game_icon":"http://h5i.6533.com/upload/logo/lncq_1489631046.png", "game_type":["角色类","射击类"],  "app_id":"60025", "click_num":"36895"},
+		{"game_name":"龙女传奇", "game_icon":"http://h5i.6533.com/upload/logo/lncq_1489631046.png", "game_type":["角色类","射击类"],  "app_id":"60025", "click_num":"36895"},
+		{"game_name":"龙女传奇", "game_icon":"http://h5i.6533.com/upload/logo/lncq_1489631046.png", "game_type":["角色类","射击类"],  "app_id":"60025", "click_num":"36895"},
+		{"game_name":"龙女传奇", "game_icon":"http://h5i.6533.com/upload/logo/lncq_1489631046.png", "game_type":["角色类","射击类"],  "app_id":"60025", "click_num":"36895"},
+		{"game_name":"龙女传奇", "game_icon":"http://h5i.6533.com/upload/logo/lncq_1489631046.png", "game_type":["角色类","射击类"],  "app_id":"60025", "click_num":"36895"}
+	],
+	"gift_list":[
+		{"game_icon":"http://h5i.6533.com/upload/logo/mrxj_1482921017.jpg","gift_title":"《美人心计》幸运礼包","remain_bfb":"85%", "gift_id":"45"},
+		{"game_icon":"http://h5i.6533.com/upload/logo/mrxj_1482921017.jpg","gift_title":"《美人心计》幸运礼包","remain_bfb":"85%", "gift_id":"45"},
+		{"game_icon":"http://h5i.6533.com/upload/logo/mrxj_1482921017.jpg","gift_title":"《美人心计》幸运礼包","remain_bfb":"85%", "gift_id":"45"},
+		{"game_icon":"http://h5i.6533.com/upload/logo/mrxj_1482921017.jpg","gift_title":"《美人心计》幸运礼包","remain_bfb":"85%", "gift_id":"45"},
+		{"game_icon":"http://h5i.6533.com/upload/logo/mrxj_1482921017.jpg","gift_title":"《美人心计》幸运礼包","remain_bfb":"85%", "gift_id":"45"},
+		{"game_icon":"http://h5i.6533.com/upload/logo/mrxj_1482921017.jpg","gift_title":"《美人心计》幸运礼包","remain_bfb":"85%", "gift_id":"45"},
+		{"game_icon":"http://h5i.6533.com/upload/logo/mrxj_1482921017.jpg","gift_title":"《美人心计》幸运礼包","remain_bfb":"85%", "gift_id":"45"},
+		{"game_icon":"http://h5i.6533.com/upload/logo/mrxj_1482921017.jpg","gift_title":"《美人心计》幸运礼包","remain_bfb":"85%", "gift_id":"45"},
+		{"game_icon":"http://h5i.6533.com/upload/logo/mrxj_1482921017.jpg","gift_title":"《美人心计》幸运礼包","remain_bfb":"85%", "gift_id":"45"}
+	],
+	"post_list":[
+		{"post_thumb":"http://h.6533.com/upload/posts/mszzl_1488801372.jpg", "post_title":"打造最强战力 《龙啸九天H5》新手入门攻", "post_modified":"2017-03-17","post_id":"125"},
+		{"post_thumb":"http://h.6533.com/upload/posts/mszzl_1488801372.jpg", "post_title":"打造最强战力 《龙啸九天H5》新手入门攻", "post_modified":"2017-03-17","post_id":"125"},
+		{"post_thumb":"http://h.6533.com/upload/posts/mszzl_1488801372.jpg", "post_title":"打造最强战力 《龙啸九天H5》新手入门攻", "post_modified":"2017-03-17","post_id":"125"},
+		{"post_thumb":"http://h.6533.com/upload/posts/mszzl_1488801372.jpg", "post_title":"打造最强战力 《龙啸九天H5》新手入门攻", "post_modified":"2017-03-17","post_id":"125"},
+		{"post_thumb":"http://h.6533.com/upload/posts/mszzl_1488801372.jpg", "post_title":"打造最强战力 《龙啸九天H5》新手入门攻", "post_modified":"2017-03-17","post_id":"125"},
+		{"post_thumb":"http://h.6533.com/upload/posts/mszzl_1488801372.jpg", "post_title":"打造最强战力 《龙啸九天H5》新手入门攻", "post_modified":"2017-03-17","post_id":"125"},
+		{"post_thumb":"http://h.6533.com/upload/posts/mszzl_1488801372.jpg", "post_title":"打造最强战力 《龙啸九天H5》新手入门攻", "post_modified":"2017-03-17","post_id":"125"},
+		{"post_thumb":"http://h.6533.com/upload/posts/mszzl_1488801372.jpg", "post_title":"打造最强战力 《龙啸九天H5》新手入门攻", "post_modified":"2017-03-17","post_id":"125"}
+	]
+}

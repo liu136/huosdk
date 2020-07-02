@@ -1,0 +1,33 @@
+.qiang_btn {border: none;border-radius: 5px;background: #e74c3c;color: #fff;font-size: 12px;padding: 5px 15px;cursor: pointer; color: #fff !important}
+.qiang_btn a:hover{color: #fff !important}
+.windows{position:fixed;top: 0;left: 0;width: 100%;height: 100%;background-color:rgba(0, 0, 0, 0.4);z-index: 100;display: none;}
+.windows-div{position: relative;background: #fff;text-align: center;width: 400px;margin: 0 auto;padding: 10px 0 40px;z-index: 1000}
+.win-title{font-size: 22px;color: #00a658;border-bottom: 1px solid #D5D5D5;height: 60px;line-height: 59px;font-weight: bold;}
+.win-close{width: 20px;height: 20px;font-size: 22px;color: #666;position: absolute;top: 28px;right: 17px;cursor: pointer;background-image: url(../img/layout_z_0ab5592.png);background-position: -110px -886px;}
+.windows-div img{margin-top: 30px;cursor: pointer;}
+
+.name{border: 1px solid transparent;padding: 0 8px;border-bottom: none;}
+.name:hover{border: 1px solid #e6e6e6;background:#fff;}
+.name .userInfoNew{display: none;}
+.name:hover .userInfoNew{display: block;}
+.page{text-align: center;}
+.contentHolder .div .item img.lazy,.activity .contentHolder .div .pic,.activity .contentHolder .item{width: 70px;height: 70px;}
+.activity .contentHolder .div .text{margin-left: 35px;}
+.wrapperBox.border-box{padding-left: 15px;padding-right: 0;}
+.headNews.wrapperBox.border-box{height: auto;margin: 0 10px;padding-left: 0;width: 432px;}
+.headNews .top-news .item .text1{width: 330px;}
+.addimghd .wrapperBox.border-box,.addimghd .libao{height: 581px;}
+.addimghd .hot,.addimghd .home-section,.addimghd .gameZoneRecommend,.addimghd .gameCategory,.addimghd .friendLink{margin-top: 10px;}
+.addimghd .recommend-content{margin-bottom: 10px;}
+.addimghd .hot .right,.addimghd .hot .left,.addimghd .headNews.wrapperBox.border-box{height: 581px;}
+.addimghd .libao{padding-right: 15px;}
+.addimghd .bang li.first span:nth-child(3){width: 22%;}
+.addimghd .bang li span:nth-child(3){width: 25%;}
+.addimghd .hot{height: auto;}
+.addimghd .bang li span.span1{width: 15%;}
+.addimghd .headNews.wrapperBox.border-box .contentHolder{padding-left: 10px;}
+.addimghd .home-section .wrapperBox.border-box{height: auto;width: 703px;}
+.addimghd .section.gameZoneRecommend.clearfix .zoneRecommend{width: 614px;height: 618px;}
+.addimghd .gameList{height: 618px;}
+.addimghd .headNews.wrapperBox.border-box{width: 448px;}
+.friendLink.section .wrapperBox.border-box{height: auto;}

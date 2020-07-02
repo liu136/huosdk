@@ -1,0 +1,86 @@
+<admintpl file="header" />
+</head>
+<body >
+<div class="wrap" >
+    <ul class="nav nav-tabs" >
+        <li ><a href="{:U('/Sdk/IosGame/iosindex')}" >游戏列表</a ></li >
+        <li class="active" ><a href="#" >切换设置</a ></li >
+    </ul >
+    <form class="form-horizontal js-ajax-form" method="post" action="{:U('IosGame/set_pay_switch_do')}" >
+        <fieldset >
+			<div class="control-group" >
+                <label class="control-label"  >按时间段</label >
+                <div class="controls" >
+					<input type="hidden" name="appid" value="{$Think.get.appid}" >
+                    <input type="time" name="start_time" class="input-xlarge" value="{$item.start_time}"
+                           placeholder="如:00:00" style="width: 110px;" >
+						    -
+					<input type="time" class="input-xlarge" name="end_time" value="{$item.end_time}"
+                           placeholder="如:24:00" style="width: 110px;" >
+                    <em style="color: red">*只在此时间段内切换 web支付 不设置表示任何时间都切换</em>
+
+                </div >
+            </div >
+			<div class="control-group" >
+                <label class="control-label"  >ip段设置</label >
+                <div class="controls" >
+					<input name="is_domestic" type="checkbox" value="1"
+                    <if condition="$item['is_domestic'] neq 2" >checked="checked" </if >
+                    />大陆
+				 <input name="is_overseas" type="checkbox" value="1"
+                    <if condition="$item['is_overseas'] neq 2" >checked="checked" </if >/>海外
+                     <em style="color: red">*只在此IP段内切换 web支付 不设置表示都切换 </em>
+				</div >
+            </div >
+            <div class="control-group" >
+                <label class="control-label" >首充不切换</label >
+                <div class="controls" >
+					<input name="is_first" type="checkbox" value="1" <if
+                        condition="$item['is_first'] eq 1" >checked="checked" </if >/>
+                    <em style="color: red">*勾选表示玩家首次充值不切换</em>
+                </div >
+            </div >
+            <div class="control-group" >
+                <label class="control-label" >设置切换金额</label >
+                <div class="controls" >
+                    <input type="number" class="input-xlarge" name="price" value="{$item.price}" step="0.01">
+                    <em style="color: red">*超过此金额才切换 默认全部切换</em>
+                </div >
+            </div >
+            <div class="control-group" >
+                <label class="control-label" >设置切换版本</label >
+                <div class="controls" >
+                   <!-- <textarea name="version" rows="3" cols="30" style="resize:none;width:40%;" 
+                    placeholder="请输入版本号" >{$item.version}</textarea >-->
+                    <input type="text" class="input-xlarge" name="version" value="{$item.version}" >
+                    <em style="color: red">*在此版本内才切换 内购支付 默认全部切换（多个,隔开）</em>
+                </div >
+            </div >
+            <div class="control-group" >
+                <label class="control-label" >设置混淆代码前缀</label >
+                <div class="controls" >
+                   <!-- <textarea name="version" rows="3" cols="30" style="resize:none;width:40%;" 
+                    placeholder="请输入版本号" >{$item.version}</textarea >-->
+                    <input type="text" class="input-xlarge" name="code_str_start" value="{$item.code_str_start}" >
+                   
+                </div >
+            </div >
+            <div class="control-group" >
+                <label class="control-label" >设置混淆代码后缀</label >
+                <div class="controls" >
+                   <!-- <textarea name="version" rows="3" cols="30" style="resize:none;width:40%;" 
+                    placeholder="请输入版本号" >{$item.version}</textarea >-->
+                    <input type="text" class="input-xlarge" name="code_str_end" value="{$item.code_str_end}" >
+                     
+                </div >
+            </div >
+            <div class="form-actions" >
+                <button type="submit" class="btn btn-primary  js-ajax-submit" >{:L('SAVE')}</button >
+				<a class="btn" href="{:U('Sdk/IosGame/iosindex')}" >返回</a >
+            </div >
+        </fieldset >
+    </form >
+</div >
+<script src="__PUBLIC__/js/common.js" ></script >
+</body >
+</html>
